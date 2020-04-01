@@ -1,0 +1,22 @@
+
+.$(accordion) {
+  &-body {
+    transition: max-height .2s;
+  }
+
+  .$(accordion)-header {
+    .$(accordion)-icon {
+      transition: transform .2s;
+    }
+  }
+
+  input.$(accordion)-indicator:checked ~,
+  &[open],
+  &.open {
+    .$(accordion)-header {
+      .$(accordion)-icon {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

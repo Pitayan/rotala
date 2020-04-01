@@ -1,0 +1,22 @@
+.$(prefix)check-group {
+  @apply relative;
+}
+
+.$(checkbox) {
+  @apply block;
+  @apply cursor-pointer;
+  @apply select-none;
+  @apply relative;
+  @apply leading-normal;
+  @apply pl-5 py-1;
+
+  min-height: 1.5rem;
+
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    @apply cursor-default;
+    @apply pointer-events-none;
+    @apply text-gray-400;
+  }
+}

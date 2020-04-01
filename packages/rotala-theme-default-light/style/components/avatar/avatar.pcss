@@ -1,0 +1,38 @@
+
+.$(avatar) {
+  &&-rounded {
+    @apply rounded-full;
+
+    img {
+      @apply rounded-full;
+    }
+
+    .$(avatar)-icon,
+    .$(avatar)-status {
+      bottom: 14.64%;
+      right: 14.64%;
+    }
+  }
+
+  & &-icon,
+  & &-status {
+    @apply absolute;
+    @apply z-10;
+    @apply rounded-full;
+    @apply shadow-white;
+
+    bottom: 11.36%;
+    right: 11.36%;
+    height: 50%;
+    width: 50%;
+    transform: translate(50%, 50%);
+  }
+
+  & &-status {
+    @apply bg-gray-500;
+
+    padding: 2px;
+    height: .5em;
+    width: .5em;
+  }
+}

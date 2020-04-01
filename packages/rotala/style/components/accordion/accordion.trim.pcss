@@ -1,0 +1,31 @@
+
+.$(accordion) {
+  .$(accordion)-header {
+    @apply block;
+    @apply py-px py-2;
+  }
+
+  /* Remove default details marker in Webkit */
+  summary.$(accordion)-header {
+    &::-webkit-details-marker {
+      @apply hidden;
+    }
+  }
+
+  &-body {
+    @apply mb-1;
+    @apply overflow-x-hidden;
+    @apply overflow-y-auto;
+
+    max-height: 0;
+  }
+
+  input.$(accordion)-indicator:checked ~,
+  &[open],
+  &.open {
+    .$(accordion)-body {
+      @apply max-h-screen;
+    }
+  }
+}
+

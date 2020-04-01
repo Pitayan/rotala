@@ -1,0 +1,24 @@
+.$(icon) {
+  @apply inline-block;
+  @apply relative;
+  @apply align-middle;
+
+  height: 1em;
+  width: 1em;
+  font-size: normal;
+
+  &::before,
+  &:after {
+    @apply absolute;
+    @apply block;
+
+    content: '';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-combo {
+    vertical-align: -15%;
+  }
+}

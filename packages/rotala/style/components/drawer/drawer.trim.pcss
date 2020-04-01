@@ -1,0 +1,59 @@
+.is-$(prefix)drawer-open {
+  @apply fixed;
+  @apply w-full;
+}
+
+.$(drawer) {
+  @apply fixed;
+  @apply inset-0;
+  @apply hidden;
+  @apply overflow-hidden;
+  @apply z-0;
+
+  &-container {
+    @apply absolute;
+    @apply inset-y-0;
+    @apply m-0;
+    @apply outline-none;
+    @apply w-full;
+    @apply h-full;
+  }
+
+  &.right,
+  &.left {
+    .$(drawer)-container {
+      width: calc(960px / 3);
+    }
+  }
+
+  &.right {
+    .$(drawer)-container {
+      left: 100%;
+      transform: translateX(-100%);
+    }
+  }
+
+  &.bottom {
+    .$(drawer)-container {
+      top: 100%;
+      transform: translateY(-100%);
+    }
+  }
+
+  &.top,
+  &.bottom {
+    .$(drawer)-container {
+      height: calc(960px / 3);
+    }
+  }
+
+  &:target,
+  &.open {
+    @apply block;
+    @apply z-40;
+
+    .$(drawer)-container {
+      @apply z-50;
+    }
+  }
+}

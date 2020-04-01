@@ -1,0 +1,35 @@
+.$(input) {
+  @apply appearance-none;
+  @apply border-none;
+  @apply text-base;
+  @apply leading-normal;
+  @apply shadow-none;
+  @apply max-w-full;
+  @apply w-full;
+  @apply py-1 px-0;
+
+  min-height: 36px;
+  font-stretch: 100%;
+
+  &:active,
+  &:focus {
+    @apply outline-none;
+  }
+
+  &::placeholder {
+    @apply text-base;
+    @apply text-gray-500;
+  }
+
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    @apply cursor-default;
+    @apply pointer-events-none;
+    @apply text-gray-400;
+
+    &::placeholder {
+      @apply text-gray-400;
+    }
+  }
+}

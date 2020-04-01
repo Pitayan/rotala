@@ -1,0 +1,31 @@
+$url: 'data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 24 24" height="16" width="16" fill="%239a9a9a" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M7.8105 2.25L6.75 3.3105L15.4395 12L6.75 20.6895L7.8105 21.75L17.5605 12L7.8105 2.25Z" /%3E%3C/svg%3E%0A';
+
+.$(breadcrumb) {
+  .$(breadcrumb)-item {
+    &.active {
+      @apply text-primary-600;
+    }
+
+    a {
+      @apply text-gray-700;
+      transition: color .15s;
+
+      &:hover,
+      &:focus {
+        @apply text-primary-500;
+      }
+    }
+
+    &:not(:last-child) {
+      &::after {
+        @apply inline-block;
+        @apply w-4;
+        @apply mx-2;
+        @apply static;
+
+        content: '\00A0 ';
+        background: white url($(url)) no-repeat center;
+      }
+    }
+  }
+}

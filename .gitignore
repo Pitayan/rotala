@@ -1,0 +1,26 @@
+# Logs
+logs
+*.log
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+dist
+
+# Build Path of Test Fixtures
+.cache/
+.netlify
+
+# IDE specific
+.idea/
+.vscode/
+*.sw*
+
+# lock files
+yarn.lock
+package-lock.json
+# ignore any lock file other than main lock file
+!/yarn.lock
+
+# package developemnt css
+packages/**/*/docs/assets/css

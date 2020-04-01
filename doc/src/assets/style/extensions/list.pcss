@@ -1,0 +1,35 @@
+
+.bullet-dot {
+  &::before {
+    @apply absolute;
+    @apply w-2;
+    @apply h-2;
+    @apply transition;
+    @apply duration-150;
+    @apply ease-in-out;
+    @apply rounded;
+    @apply transform;
+    @apply scale-0;
+
+    content: "";
+    left: calc(-1rem);
+    top: .3em;
+    transition-delay: initial;
+    transition-property: initial;
+  }
+
+  &:hover {
+    &::before {
+      @apply bg-gray-500;
+      @apply scale-100;
+    }
+  }
+
+  &:active,
+  &.active {
+    &::before {
+      @apply bg-primary-600;
+      @apply scale-100;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "rotala-theme-default-light",
+  "version": "0.0.1-alpha.0+ee61601",
+  "description": "a light theme for rotala.css framework",
+  "main": "dist/theme.css",
+  "style": "style/main.pcss",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development concurrently \"postcss docs/main.pcss -o docs/assets/css/theme.css --watch\" \"live-server ./docs\"",
+    "build": "cross-env NODE_ENV=production postcss style/main.pcss -o dist/theme.css",
+    "prepare": "lerna run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daiyanze/rotala.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "UI",
+    "UX",
+    "rotala"
+  ],
+  "author": "daiyanze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daiyanze/rotala/issues"
+  },
+  "dependencies": {
+    "rotala": "^0.0.1-alpha.0",
+    "rotala-extension-cssicon": "^0.0.1-alpha.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "cross-env": "^7.0.2",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^7.1.0"
+  },
+  "gitHead": "ee61601271cd3184463212ffa5dbc7f2e039cf5f"
+}

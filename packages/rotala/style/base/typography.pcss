@@ -1,0 +1,180 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  @apply font-medium;
+  @apply leading-normal;
+  @apply mt-0;
+
+  margin-bottom: .5em;
+
+  small,
+  .small {
+    @apply font-normal;
+    @apply text-gray-600;
+
+    font-size: 80%;
+    line-height: 1;
+  }
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1, .h1 {
+  font-size: 40px;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+h3, .h3 {
+  font-size: 28px;
+}
+
+h4, .h4 {
+  font-size: 24px;
+}
+
+h5, .h5 {
+  font-size: 20px;
+}
+
+h6, .h6 {
+  font-size: 16px;
+}
+
+p {
+  @apply mb-4;
+  @apply leading-normal;
+}
+
+small {
+  font-size: 86%;
+}
+
+a,
+ins,
+u {
+  text-decoration-skip: ink edges;
+}
+
+abbr[title] {
+  @apply border-b border-dotted;
+  @apply no-underline;
+
+  cursor: help;
+}
+
+kbd {
+  @apply rounded-sm;
+  @apply text-white;
+  @apply leading-normal;
+  @apply py-px px-2;
+  @apply bg-gray-800;
+}
+
+mark {
+  @apply bg-orange-300;
+  @apply border-b-2 border-solid border-orange-500;
+  @apply rounded-sm;
+
+  padding: 0.25rem 0.5rem 0;
+}
+
+blockquote {
+  @apply ml-0;
+  @apply py-2 px-4;
+}
+
+address {
+  @apply mb-6;
+  @apply font-normal;
+  @apply leading-normal;
+}
+
+pre {
+  @apply whitespace-pre;
+
+  width: inherit;
+
+  code {
+    @apply block;
+    @apply relative;
+    @apply whitespace-pre-line;
+    @apply bg-gray-100;
+    @apply leading-relaxed;
+    @apply overflow-x-auto;
+    @apply p-4;
+
+    color: inherit;
+    font-size: 85%;
+
+    &::before {
+      @apply absolute;
+      @apply text-gray-600;
+      @apply text-sm;
+
+      top: .5rem;
+      right: 2rem;
+      content: attr(data-lang);
+    }
+  }
+}
+
+code {
+  @apply text-sm;
+  @apply text-red-600;
+  @apply bg-red-200;
+  @apply leading-normal;
+  @apply rounded-sm;
+  @apply py-px px-1;
+}
+
+ul, ol {
+  margin: 1rem 0 1rem 1rem;
+  padding: 0;
+
+  ul, ol {
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  li {
+    @apply mt-4;
+  }
+}
+
+ul {
+  list-style: disc inside;
+
+  ul {
+    list-style-type: circle;
+  }
+}
+
+ol {
+  list-style: decimal inside;
+
+  ol {
+    list-style-type: lower-alpha;
+
+    ol {
+      list-style-type: lower-roman;
+    }
+  }
+}
+
+dl {
+  margin: 1rem 0 1rem 1rem;
+
+  dt {
+    @apply font-black;
+  }
+
+  dd {
+    margin: 1rem 0 2rem 0;
+  }
+}

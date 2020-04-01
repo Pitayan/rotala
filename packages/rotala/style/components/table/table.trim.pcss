@@ -1,0 +1,20 @@
+.$(table-group) {
+  @apply w-full;
+  @apply max-w-full;
+  @apply border-collapse;
+  @apply text-left;
+
+  /* avoid being appended !important */
+  display: table;
+  border-spacing: 0;
+
+  th,
+  td {
+    @apply p-4;
+    @apply border-none;
+  }
+
+  th {
+    @apply border-t-0;
+  }
+}

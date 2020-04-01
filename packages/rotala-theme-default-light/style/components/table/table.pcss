@@ -1,0 +1,63 @@
+
+.$(table-group) {
+  &-outline {
+    td,
+    th {
+      @apply border-b border-solid border-gray-400;
+    }
+
+    th {
+      @apply border-t border-solid border-gray-400;
+    }
+
+    thead th {
+      @apply border-b-2;
+    }
+  }
+
+  &-border {
+    th,
+    td {
+      @apply border border-solid border-gray-400;
+    }
+
+    th {
+      @apply border-b-2;
+    }
+  }
+
+  &-stripe {
+    tbody {
+      tr:nth-of-type(odd) {
+        @apply bg-gray-200;
+      }
+    }
+  }
+
+  &,
+  &-stripe {
+    tbody {
+      tr {
+        &.active {
+          @apply bg-gray-300;
+        }
+      }
+    }
+  }
+
+  &-hover {
+    tbody {
+      tr {
+        &:hover {
+          @apply bg-gray-300;
+        }
+      }
+    }
+  }
+
+  &-scroll {
+    @apply block !important;
+    @apply whitespace-no-wrap;
+    @apply overflow-x-auto;
+  }
+}

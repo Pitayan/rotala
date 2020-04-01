@@ -1,0 +1,43 @@
+.$(hr) {
+  &[data-content] {
+    @apply my-4 mx-0;
+  }
+
+  &[data-content]::after {
+    @apply bg-white;
+    @apply text-gray-500;
+    @apply inline-block;
+    @apply text-sm;
+    @apply py-0 px-2;
+
+    content: attr(data-content);
+    transform: translateY(calc(theme('borderWidth.default') - theme('fontSize.xs')));
+  }
+
+  &-vertical {
+    @apply border-t-0;
+    @apply h-auto;
+    @apply p-2;
+
+    &::before {
+      @apply block;
+      @apply absolute;
+      @apply border-l border-solid border-gray-400;
+
+      top: .125rem;
+      bottom: .125rem;
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &[data-content]::after {
+      @apply absolute;
+      @apply py-px px-0;
+
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
