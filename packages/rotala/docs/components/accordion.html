@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../assets/css/rotala.css">
+</head>
+
+<body>
+  <main class="m-16">
+    <div class="w-full text-center">
+      <a class="link" href="/">Home</a>
+    </div>
+    <section id="Accordion">
+      <h4>toggleable (with checkbox)</h4>
+      <div class="accordion margin-8">
+        <input class="accordion-indicator" id="accordion-0" type="checkbox" name="accordion-checkbox" hidden="">
+        <label class="accordion-header" for="accordion-0">
+          Layout
+        </label>
+        <div class="accordion-body">
+          <ul class="list-none">
+            <li><a href="#accordions">Layout 1</a></li>
+            <li><a href="#accordions">Layout 2</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion margin-8">
+        <input class="accordion-indicator" id="accordion-1" type="checkbox" name="accordion-checkbox" hidden=""
+          checked="">
+        <label class="accordion-header" for="accordion-1">Elements</label>
+        <div class="accordion-body">
+          <ul class="list-none">
+            <li><a href="#accordions">Element 1</a></li>
+            <li><a href="#accordions">Element 2</a></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <h4>icon accordion-icon indicator (with radio)</h4>
+      <div class="accordion margin-8">
+        <input class="accordion-indicator" id="accordion-2" type="radio" name="accordion-radio" hidden="">
+        <label class="accordion-header" for="accordion-2">Layout</label>
+        <div class="accordion-body">
+          <ul class="list-none">
+            <li><a href="#accordions">Layout 1</a></li>
+            <li><a href="#accordions">Layout 2</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion margin-8">
+        <input class="accordion-indicator" id="accordion-3" type="radio" name="accordion-radio" hidden="">
+        <label class="accordion-header" for="accordion-3">Elements</label>
+        <div class="accordion-body">
+          <ul class="list-none">
+            <li><a href="#accordions">Element 1</a></li>
+            <li><a href="#accordions">Element 2</a></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <h4>controlled by class</h4>
+      <div class="accordion margin-8" id="accordion-class" onclick="toggleAccordion">
+        <input class="accordion-indicator" id="accordion-4" type="checkbox" name="accordion-checkbox-1" hidden="">
+        <label class="accordion-header" for="accordion-4">Elements</label>
+        <div class="accordion-body" onclick="stop(event)">
+          <ul class="list-none">
+            <li><a href="#accordions">Element 1</a></li>
+            <li><a href="#accordions">Element 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      var accordion = document.getElementById('accordion-class')
+
+      var toggleAccordion = function () {
+        accordion.className.includes('open') ?
+          accordion.classList.remove('open') :
+          accordion.classList.add('open')
+      }
+
+      var stop = function (event) {
+        event.stopPropagation()
+      }
+    </script>
+  </main>
+</body>
+
+</html>

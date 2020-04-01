@@ -1,0 +1,25 @@
+.$(select) {
+  @apply appearance-none;
+  @apply border-0 rounded-none;
+  @apply leading-normal;
+  @apply outline-none;
+  @apply align-middle;
+  @apply max-w-full;
+  @apply w-full;
+
+  background-color: inherit;
+  min-height: 2.25rem;
+
+  &::-ms-expand {
+    @apply hidden;
+    @apply bg-transparent;
+  }
+
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    @apply cursor-default;
+    @apply pointer-events-none;
+    @apply text-gray-400;
+  }
+}

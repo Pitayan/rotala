@@ -1,0 +1,16 @@
+
+.$(link) {
+  &:active,
+  &:focus,
+  &:hover {
+    @apply outline-none;
+  }
+
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    @apply cursor-default;
+    @apply pointer-events-none;
+    @apply text-gray-400;
+  }
+}

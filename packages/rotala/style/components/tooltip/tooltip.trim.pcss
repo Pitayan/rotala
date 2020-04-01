@@ -1,0 +1,103 @@
+.$(tooltip) {
+  @apply relative;
+
+  &::after {
+    @apply block;
+    @apply absolute;
+    @apply text-left;
+    @apply z-50;
+    @apply text-sm;
+    @apply leading-normal;
+    @apply opacity-0;
+    @apply overflow-hidden;
+    @apply py-1 px-4;
+    @apply pointer-events-none;
+    @apply whitespace-pre;
+
+    bottom: 110%;
+    left: 50%;
+    content: attr(data-tooltip);
+    transform: translate(-50%, .25rem);
+  }
+
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    @apply pointer-events-none;
+  }
+
+  &:target,
+  &:hover,
+  &:active {
+    &::after {
+      @apply opacity-100;
+    }
+  }
+
+  &-top {
+    &::after {
+      transform: translate(-50%, .5rem);
+    }
+  }
+
+  &-top-right {
+    &::after {
+      @apply left-0;
+      transform: translate(0, .25rem);
+    }
+  }
+
+  &-top-left {
+    &::after {
+      left: 100%;
+      transform: translate(-100%, .25rem);
+    }
+  }
+
+  &-right {
+    &::after {
+      bottom: 50%;
+      left: 100%;
+      transform: translate(-.5rem, 50%);
+    }
+  }
+
+  &-bottom {
+    &::after {
+      @apply bottom-auto;
+
+      top: 110%;
+      transform: translate(-50%, -.5rem);
+    }
+  }
+
+  &-bottom-right {
+    &::after {
+      @apply bottom-auto;
+      @apply left-0;
+
+      top: 110%;
+      transform: translate(0, -.5rem);
+    }
+  }
+
+  &-bottom-left {
+    &::after {
+      @apply bottom-auto;
+
+      top: 110%;
+      left: 100%;
+      transform: translate(-100%, -.5rem);
+    }
+  }
+
+  &-left {
+    &::after {
+      @apply left-auto;
+
+      bottom: 50%;
+      right: 100%;
+      transform: translate(.5rem, 50%);
+    }
+  }
+}

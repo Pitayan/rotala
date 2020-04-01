@@ -1,0 +1,34 @@
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.$(loading) {
+  @apply relative;
+  @apply pointer-events-none;
+
+  min-height: 1rem;
+
+  &::after {
+    @apply absolute;
+    @apply block;
+    @apply h-4;
+    @apply w-4;
+    @apply border-2 border-solid rounded-full;
+    @apply border-primary-600;
+    @apply -ml-2;
+    @apply -mt-2;
+
+    content: '';
+    left: 50%;
+    top: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    animation: rotating 500ms infinite linear;
+  }
+}

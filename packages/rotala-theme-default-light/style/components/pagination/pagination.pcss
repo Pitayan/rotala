@@ -1,0 +1,43 @@
+.$(pagination) {
+  &-prev,
+  &-next,
+  &-item {
+    a {
+      @apply rounded;
+    }
+
+    &.disabled {
+      a {
+        @apply text-gray-400;
+        @apply pointer-events-none;
+      }
+    }
+  }
+
+  &-item {
+    &.active {
+      a,
+      span {
+        @apply block;
+        @apply cursor-default;
+        @apply text-primary-600;
+
+        &::after {
+          @apply block;
+          @apply text-primary-600;
+          @apply border border-solid border-primary-600;
+          @apply rounded-full;
+          @apply mt-2;
+          @apply mx-auto;
+          @apply w-8;
+
+          content: '';
+        }
+
+        &:hover {
+          background: initial;
+        }
+      }
+    }
+  }
+}

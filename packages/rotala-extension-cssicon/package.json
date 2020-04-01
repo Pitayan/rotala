@@ -1,0 +1,38 @@
+{
+  "name": "rotala-extension-icon",
+  "version": "0.0.1-alpha.0+ee61601",
+  "description": "icon extension for rotala.css framework",
+  "main": "dist/icon.thin.css",
+  "style": "style/icon.thin.pcss",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development concurrently \"postcss docs/thin.pcss -o docs/assets/css/thin.css --watch\" \"postcss docs/thick.pcss -o docs/assets/css/thick.css --watch\" \"live-server ./docs\"",
+    "build": "cross-env NODE_ENV=production concurrently \"postcss style/icon.thin.pcss -o dist/icon.thin.css\" \"postcss style/icon.thick.pcss -o dist/icon.thick.css\"",
+    "prepare": "lerna run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daiyanze/rotala.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "UI",
+    "UX",
+    "rotala"
+  ],
+  "author": "daiyanze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daiyanze/rotala/issues"
+  },
+  "dependencies": {
+    "rotala": "^0.0.1-alpha.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "cross-env": "^7.0.2",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^7.1.0"
+  },
+  "gitHead": "ee61601271cd3184463212ffa5dbc7f2e039cf5f"
+}

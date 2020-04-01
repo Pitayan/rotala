@@ -1,0 +1,113 @@
+.$(popover) {
+  @apply inline-block;
+  @apply relative;
+
+  &-container {
+    @apply z-50;
+    @apply block;
+    @apply absolute;
+    @apply top-0;
+    @apply opacity-0;
+
+    left: 50%;
+    width: 20rem;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  &&-click.open &-container,
+  &&-hover:hover &-container {
+    @apply opacity-100;
+
+    transform: translate(-50%, -108%) scale(1);
+  }
+
+  &-top {
+    &.$(popover)-click.open .$(popover)-container,
+    &.$(popover)-hover:hover .$(popover)-container {
+      transform: translate(-50%, -108%) scale(1);
+    }
+  }
+
+  &-top-left {
+    .$(popover)-container {
+      left: 100%;
+    }
+
+    &.$(popover)-click.open .$(popover)-container,
+    &.$(popover)-hover:hover .$(popover)-container {
+      transform: translate(-100%, -108%) scale(1);
+    }
+  }
+
+  &-top-right {
+    .$(popover)-container {
+      @apply left-0;
+    }
+
+    &.$(popover)-click.open .$(popover)-container,
+    &.$(popover)-hover:hover .$(popover)-container {
+      transform: translate(0, -108%) scale(1);
+    }
+  }
+
+  &-right {
+    .$(popover)-container {
+      left: 100%;
+      top: 50%;
+    }
+
+    &.$(popover)-click.open .$(popover)-container,
+    &.$(popover)-hover:hover .$(popover)-container {
+      transform: translate(6%, -50%) scale(1);
+    }
+  }
+
+  &-left {
+    .$(popover)-container {
+      @apply left-0;
+
+      top: 50%;
+    }
+
+    &.$(popover)-click.open .$(popover)-container,
+    &.popover-hover:hover .popover-container {
+      transform: translate(-106%, -50%) scale(1);
+    }
+  }
+
+  &-bottom-right {
+    .$(popover)-container {
+      @apply left-0;
+
+      top: 100%;
+    }
+
+    &.$(popover)-click.open .$(popover)-container,
+    &.$(popover)-hover:hover .$(popover)-container {
+      transform: translate(0, 8%) scale(1);
+    }
+  }
+
+  &-bottom {
+    .$(popover)-container {
+      top: 100%;
+    }
+
+    &.$(popover)-click.open .$(popover)-container,
+    &.$(popover)-hover:hover .$(popover)-container {
+      transform: translate(-50%, 8%) scale(1);
+    }
+  }
+
+  &-bottom-left {
+    .$(popover)-container {
+      left: 100%;
+      top: 100%;
+    }
+
+    &.$(popover)-click.open .$(popover)-container,
+    &.$(popover)-hover:hover .$(popover)-container {
+      transform: translate(-100%, 8%) scale(1);
+    }
+  }
+}

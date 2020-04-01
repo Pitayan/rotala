@@ -1,0 +1,22 @@
+.$(radio)-group {
+  @apply relative;
+}
+
+.$(radio) {
+  @apply block;
+  @apply cursor-pointer;
+  @apply select-none;
+  @apply relative;
+  @apply leading-normal;
+  @apply pl-5 py-1;
+
+  min-height: 1.5rem;
+
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    @apply cursor-default;
+    @apply pointer-events-none;
+    @apply text-gray-400;
+  }
+}

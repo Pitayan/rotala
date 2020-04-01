@@ -1,0 +1,189 @@
+
+/* fade-in-out */
+@keyframes fade-in {
+  0% {
+    @apply opacity-0;
+  }
+
+  100% {
+    @apply opacity-100;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    @apply opacity-100;
+  }
+
+  100% {
+    @apply opacity-0;
+  }
+}
+
+
+/* slide-off-canvas */
+@keyframes slide-right-off-canvas {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-left-off-canvas {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-top-off-canvas {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes slide-bottom-off-canvas {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+/* slide-fade-in */
+@keyframes slide-up-fade-in {
+  0% {
+    @apply opacity-0;
+    bottom: -4rem;
+  }
+
+  100% {
+    @apply opacity-100;
+    bottom: 0;
+  }
+}
+
+@keyframes slide-down-fade-in {
+  0% {
+    @apply opacity-0;
+    top: -4rem;
+  }
+
+  100% {
+    @apply opacity-100;
+    top: 0;
+  }
+}
+
+
+/* slide-fade-out */
+@keyframes slide-up-fade-out {
+  0% {
+    @apply opacity-100;
+    top: 0;
+  }
+
+  100% {
+    @apply opacity-0;
+    top: -4rem;
+  }
+}
+
+@keyframes slide-down-fade-out {
+  0% {
+    @apply opacity-100;
+    bottom: 0;
+  }
+
+  100% {
+    @apply opacity-0;
+    bottom: -4rem;
+  }
+}
+
+
+/* scale-in-out */
+@keyframes scale-in {
+  0% {
+    transform: scale(.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-out {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(.9);
+  }
+}
+
+.$(effect)-fade-in {
+  animation-name: fade-in;
+}
+
+.$(effect)-fade-out {
+  animation-name: fade-out;
+}
+
+.$(effect)-slide-left-off-canvas {
+  animation-name: slide-left-off-canvas;
+  animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.$(effect)-slide-right-off-canvas {
+  animation-name: slide-right-off-canvas;
+  animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.$(effect)-slide-top-off-canvas {
+  animation-name: slide-top-off-canvas;
+  animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.$(effect)-slide-bottom-off-canvas {
+  animation-name: slide-bottom-off-canvas;
+  animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.$(effect)-slide-up-fade-in {
+  animation-name: slide-up-fade-in;
+}
+
+.$(effect)-slide-down-fade-in {
+  animation-name: slide-down-fade-in;
+}
+
+.$(effect)-slide-up-fade-out {
+  animation-name: slide-up-fade-out;
+}
+
+.$(effect)-slide-down-fade-out {
+  animation-name: slide-down-fade-out;
+}
+
+.$(effect)-scale-in {
+  animation-name: scale-in;
+}
+
+.$(effect)-scale-out {
+  animation-name: scale-out;
+}

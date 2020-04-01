@@ -1,0 +1,70 @@
+$url: 'data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 24 24" height="24" width="24" fill="%239a9a9a" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M7 10l5 5 5-5z"%3E%3C/path%3E%3Cpath d="M0 0h24v24H0z" fill="none"%3E%3C/path%3E%3C/svg%3E';
+
+.$(select)-group {
+  @apply relative;
+}
+
+.$(select) {
+  @apply border-b border-solid border-gray-600;
+
+  transition: background .15s, border .15s, box-shadow .15s;
+
+  &:active,
+  &:focus {
+    @apply border-primary-600;
+  }
+
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    @apply border-gray-400;
+    @apply border-dashed;
+
+    &::placeholder {
+      @apply text-gray-400;
+    }
+
+    &-label {
+      @apply text-gray-400;
+    }
+  }
+
+  &::-ms-expand {
+    @apply hidden;
+    @apply bg-transparent;
+  }
+
+  &[size],
+  &[multiple] {
+    @apply h-auto;
+    @apply py-2 px-0;
+  }
+
+  &:not([multiple]):not([size]):not([disabled]):not(.disabled) {
+    background: white url($(url)) no-repeat right center;
+  }
+
+  &-outline {
+    @apply rounded-sm;
+    @apply pr-6 pl-2;
+    @apply border border-solid;
+
+    &[size],
+    &[multiple] {
+      @apply px-4;
+    }
+
+    &:focus {
+      @apply shadow-primary-base;
+    }
+  }
+
+  &-underline {
+    @apply pr-6;
+    @apply border-b border-solid border-gray-500;
+
+    &:focus {
+      @apply border-primary-600;
+    }
+  }
+}

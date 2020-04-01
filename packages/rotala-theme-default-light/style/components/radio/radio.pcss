@@ -1,0 +1,81 @@
+
+.$(radio) {
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    .$(radio)-icon {
+      &::before {
+        @apply border-gray-400;
+      }
+    }
+
+    input[type="radio"] {
+      &:checked + .$(radio)-icon {
+        &::before {
+          @apply bg-gray-400;
+          @apply border-gray-400;
+        }
+      }
+    }
+  }
+
+  input[type="radio"] {
+    @apply opacity-0;
+
+    &:focus + .$(radio)-icon {
+      @apply shadow-primary-base;
+    }
+
+    &:checked + .$(radio)-icon {
+      &::before {
+        @apply border-primary-600;
+        @apply bg-primary-600;
+      }
+
+      &::after {
+        transform: scale(.95);
+      }
+    }
+  }
+}
+
+.$(radio) .$(radio)-icon {
+  @apply h-4;
+  @apply w-4;
+  @apply inline-block;
+  @apply absolute;
+  @apply left-0;
+  @apply rounded-full;
+
+  top: 8px;
+
+  &::after,
+  &::before {
+    @apply absolute;
+    @apply rounded-full;
+    @apply bg-white;
+
+    content: "";
+  }
+
+  &::before {
+    @apply border border-solid border-gray-600;
+    @apply bg-white;
+
+    height: inherit;
+    width: inherit;
+    transition: all .15s ease;
+  }
+
+  &::after {
+    height: 6px;
+    width: 6px;
+    left: 5px;
+    top: 5px;
+    z-index: 2;
+    transform: scale(1.4);
+    margin-top: 0;
+    transition: all .15s ease;
+    transition-delay: .03s;
+  }
+}

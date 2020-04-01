@@ -1,0 +1,78 @@
+
+.$(button) {
+  @apply text-primary-600;
+  @apply transition-colors;
+  @apply duration-150;
+
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    @apply text-gray-400 !important;
+    @apply border-gray-400 !important;
+    @apply bg-transparent !important;
+  }
+
+  &.$(loading) {
+    @apply text-transparent !important;
+  }
+
+  &-outline {
+    @apply border border-solid border-primary-600;
+
+    &:hover {
+      @apply bg-primary-100;
+    }
+
+    &:active,
+    &.active {
+      @apply text-white;
+      @apply bg-primary-700;
+    }
+  }
+
+  &-primary {
+    @apply text-white;
+    @apply bg-primary-600;
+    @apply border border-solid border-primary-600;
+
+    &:focus {
+      @apply shadow-primary-base;
+    }
+
+    &:active,
+    &.active {
+      @apply border-primary-700;
+      @apply bg-primary-700;
+    }
+
+    &.$(loading) {
+      &:after {
+        border-top-color: white;
+        border-left-color: white;
+      }
+    }
+  }
+
+  &-secondary {
+    @apply text-white;
+    @apply bg-secondary-600;
+    @apply border border-solid border-secondary-600;
+
+    &:focus {
+      @apply shadow-secondary-base;
+    }
+
+    &:active,
+    &.active {
+      @apply border-secondary-700;
+      @apply bg-secondary-700;
+    }
+
+    &.$(loading) {
+      &:after {
+        border-top-color: white;
+        border-left-color: white;
+      }
+    }
+  }
+}

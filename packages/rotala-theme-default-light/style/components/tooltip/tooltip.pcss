@@ -1,0 +1,83 @@
+.$(tooltip) {
+  @apply relative;
+
+  &::after {
+    @apply rounded-sm;
+    @apply text-white;
+
+    background: rgba(0, 0, 0, .7);
+    transition: opacity .15s, transform .15s;
+  }
+
+  &:target,
+  &:hover,
+  &:active {
+    &::after {
+      transform: translate(-50%, -.25rem);
+    }
+  }
+
+  &-top {
+    &:hover {
+      &::after {
+        transform: translate(-50%, -.25rem);
+      }
+    }
+  }
+
+  &-top-right {
+    &:hover {
+      &::after {
+        transform: translate(0, -.25rem);
+      }
+    }
+  }
+
+  &-top-left {
+    &:hover {
+      &::after {
+        transform: translate(-100%, -.25rem);
+      }
+    }
+  }
+
+  &-right {
+    &:hover {
+      &::after {
+        transform: translate(.5rem, 50%);
+      }
+    }
+  }
+
+  &-bottom {
+    &:hover {
+      &::after {
+        transform: translate(-50%, .25rem);
+      }
+    }
+  }
+
+  &-bottom-right {
+    &:hover {
+      &::after {
+        transform: translate(0, .25rem);
+      }
+    }
+  }
+
+  &-bottom-left {
+    &:hover {
+      &::after {
+        transform: translate(-100%, .25rem);
+      }
+    }
+  }
+
+  &-left {
+    &:hover {
+      &::after {
+        transform: translate(-.5rem, 50%);
+      }
+    }
+  }
+}

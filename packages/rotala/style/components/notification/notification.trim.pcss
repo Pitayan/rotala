@@ -1,0 +1,69 @@
+.$(notification) {
+  @apply fixed;
+  @apply text-sm;
+  @apply leading-normal;
+  @apply z-40;
+
+  width: 24rem;
+  max-width: calc(100vw - 2rem);
+
+  &-title {
+    @apply font-normal;
+    @apply text-lg;
+    @apply mb-8;
+    @apply inline-block;
+  }
+
+  &-container {
+    @apply hidden;
+    @apply relative;
+    @apply py-4 px-6;
+    @apply mb-16;
+    @apply overflow-hidden;
+    @apply z-50;
+
+    &:target,
+    &.open {
+      @apply block;
+    }
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+
+  &&-top-left,
+  &&-top-right,
+  &&-top-center {
+    top: 1rem;
+  }
+
+  &&-bottom-left,
+  &&-bottom-center,
+  &&-bottom-right {
+    bottom: 1rem;
+  }
+
+  &&-top-left,
+  &&-bottom-left {
+    @apply left-0;
+    @apply ml-4;
+  }
+
+  &&-top-center,
+  &&-bottom-center {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  &&-top-right,
+  &&-bottom-right {
+    @apply mr-4;
+    @apply right-0;
+
+    .$(notification)-container {
+      left: 100%;
+      transform: translateX(-100%);
+    }
+  }
+}

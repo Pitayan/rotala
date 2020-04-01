@@ -1,0 +1,28 @@
+.$(menu) {
+  @apply max-w-3xl;
+
+  &-item {
+    &:focus,
+    &:active,
+    &.active {
+      a {
+        @apply bg-primary-200;
+        @apply text-primary-600;
+      }
+    }
+
+    & > a {
+      @apply block;
+      @apply no-underline;
+      @apply rounded-sm;
+
+      color: inherit;
+
+      &:focus,
+      &:hover {
+        @apply bg-primary-200;
+        @apply text-primary-600 !important;
+      }
+    }
+  }
+}

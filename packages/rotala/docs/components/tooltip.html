@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../assets/css/rotala.css">
+</head>
+
+<body>
+  <main class="m-16">
+    <div class="w-full text-center">
+      <a class="link" href="/">Home</a>
+    </div>
+    <section id="Tooltip">
+      <h4>default</h4>
+      <div class="flex justify-between">
+        <div class="m-4">
+          <button class="button tooltip tooltip-top-right" data-tooltip="This is a top-right tooltip!">top
+            right</button>
+        </div>
+        <div class="m-4">
+          <button class="button tooltip tooltip-top" data-tooltip="This is a top tooltip!">top</button>
+        </div>
+        <div class="m-4">
+          <button class="button tooltip tooltip-top-left" data-tooltip="This is a top-left tooltip!">top
+            left</button>
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <div class="m-4">
+          <button class="button tooltip tooltip-right" data-tooltip="This is a left tooltip!">left</button>
+        </div>
+        <div class="m-4">
+          <button class="button tooltip tooltip-left" data-tooltip="This is a right tooltip!">right</button>
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <div class="m-4">
+          <button class="button tooltip tooltip-bottom-right" data-tooltip="This is a bottom-right tooltip!">bottom
+            right</button>
+        </div>
+        <div class="m-4">
+          <button class="button tooltip tooltip-bottom" data-tooltip="This is a bottom tooltip!">bottom</button>
+        </div>
+        <div class="m-4">
+          <button class="button tooltip tooltip-bottom-left" data-tooltip="This is a bottom-left tooltip!">bottom
+            left</button>
+        </div>
+      </div>
+      <br>
+      <h4>multiple lines</h4>
+      <div class="m-4">
+        <button class="button tooltip tooltip-right" data-tooltip="This is a very long content.
+  - first line of content...
+  - second line of content...
+  - third line of content...
+  - forth line of content...
+  - fifth line of content...
+  - sixth line of content...
+  - seventh line of content...
+  - eighth line of content...">right</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.$(modal) {
+  &-fullscreen {
+    @apply p-0;
+
+    .$(modal)-container {
+      @apply rounded-none;
+      @apply w-full;
+      @apply h-full;
+      @apply max-w-full;
+      @apply min-h-full;
+    }
+  }
+
+  &-scrollable {
+    @apply overflow-y-auto;
+
+    .$(modal)-container {
+      max-height: inherit;
+    }
+  }
+}

@@ -1,0 +1,277 @@
+.$(icon) {
+  &-close {
+    &::before,
+    &::after {
+      background: currentColor;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::before {
+      height: .125rem;
+      @apply w-full;
+    }
+
+    &::after {
+      @apply h-full;
+      width: .125rem;
+    }
+  }
+
+  &-search {
+    &::before {
+      @apply rounded-full;
+
+      border: .125rem solid currentColor;
+      border-radius: 50%;
+      height: .675em;
+      left: calc(5% - 1px);
+      top: calc(5% - 1px);
+      transform: translate(0, 0) rotate(45deg);
+      width: .675em;
+    }
+
+    &::after {
+      background: currentColor;
+      height: .125rem;
+      left: 85%;
+      top: 85%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: .45em;
+    }
+  }
+
+  &-menu {
+    &::before {
+      @apply w-full;
+
+      background: currentColor;
+      box-shadow: 0 -.375em, 0 .375em;
+      height: .125rem;
+    }
+  }
+
+  &-check {
+    &::before {
+      @apply border-solid;
+      border-color: currentColor;
+
+      border-width: 0 0 .125rem .125rem;
+      height: .5em;
+      width: .9em;
+      transform: translate(-50%, -90%) rotate(-45deg);
+    }
+  }
+
+  &-arrow-down,
+  &-arrow-left,
+  &-arrow-right,
+  &-arrow-up,
+  &-chevron-up,
+  &-chevron-right,
+  &-chevron-down,
+  &-chevron-left {
+    &::before {
+      border-color: currentColor;
+
+      height: .625em;
+      width: .625em;
+      border-style: solid;
+      border-width: .125rem 0 0 .125rem;
+    }
+  }
+
+  &-arrow-left,
+  &-arrow-right {
+    &::after {
+      background: currentColor;
+      width: 1em;
+      height: .125rem;
+    }
+  }
+
+  &-arrow-down,
+  &-arrow-up {
+    &::after {
+      background: currentColor;
+      width: .125rem;
+      height: 1em;
+    }
+  }
+
+  &-arrow-left {
+    &::before {
+      left: 25%;
+    }
+  }
+
+  &-arrow-up {
+    &::before {
+      top: 25%;
+    }
+  }
+
+  &-arrow-down {
+    &::before {
+      top: 75%;
+    }
+  }
+
+  &-arrow-right {
+    &::before {
+      left: 75%;
+    }
+  }
+
+  &-arrow-left,
+  &-chevron-left {
+    &::before {
+      transform: translate(-25%, -50%) rotate(-45deg);
+    }
+  }
+
+  &-arrow-up,
+  &-chevron-up {
+    &::before {
+      transform: translate(-50%, -25%) rotate(45deg);
+    }
+  }
+
+  &-arrow-right,
+  &-chevron-right {
+    &::before {
+      transform: translate(-75%, -50%) rotate(135deg);
+    }
+  }
+
+  &-arrow-down,
+  &-chevron-down {
+    &::before {
+      transform: translate(-50%, -75%) rotate(225deg);
+    }
+  }
+
+  &-edit {
+    &::before {
+      border: .125rem solid currentColor;
+      height: .4em;
+      transform: translate(-40%, -60%) rotate(-45deg);
+      width: .9em;
+    }
+
+    &::after {
+      @apply h-0;
+      @apply w-0;
+
+      border: .1875em solid currentColor;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      left: -5%;
+      top: 110%;
+      transform: translate(0, -100%);
+    }
+  }
+
+  &-mail {
+    &::before {
+      @apply rounded-sm;
+      border: .125rem solid currentColor;
+      height: .8em;
+      width: 1em;
+    }
+
+    &::after {
+      border: .125rem solid currentColor;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      height: .5em;
+      transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
+      width: .5em;
+    }
+  }
+
+  &-attachment {
+    &::before,
+    &::after {
+      @apply border-r-0;
+
+      border: .125rem solid currentColor;
+      border-right-width: 0;
+      border-radius: 4em 0 0 4em;
+      height: .4em;
+      width: .8em;
+    }
+
+    &::before {
+      transform: translate(-70%, -45%) rotate(-45deg);
+    }
+
+    &::after {
+      transform: translate(-30%, -55%) rotate(135deg);
+    }
+  }
+
+  &-bookmark {
+    &::before {
+      @apply rounded-sm;
+
+      border: .125rem solid currentColor;
+      border-bottom-color: transparent;
+      height: .9em;
+      width: .8em;
+    }
+
+    &::after {
+      @apply rounded-sm;
+
+      border: .125rem solid currentColor;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      height: .425em;
+      transform: translate(-50%, calc(50% - 3px)) rotate(-45deg) skew(15deg, 15deg);
+      width: .425em;
+    }
+  }
+
+  &-ellipsis,
+  &-ellipsis-vertical {
+    &::before {
+      @apply rounded-full;
+      height: .25rem;
+      width: .25rem;
+
+      background: currentColor;
+      box-shadow: -.4em 0, .4em 0;
+    }
+  }
+
+  &-ellipsis-vertical {
+    &::before {
+      box-shadow: 0 -.4em, 0 .4em;
+    }
+  }
+
+  &-minus {
+    &::before {
+      @apply w-full;
+
+      background: currentColor;
+      height: .125rem;
+    }
+  }
+
+  &-plus {
+    &::before {
+      @apply w-full;
+
+      background: currentColor;
+      height: .125rem;
+    }
+
+    &::after {
+      @apply h-full;
+
+      background: currentColor;
+      width: .125rem;
+    }
+  }
+}

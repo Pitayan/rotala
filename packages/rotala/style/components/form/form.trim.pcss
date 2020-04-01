@@ -1,0 +1,23 @@
+.$(form-group) {
+  .$(prefix)fieldset {
+    @apply mb-2;
+  }
+
+  .$(prefix)legend {
+    @apply text-lg;
+    @apply font-normal;
+    @apply mb-2;
+  }
+
+  &-item {
+    &:not(:last-child) {
+      @apply mb-2;
+    }
+  }
+
+  &-label {
+    @apply block;
+    @apply leading-normal;
+    @apply py-1;
+  }
+}

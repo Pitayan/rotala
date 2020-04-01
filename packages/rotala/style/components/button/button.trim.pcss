@@ -1,0 +1,30 @@
+
+.$(button) {
+  @apply appearance-none;
+  @apply select-none;
+  @apply align-middle;
+  @apply font-medium;
+  @apply text-center;
+  @apply text-base;
+  @apply no-underline;
+  @apply leading-normal;
+  @apply whitespace-no-wrap;
+  @apply inline-block;
+  @apply cursor-pointer;
+  @apply rounded-sm;
+  @apply py-1 px-3;
+
+  background-color: inherit;
+
+  &:focus {
+    @apply outline-none;
+  }
+
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    @apply cursor-default;
+    @apply pointer-events-none;
+    @apply text-gray-400;
+  }
+}

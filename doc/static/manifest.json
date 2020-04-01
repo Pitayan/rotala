@@ -1,0 +1,19 @@
+{
+  "name": "RotalaCSS",
+  "short_name": "rotala",
+  "icons": [
+    {
+      "src": "logo-192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo-512.png",
+      "sizes": "512x512"
+    }
+  ],
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#3D9968",
+  "background_color": "#FFF"
+}

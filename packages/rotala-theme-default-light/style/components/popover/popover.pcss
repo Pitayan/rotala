@@ -1,0 +1,15 @@
+.$(popover) {
+  &-container {
+    @apply bg-white;
+    @apply rounded-sm;
+    @apply shadow-lg;
+
+    transition: opacity .2s, transform .2s;
+    transition-delay: .1s;
+  }
+
+  &-click.open &-container,
+  &-hover:hover &-container {
+    transition-delay: .1s;
+  }
+}

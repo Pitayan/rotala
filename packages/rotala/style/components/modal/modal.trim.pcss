@@ -1,0 +1,57 @@
+/* to disable body scroll */
+.is-$(modal)-open {
+  @apply fixed;
+  @apply w-full;
+}
+
+.$(modal) {
+  @apply fixed;
+  @apply inset-0;
+  @apply hidden;
+  @apply justify-center;
+  @apply overflow-hidden;
+  @apply p-6;
+  @apply z-0;
+  @apply cursor-default;
+
+  &:target,
+  &.open {
+    @apply flex;
+    @apply items-baseline;
+    @apply z-40;
+
+    .$(modal)-container {
+      @apply z-50;
+    }
+  }
+
+  .$(modal)-container {
+    @apply m-auto;
+    @apply p-5;
+    @apply outline-none;
+    @apply relative;
+    @apply cursor-auto;
+    @apply flex;
+    @apply flex-col;
+    @apply flex-1;
+    /* TODO: control width variable */
+    max-width: 960px;
+    max-height: 80vh;
+
+    .$(modal)-head {
+      @apply flex;
+      @apply items-start;
+      @apply pb-5;
+    }
+
+    .$(modal)-body {
+      @apply relative;
+      @apply overflow-y-auto;
+    }
+
+    .$(modal)-footer {
+      @apply text-right;
+      @apply pt-5;
+    }
+  }
+}

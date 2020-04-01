@@ -1,0 +1,16 @@
+
+.$(link) {
+  @apply transition-all;
+  @apply ease-in-out;
+  @apply duration-150;
+
+  &:focus {
+    @apply shadow-primary-base;
+  }
+
+  &:hover,
+  &:active,
+  &.active {
+    @apply text-primary-500;
+  }
+}

@@ -1,0 +1,31 @@
+
+.$(avatar) {
+  @apply rounded-sm;
+  @apply inline-block;
+  @apply font-normal;
+  @apply leading-normal;
+  @apply relative;
+  @apply align-middle;
+  @apply h-16;
+  @apply w-16;
+
+  img {
+    @apply relative;
+    @apply h-full;
+    @apply w-full;
+    @apply rounded-sm;
+    @apply z-10;
+  }
+
+  &[data-initial]::before {
+    @apply absolute;
+    @apply z-0;
+
+    top: 50%;
+    left: 50%;
+    content: attr(data-initial);
+    color: currentColor;
+    transform: translate(-50%, -50%);
+  }
+
+}

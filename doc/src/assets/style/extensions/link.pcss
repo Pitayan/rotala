@@ -1,0 +1,29 @@
+.link {
+  &-doc {
+    @apply text-primary-600;
+    @apply border-b border-solid border-primary-300;
+
+    &:hover {
+      @apply text-primary-600;
+      @apply border-primary-600;
+    }
+  }
+
+  &-anchor {
+    @apply opacity-0;
+    @apply text-primary-600;
+
+    &:active {
+      @apply opacity-100;
+      @apply text-primary-600;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &:hover {
+    .link.link-anchor {
+      @apply opacity-100;
+    }
+  }
+}

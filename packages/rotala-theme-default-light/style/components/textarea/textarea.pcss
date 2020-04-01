@@ -1,0 +1,12 @@
+
+textarea.$(input) {
+  +.$(input)-label {
+    top: -12px !important;
+  }
+
+  &:not(:placeholder-shown) {
+    +.$(input)-label {
+      top: -16px !important;
+    }
+  }
+}

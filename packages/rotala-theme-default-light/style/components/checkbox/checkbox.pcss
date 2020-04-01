@@ -1,0 +1,113 @@
+
+.$(checkbox) {
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    .$(checkbox)-icon {
+      &::before {
+        @apply border-gray-400;
+      }
+    }
+
+    input[type="checkbox"] {
+      &:checked + .$(checkbox)-icon {
+        &::before {
+          @apply bg-gray-400;
+          @apply border-gray-400;
+        }
+      }
+
+      &.indeterminate + .$(checkbox)-icon,
+      &:indeterminate + .$(checkbox)-icon {
+        &::before {
+          @apply bg-gray-400;
+        }
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    @apply opacity-0;
+
+    &:focus + .$(checkbox)-icon {
+      @apply shadow-primary-base;
+    }
+
+    &:checked + .$(checkbox)-icon {
+      &::before {
+        @apply border-transparent;
+        @apply bg-primary-600;
+      }
+
+      &::after {
+        @apply opacity-100;
+        @apply border-r-2 border-b-2 border-solid;
+        @apply border-white;
+        transform: translateY(-50%) rotate(45deg) scale(1);
+      }
+    }
+
+    &.indeterminate + .$(checkbox)-icon,
+    &:indeterminate + .$(checkbox)-icon {
+      &::before {
+        @apply border-transparent;
+        @apply bg-primary-600;
+      }
+
+      &::after {
+        @apply w-2;
+        @apply -ml-1;
+        @apply border-white border-solid border-b-2;
+        top: 1px;
+
+        transform: rotate(0) scale(1);
+      }
+    }
+  }
+
+  &-icon {
+    @apply h-4;
+    @apply w-4;
+    @apply inline-block;
+    @apply absolute;
+    @apply left-0;
+    @apply rounded-sm;
+
+    top: 8px;
+
+    &::after,
+    &::before {
+      @apply absolute;
+
+      content: "";
+    }
+
+    &::before {
+      @apply border-solid border border-gray-600;
+      @apply rounded-sm;
+      @apply transition-colors;
+      @apply ease-in-out;
+      @apply duration-75;
+
+      height: inherit;
+      width: inherit;
+    }
+
+    &::after {
+      @apply transition-all;
+      @apply ease-in-out;
+      @apply duration-100;
+      @apply opacity-100;
+      @apply rotate-45;
+      @apply scale-0;
+
+      height: 9px;
+      width: 6px;
+      margin-left: -3px;
+      margin-top: -1px;
+      top: 50%;
+      left: 50%;
+      transform: translate(50%, 50%);
+    }
+  }
+}
