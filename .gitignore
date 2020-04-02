@@ -24,3 +24,6 @@ package-lock.json
 
 # package developemnt css
 packages/**/*/docs/assets/css
+
+# temp
+.temp/
