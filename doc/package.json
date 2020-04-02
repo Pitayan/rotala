@@ -10,6 +10,9 @@
   ],
   "dependencies": {
     "gridsome": "^0.7.0",
+    "rotala": "^0.0.2",
+    "rotala-extension-css-icon": "^0.0.3",
+    "rotala-theme-default-light": "^0.0.3",
     "tailwindcss": "^1.2.0",
     "typeface-open-sans": "^0.0.75",
     "vue-svg-loader": "^0.16.0"

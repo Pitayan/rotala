@@ -1,5 +1,5 @@
 
-const { extend, plugins } = require('rotala/variables')
+const { extend, plugins } = require('rotala-theme-default-light/variables')
 
 module.exports = {
   important: true,
