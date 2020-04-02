@@ -2,13 +2,15 @@
   @apply inline-block;
   @apply relative;
   @apply align-middle;
+  @apply box-border;
 
   height: 1em;
   width: 1em;
   font-size: normal;
 
   &::before,
-  &:after {
+  &::after {
+    @apply box-border;
     @apply absolute;
     @apply block;
 
