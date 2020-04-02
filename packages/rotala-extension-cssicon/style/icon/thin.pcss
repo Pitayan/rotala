@@ -22,20 +22,21 @@
       @apply rounded-full;
 
       border: .0625rem solid currentColor;
-      height: .8em;
-      left: 0;
-      top: 0;
+      border-radius: 50%;
+      height: .75em;
+      left: 5%;
+      top: 5%;
       transform: translate(0, 0) rotate(45deg);
-      width: .8em;
+      width: .75em;
     }
 
     &::after {
       background: currentColor;
       height: .0625rem;
-      left: 90%;
-      top: 90%;
+      left: 80%;
+      top: 80%;
       transform: translate(-50%, -50%) rotate(45deg);
-      width: .45em;
+      width: .4em;
     }
   }
 
@@ -44,7 +45,7 @@
       @apply w-full;
 
       background: currentColor;
-      box-shadow: 0 -.4em, 0 .4em;
+      box-shadow: 0 -.35em, 0 .35em;
       height: .0625rem;
     }
   }
@@ -72,8 +73,8 @@
     &::before {
       border-color: currentColor;
 
-      height: .6875em;
-      width: .6875em;
+      height: .65em;
+      width: .65em;
       border-style: solid;
       border-width: .0625rem 0 0 .0625rem;
     }
@@ -83,8 +84,8 @@
   &-arrow-right {
     &::after {
       background: currentColor;
-      height: 1px;
-      width: .9em;
+      height: .0625rem;
+      width: .8em;
     }
   }
 
@@ -92,32 +93,32 @@
   &-arrow-up {
     &::after {
       background: currentColor;
-      height: .9em;
-      width: 1px;
+      height: .8em;
+      width: .0625rem;
     }
   }
 
   &-arrow-left {
     &::before {
-      left: 34%;
+      left: 35%;
     }
   }
 
   &-arrow-up {
     &::before {
-      top: 34%;
+      top: 35%;
     }
   }
 
   &-arrow-down {
     &::before {
-      top: 66%;
+      top: 65%;
     }
   }
 
   &-arrow-right {
     &::before {
-      left: 66%;
+      left: 65%;
     }
   }
 
@@ -161,11 +162,11 @@
       @apply h-0;
       @apply w-0;
 
-      border: .16em solid currentColor;
+      border: .15em solid currentColor;
       border-top-color: transparent;
       border-right-color: transparent;
-      left: 1%;
-      top: 100%;
+      left: 5%;
+      top: 95%;
       transform: translate(0, -100%);
     }
   }
@@ -195,9 +196,9 @@
 
       border: .0625rem solid currentColor;
       border-right-width: 0;
-      border-radius: 4em 0 0 4em;
-      height: .4em;
-      width: .8em;
+      border-radius: 5em 0 0 5em;
+      height: .5em;
+      width: .75em;
     }
 
     &::before {
@@ -226,9 +227,9 @@
       border: .0625rem solid currentColor;
       border-bottom-color: transparent;
       border-left-color: transparent;
-      height: .425em;
-      transform: translate(-50%, calc(50% - 1px)) rotate(-45deg) skew(15deg, 15deg);
-      width: .425em;
+      height: .5em;
+      transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
+      width: .5em;
     }
   }
 
