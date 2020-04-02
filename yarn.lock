@@ -5602,18 +5602,12 @@ rimraf@^2.5.4, rimraf@^2.6.2, rimraf@^2.6.3:
   dependencies:
     glob "^7.1.3"
 
-rotala@^0.0.1-alpha.0:
-  version "0.0.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/rotala/-/rotala-0.0.1-alpha.0.tgz#c2db53e9f1430f7acc98dfc48d3ae97bcfb20f4d"
-  integrity sha512-rWIoFUhEOQpgD0Y7sbBE9QL5zdOwtrrTk43BqXWQXE61/XdHHeh010CIqSOlz6oL+Pnz29gCkeef9G3aghbsTw==
+rotala-extension-cssicon@^0.0.1-alpha.3:
+  version "0.0.1-alpha.3"
+  resolved "https://registry.yarnpkg.com/rotala-extension-cssicon/-/rotala-extension-cssicon-0.0.1-alpha.3.tgz#3c877dfd20db478e456ad6daf50b73c3c728d9e5"
+  integrity sha512-iRUOT3EVL5h7EOCx5z9RybLpYhAmX2D51pk6Hi3uAaA5sv6kukBdOGuvnTQUuCq8XfXtCsrvEYVwpizmfd1PzA==
   dependencies:
-    autoprefixer "^9.7.4"
-    cssnano "^4.1.10"
-    postcss "^7.0.27"
-    postcss-import "^12.0.1"
-    postcss-nested "^4.2.1"
-    postcss-simple-vars "^5.0.2"
-    tailwindcss "^1.2.0"
+    rotala "^0.0.1"
 
 run-async@^2.2.0:
   version "2.4.0"
