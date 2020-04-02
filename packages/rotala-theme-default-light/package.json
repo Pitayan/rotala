@@ -1,6 +1,6 @@
 {
   "name": "rotala-theme-default-light",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a light theme for rotala.css framework",
   "main": "dist/theme.css",
   "style": "style/main.pcss",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "rotala": "^0.0.2",
-    "rotala-extension-css-icon": "^0.0.2"
+    "rotala-extension-css-icon": "^0.0.3"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
