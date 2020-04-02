@@ -1,5 +1,5 @@
 {
-  "name": "rotala-extension-cssicon",
+  "name": "rotala-extension-css-icon",
   "version": "0.0.2",
   "description": "icon extension for rotala.css framework",
   "main": "dist/icon.thin.css",
@@ -34,5 +34,5 @@
     "live-server": "^1.2.1",
     "postcss-cli": "^7.1.0"
   },
-  "gitHead": "ee61601271cd3184463212ffa5dbc7f2e039cf5f"
+  "gitHead": "dc9083752bb5cdfd9a98a10e1cd41fb2e1ac0012"
 }
