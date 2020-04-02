@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "rotala": "^0.0.1",
-    "rotala-extension-cssicon": "^0.0.1-alpha.3"
+    "rotala-extension-cssicon": "^0.0.1"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
