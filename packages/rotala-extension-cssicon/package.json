@@ -1,6 +1,6 @@
 {
   "name": "rotala-extension-cssicon",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "icon extension for rotala.css framework",
   "main": "dist/icon.thin.css",
   "style": "style/icon.thin.pcss",
