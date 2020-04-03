@@ -77,7 +77,6 @@ $hr: $(prefix)hr;
 ```scss
 // Extend the theme by following the Tainwindcss style guides
 @charset "UTF-8";
-
 @import "tailwindcss/base";
 @import "rotala/src/base/all.pcss";
 @import "your/base/override.pcss";

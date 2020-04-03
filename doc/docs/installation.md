@@ -39,10 +39,5 @@ Use CDN delivered compiled files to skip importing files to your project. You ma
 
 ```html
 <!-- Latest -->
-<link rel="stylesheet" href="https://unpkg.com/rotala.css/dist/rotala.css">
-<link rel="stylesheet" href="https://unpkg.com/rotala.css/dist/rotala.trim.css">
-
-<!-- Versioned -->
-<link rel="stylesheet" href="https://unpkg.com/rotala.css/dist/1.0/rotala.css">
-<link rel="stylesheet" href="https://unpkg.com/rotala.css/dist/1.0/rotala.trim.css">
+<link rel="stylesheet" href="https://unpkg.com/rotala@latest/dist/rotala.css">
 ```

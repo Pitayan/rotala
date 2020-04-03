@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Rotala',
-  siteUrl: 'https://rotalacss.com',
+  siteUrl: process.env.SITE_URL,
   transformers: {
     plugins: [
       'remark-attr'
@@ -42,13 +42,35 @@ module.exports = {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: (process.env.GA_ID ? process.env.GA_ID : 'XX-999999999-9')
+        id: process.env.GA_ID
       }
     },
     {
       use: '@gridsome/plugin-sitemap',
       options: {
         cacheTime: 600000
+      }
+    },
+    {
+      use: 'gridsome-plugin-robots-txt',
+      options: {
+        host: process.env.SITE_URL,
+        sitemap: process.env.SITE_URL + '/sitemap.xml',
+        policy: [
+          {
+            userAgent: "Googlebot",
+            allow: "/",
+            disallow: "/search",
+            crawlDelay: 2
+          },
+          {
+            userAgent: "*",
+            allow: "/",
+            disallow: "/search",
+            crawlDelay: 10,
+            cleanParam: "ref /docs/"
+          }
+        ]
       }
     }
   ]

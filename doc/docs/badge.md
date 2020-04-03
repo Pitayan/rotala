@@ -15,7 +15,7 @@ Information notice indicator
 
 #### default
 <span class="badge m-2">default badge</span>
-<button class="badge button button-outline m-2" data-badge="">button badge</button>
+<button class="badge button button-outline m-2">button badge</button>
 
 
 ```html {}

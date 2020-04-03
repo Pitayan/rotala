@@ -17,8 +17,8 @@
 
         <div class="flex-1 mx-4">
           <label class="input-group relative w-full ml-auto md:max-w-sm">
-            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
-              <i class="icon icon-search text-gray-600 text-sm -mt-px"></i>
+            <span class="absolute inset-y-0 left-0 pl-2 flex items-center">
+              <i class="icon icon-search text-gray-600 text-xl mt-px"></i>
             </span>
             <input class="input input-search" type="text"
               placeholder="Search">
@@ -28,12 +28,12 @@
         <div class="hidden sm:flex items-center justify-between">
           <ul class="tab flex justify-start items-center border-0">
             <li class="tab-item text-gray-700">
-              <a class="mr-0" target="__blank" href="https://github.com/tailwindcss/tailwindcss">
+              <a class="mr-0" target="__blank" href="https://github.com/daiyanze/rotala">
                 <SVG-github width="20" height="20" />
               </a>
             </li>
             <li class="tab-item text-gray-700">
-              <a class="mr-0" target="__blank" href="https://github.com/tailwindcss/tailwindcss">
+              <a class="mr-0" target="__blank" href="https://github.com/daiyanze/rotala">
                 <SVG-twitter width="20" height="20" />
               </a>
             </li>

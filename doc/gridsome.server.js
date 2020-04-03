@@ -30,7 +30,12 @@ module.exports = function (api) {
             ...process.env.NODE_ENV === 'production'
               ? [
                   require('@fullhuman/postcss-purgecss')({
-                    content: ['./src/assets/style/**/*.pcss', './src/**/*.vue', './docs/*.md', './gridsome.config.js'],
+                    content: [
+                      './src/assets/style/**/*.pcss',
+                      './src/**/*.vue',
+                      './docs/*.md',
+                      './gridsome.config.js'
+                    ],
                     defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
                   })
                 ]
