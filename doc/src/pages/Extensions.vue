@@ -1,7 +1,7 @@
 <template>
   <DefaultLayout>
     <div class="content">
-      <h1>{{ $static.metadata.siteName }} - {{ this.description }}</h1>
+      <h1>extensions</h1>
     </div>
   </DefaultLayout>
 </template>
@@ -17,16 +17,15 @@ query {
 <script>
 
 export default {
-  data() {
-    return {
-      description: 'The ultimate static generated documentation theme for the JAM-stack'
-    }
-  },
   metaInfo() {
     return {
-      title: this.description,
+      title: 'Extensions',
       meta: [
-        { key: 'description', name: 'description', content: 'A theme for static site documentation based on Gridsome, ready to deploy to Netlify in one click.' }
+        {
+          key: 'description',
+          name: 'description',
+          content: this.$static.metadata.siteDescription
+        }
       ]
     }
   }

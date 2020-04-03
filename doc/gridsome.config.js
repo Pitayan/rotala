@@ -7,6 +7,7 @@
 module.exports = {
   siteName: 'Rotala',
   siteUrl: process.env.SITE_URL,
+  siteDescription: process.env.SITE_DESCRIPTION,
   transformers: {
     plugins: [
       'remark-attr'

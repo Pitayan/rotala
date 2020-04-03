@@ -9,7 +9,7 @@
 
         <ul class="flex-no-wrap tab hidden lg:flex border-0 mx-4">
           <li class="tab-item mx-3" v-for="{ node: parts } in $static.part.edges" :key="parts.part">
-            <g-link class="px-0 py-6 -my-px mr-0" :to="parts.link">
+            <g-link class="px-0 py-6 -my-px mr-0 font-semibold" :to="parts.link">
               {{ parts.part }}
             </g-link>
           </li>
@@ -33,7 +33,7 @@
               </a>
             </li>
             <li class="tab-item text-gray-700">
-              <a class="mr-0" target="__blank" href="https://github.com/daiyanze/rotala">
+              <a class="mr-0" target="__blank" href="https://twitter.com/rotalacss">
                 <SVG-twitter width="20" height="20" />
               </a>
             </li>
