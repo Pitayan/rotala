@@ -1,6 +1,17 @@
 <template>
   <DocLayout :subtitles="subtitles">
     <section class="pt-24 px-6 w-full mx-auto xl:mx-0">
+      <ul class="breadcrumb text-sm my-4">
+        <li class="breadcrumb-item">
+          <g-link class="link link-doc text-primary-600" to="/">Home</g-link>
+        </li>
+        <li class="breadcrumb-item">
+          <g-link class="link link-doc text-primary-600" to="/docs/">Docs</g-link>
+        </li>
+        <li class="breadcrumb-item">
+          <span>{{ $page.doc.title }}</span>
+        </li>
+      </ul>
       <h1>{{ $page.doc.title }}</h1>
       <VueRemarkContent class="markdown"></VueRemarkContent>
     </section>

@@ -4,10 +4,23 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-const path = require('path')
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = function (api) {
-  api.chainWebpack(config => {
+  api.chainWebpack((config, { isServer }) => {
+    // whitelist that does not need to be bundled
+    if (isServer) {
+      config.externals(nodeExternals({
+        whitelist: [
+          /\.css$/,
+          /\?vue&type=style/,
+          /vue-instantsearch/,
+          /instantsearch.js/,
+          /typeface-open-sans/
+        ]
+      }))
+    }
+
     // Process styles for Postcss styles
     config.module
       .rule('postcss-loader-all')
@@ -98,6 +111,9 @@ module.exports = function (api) {
   })
 
   api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api
+    createPage({
+      path: '/extensions/:id*',
+      component: './src/templates/Extensions.vue'
+    })
   })
 }

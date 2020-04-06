@@ -8,23 +8,6 @@ module.exports = {
   siteName: 'Rotala',
   siteUrl: process.env.SITE_URL,
   siteDescription: process.env.SITE_DESCRIPTION,
-  transformers: {
-    plugins: [
-      'remark-attr'
-    ],
-    remark: {
-      autolinkHeadings: {
-        behavior: 'append',
-        linkProperties: {
-          className: ['link link-anchor', 'ml-2']
-        },
-        content: {
-          type: 'text',
-          value: '#'
-        }
-      }
-    }
-  },
   plugins: [
     {
       use: '@gridsome/vue-remark',
@@ -37,7 +20,19 @@ module.exports = {
         plugins: [
           '@gridsome/remark-prismjs',
           'remark-attr'
-        ]
+        ],
+        remark: {
+          autolinkHeadings: {
+            behavior: 'append',
+            linkProperties: {
+              className: ['link link-anchor', 'ml-2']
+            },
+            content: {
+              type: 'text',
+              value: '#'
+            }
+          }
+        }
       }
     },
     {

@@ -17,11 +17,11 @@
 
         <div class="flex-1 mx-4">
           <label class="input-group relative w-full ml-auto md:max-w-sm">
-            <span class="absolute inset-y-0 left-0 pl-2 flex items-center">
-              <i class="icon icon-search text-gray-600 text-xl mt-px"></i>
+            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+              <i class="icon icon-search text-gray-600 mt-px"></i>
             </span>
             <input class="input input-search" type="text"
-              placeholder="Search">
+              placeholder="Search Docs...">
           </label>
         </div>
 

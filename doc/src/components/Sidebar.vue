@@ -1,16 +1,11 @@
 <template>
   <aside class="aside sticky overflow-y-auto scrolling-touch">
-    <SidebarMenu />
+    <slot />
   </aside>
 </template>
 
 <script>
-import SidebarMenu from '~/components/SidebarMenu'
-
 export default {
-  components: {
-    SidebarMenu
-  }
 }
 </script>
 
