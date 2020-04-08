@@ -63,42 +63,38 @@
     </Sidebar>
 
     <div class="lg:w-2/3 mt-24 px-6">
-      <template v-if="Boolean($route.params.id)">
-        <div class="flex text-gray-700 text-sm mb-4" v-if="hit">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            v-if="hit.repository.project == 'rotala'" :href="hit.repository.url"
-            :title="`View on ${hit.repository.host}`"
-            :aria-label="`View on ${hit.repository.host}`"
-            class="link inline-flex items-center mr-6">
-            <div :is="repositoryIcon(hit.repository)" class="inline-block" width="16" height="16" />&nbsp;
-            View on {{ hit.repository.host }}
-          </a>
+      <div class="flex text-gray-700 text-sm mb-4" v-if="Boolean($route.params.id) && hit">
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          v-if="hit.repository.project == 'rotala'" :href="hit.repository.url"
+          :title="`View on ${hit.repository.host}`"
+          :aria-label="`View on ${hit.repository.host}`"
+          class="link inline-flex items-center mr-6">
+          <div :is="repositoryIcon(hit.repository)" class="inline-block" width="16" height="16" />&nbsp;
+          View on {{ hit.repository.host }}
+        </a>
 
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            v-if="hit.repository.project == 'rotala'" href="https://www.npmjs.com/org/rotala"
-            title="View Rotala on NPM"
-            aria-label="View Rotala on NPM"
-            class="link inline-flex items-center">
-            <SVGIcon width="16" height="16" />&nbsp;
-            Official
-          </a>
-        </div>
-        <div class="markdown" v-html="content" v-if="hit && hit.readme"></div>
-      </template>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          v-if="hit.repository.project == 'rotala'" href="https://www.npmjs.com/org/rotala"
+          title="View Rotala on NPM"
+          aria-label="View Rotala on NPM"
+          class="link inline-flex items-center">
+          <SVGIcon width="16" height="16" />&nbsp;
+          Official
+        </a>
+      </div>
 
-      <template v-else>
-        <div class="text-center mr-auto max-w-3xl px-6 mt-8">
-          <SVGIcon class="text-primary-600 mx-auto mb-6" width="64" height="64" />
-          <h3>Welcome to the Rotala Extensions Library!</h3>
-          <p class="text-xl mt-12 text-gray-700">Use the search box to pick an extension.
-            With Rotala extensions, you can quickly extend the default behaviors and appearances of Rotala components to make everything look better.</p>
-          <p class="mt-8 text-gray-700">Learn how to build your own <g-link class="link link-doc" to="/docs/">extensions</g-link></p>
-        </div>
-      </template>
+      <div class="markdown" v-html="content" v-if="hit"></div>
+      <div class="text-center mr-auto max-w-3xl px-6 mt-8" v-else>
+        <SVGIcon class="text-primary-600 mx-auto mb-6" width="64" height="64" />
+        <h3>Welcome to the Rotala Extensions Library!</h3>
+        <p class="text-xl mt-12 text-gray-700">Use the search box to pick an extension.
+          With Rotala extensions, you can quickly extend the default behaviors and appearances of Rotala components to make everything look better.</p>
+        <p class="mt-8 text-gray-700">Learn how to build your own <g-link class="link link-doc" to="/docs/">extensions</g-link></p>
+      </div>
     </div>
   </DefaultLayout>
 </template>
