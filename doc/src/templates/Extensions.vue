@@ -38,14 +38,12 @@
                 class="block relative bullet-dot"
                 :class="{ active: $route.params.id == item.name }"
                 :to="`/extensions/${item.name}`">
-                <div class="flex flex-wrap justify-between items-center">
-                  <AisHighlight class="font-bold" :hit="item" attribute="name" />
-                  <span class="flex w-16 text-xs text-gray-700 my-3">
-                    <SVGIcon class="inline-block" width="16" height="16"  v-if="item.repository.project == 'rotala'" />
-                    <span class="ml-auto flex items-center">
-                      {{ item.humanDownloadsLast30Days }}
-                      <i style="font-size:10px;" class="icon icon-combo icon-arrow-down"></i>
-                    </span>
+                <AisHighlight class="font-bold" :hit="item" attribute="name" />
+                <div class="flex w-16 text-xs text-gray-700 my-3">
+                  <SVGIcon class="inline-block" width="16" height="16"  v-if="item.owner.name == 'daiyanze'" />
+                  <span class="ml-auto flex items-center">
+                    {{ item.humanDownloadsLast30Days }}
+                    <i style="font-size:10px;" class="icon icon-combo icon-arrow-down"></i>
                   </span>
                 </div>
                 <AisHighlight class="block text-sm text-gray-700" :hit="item" attribute="description" />
@@ -89,7 +87,7 @@
             Official
           </a>
         </div>
-        <div style="min-height:calc(90vh);padding-bottom:50vh;" v-if="hit" v-html="content" />
+        <div class="markdown" v-html="content" v-if="hit && hit.readme"></div>
       </template>
 
       <template v-else>
@@ -98,7 +96,7 @@
           <h3>Welcome to the Rotala Extensions Library!</h3>
           <p class="text-xl mt-12 text-gray-700">Use the search box to pick an extension.
             With Rotala extensions, you can quickly extend the default behaviors and appearances of Rotala components to make everything look better.</p>
-          <p class="mt-8 text-gray-700">Learn how to build your own exntesion: <g-link class="link link-doc" to="/docs/">extensions</g-link></p>
+          <p class="mt-8 text-gray-700">Learn how to build your own <g-link class="link link-doc" to="/docs/">extensions</g-link></p>
         </div>
       </template>
     </div>
@@ -202,6 +200,7 @@ export default {
         indexName: 'npm-search',
         query: name
       }])
+
       this.hit = results.hits.find(hit => hit.name === name)
     },
     repositoryIcon (repository) {
@@ -228,8 +227,8 @@ export default {
   overflow-y: hidden !important;
 }
 
-/* override bullet-dot top */
-.bullet-dot::before {
-  top: 1em;
+.markdown {
+ min-height: calc(90vh);
+ padding-bottom: 50vh;
 }
 </style>
