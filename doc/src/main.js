@@ -14,22 +14,22 @@ export default function (Vue, { head, isClient, appOptions }) {
   Vue.component('DefaultLayout', DefaultLayout)
   Vue.component('DocLayout', DocLayout)
 
-  // Vue.directive('retain', {
-  //   update () {
-  //     const body = document.body
-  //     if (isOpen) {
-  //       const scrollTop = -(body.scrollTop || document.documentElement.scrollTop || 0)
-  //       body.style.cssText += `top: ${scrollTop}px;`
-  //       body.classList.add('is-drawer-open')
-  //     } else {
-  //       const scrollTop = -parseInt(body.style.top || '')
-  //       body.scrollTop = scrollTop
-  //       document.documentElement.scrollTop = scrollTop
-  //       body.style.cssText = body.style.cssText.replace(`top: ${body.style.top};`, '')
-  //       body.classList.remove('is-drawer-open')
-  //     }
-  //   }
-  // })
+  Vue.directive('retain', {
+    update (_, { value: isOpen }) {
+      const body = document.body
+      if (isOpen) {
+        const scrollTop = -(body.scrollTop || document.documentElement.scrollTop || 0)
+        body.style.cssText += `top: ${scrollTop}px;`
+        body.classList.add('is-drawer-open')
+      } else {
+        const scrollTop = -parseInt(body.style.top || '')
+        body.scrollTop = scrollTop
+        document.documentElement.scrollTop = scrollTop
+        body.style.cssText = body.style.cssText.replace(`top: ${body.style.top};`, '')
+        body.classList.remove('is-drawer-open')
+      }
+    }
+  })
 
   // Add attributes to HTML tag
   head.htmlAttrs = { lang: 'en' }

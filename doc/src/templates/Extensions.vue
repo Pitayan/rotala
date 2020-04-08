@@ -1,7 +1,7 @@
 <template>
-  <DefaultLayout class="flex">
-    <Sidebar class="sidebar hidden md:block w-full md:w-auto lg:w-1/3 mt-16 pr-6" style="min-width: 360px;">
-      <AisInstantSearchSsr class="pl-6 lg:pl-16 md:max-w-sm">
+  <DefaultLayout class="extensions">
+    <div class="sidebar sticky overflow-hidden top-0 left-0 pt-16 pr-6" :class="{ open: isSidebarOpen }" v-retain="isSidebarOpen">
+      <AisInstantSearchSsr class="pl-6 lg:pl-16">
         <AisConfigure
           :hitsPerPage="hitsPerPage"
           :analyticsTags="['rotala']"
@@ -9,16 +9,21 @@
         />
 
         <div class="my-6">
-          <AisSearchBox placeholder="Search extensions..." :classNames="{
-            'ais-SearchBox-form': 'input-group',
-            'ais-SearchBox-input': 'input input-search',
-            'ais-SearchBox-reset': 'hidden',
-            'ais-SearchBox-submit': 'text-gray-600 absolute inset-y-0 left-0 pl-3 flex items-center'
-          }">
-            <template v-slot:submit-icon>
-              <span class="icon icon-search"></span>
-            </template>
-          </AisSearchBox>
+          <span class="flex justify-between">
+            <AisSearchBox class="w-full" placeholder="Search extensions..." :classNames="{
+              'ais-SearchBox-form': 'input-group',
+              'ais-SearchBox-input': 'input input-search',
+              'ais-SearchBox-reset': 'hidden',
+              'ais-SearchBox-submit': 'text-gray-600 absolute inset-y-0 left-0 pl-3 flex items-center'
+            }">
+              <template v-slot:submit-icon>
+                <span class="icon icon-search"></span>
+              </template>
+            </AisSearchBox>
+            <button class="button text-gray-700 text-lg flex items-center pr-0 md:hidden block" @click="toggleSidebar">
+              <i class="icon icon-close icon-combo"></i>
+            </button>
+          </span>
           <AisStateResults class="my-4 ml-2" v-slot="{ nbHits }">
             <div class="text-xs text-gray-600">{{ nbHits }} results</div>
           </AisStateResults>
@@ -52,7 +57,7 @@
           </template>
 
           <template v-slot:loadMore="{ refine, isLastPage }">
-            <div class="px-4">
+            <div class="px-4 mb-8">
               <button class="button button-primary w-full" @click="refine" :disabled="isLastPage">
                 More +
               </button>
@@ -60,10 +65,14 @@
           </template>
         </AisInfiniteHits>
       </AisInstantSearchSsr>
-    </Sidebar>
+    </div>
 
-    <div class="lg:w-2/3 mt-24 px-6">
-      <div class="flex text-gray-700 text-sm mb-4" v-if="Boolean($route.params.id) && hit">
+    <div class="content p-6">
+      <button class="button text-gray-700 text-lg flex items-center px-0 mb-8 md:hidden block" @click="toggleSidebar">
+        <i class="icon icon-chevron-left icon-combo"></i> Extensions
+      </button>
+
+      <div class="flex text-gray-700 text-sm my-2" v-if="Boolean($route.params.id) && hit">
         <a
           rel="noopener noreferrer"
           target="_blank"
@@ -87,8 +96,8 @@
         </a>
       </div>
 
-      <div class="markdown" v-html="content" v-if="hit"></div>
-      <div class="text-center mr-auto max-w-3xl px-6 mt-8" v-else>
+      <div class="markdown" v-html="content" v-if="Boolean($route.params.id) && hit"></div>
+      <div class="text-center mx-auto max-w-2xl px-6 mt-8" v-else>
         <SVGIcon class="text-primary-600 mx-auto mb-6" width="64" height="64" />
         <h3>Welcome to the Rotala Extensions Library!</h3>
         <p class="text-xl mt-12 text-gray-700">Use the search box to pick an extension.
@@ -149,7 +158,8 @@ export default {
     return {
       hit: null,
       hitsPerPage: 50,
-      filters: 'keywords:rotala AND deprecated:false'
+      filters: 'keywords:rotala AND deprecated:false',
+      isSidebarOpen: false
     }
   },
   computed: {
@@ -198,6 +208,7 @@ export default {
       }])
 
       this.hit = results.hits.find(hit => hit.name === name)
+      this.isSidebarOpen = false
     },
     repositoryIcon (repository) {
       switch (repository.host) {
@@ -207,6 +218,9 @@ export default {
       }
 
       return SVGGithub
+    },
+    toggleSidebar () {
+      this.isSidebarOpen = !this.isSidebarOpen
     }
   },
   watch: {
@@ -221,6 +235,34 @@ export default {
 <style scoped>
 .sidebar {
   overflow-y: hidden !important;
+  max-width: calc(25rem);
+  transform: translateX(calc(-25rem));
+  transition: transform .2s;
+}
+
+.sidebar.open {
+  transform: translate(0);
+}
+
+.sidebar.open + .content {
+  transform: translate(calc(25rem));
+}
+
+.content {
+  margin-top: calc(-100vh + 4rem - 4px);
+  transition: transform .2s;
+  max-width: 960px;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    width: calc(100% - 25rem);
+    transform: translate(calc(25rem));
+  }
+
+  .sidebar {
+    transform: translateX(0);
+  }
 }
 
 .markdown {

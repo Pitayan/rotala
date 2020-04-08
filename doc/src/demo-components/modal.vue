@@ -16,7 +16,7 @@
           enter-active-class="effect-slide-left-off-canvas"
           leave-active-class="effect-slide-right-off-canvas"
           @leave="leave"
-          v-retain>
+          v-retain="open">
           <div
             class="modal-container overflow-auto"
             style="animation-duration: 200ms">
