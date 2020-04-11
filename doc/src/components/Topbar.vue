@@ -3,7 +3,7 @@
     <div class="w-full max-w-screen-2xl relative mx-auto px-6 lg:px-16">
       <div class="flex items-center">
         <g-link class="flex items-center" to="/">
-          <SVGLogo width="24" alt="logo" />
+          <SVG-logo class="text-primary-600" width="24" alt="logo" />
           <b class="ml-2 text-xl hidden md:block">Rotala.css</b>
         </g-link>
 
@@ -64,7 +64,7 @@ query Menu {
 <script>
 import SVGGithub from '~/assets/img/github.svg'
 import SVGTwitter from '~/assets/img/twitter.svg'
-import SVGLogo from '~/assets/img/icon.svg'
+import SVGLogo from '~/assets/img/icon-fill-current.svg'
 
 export default {
   components: {

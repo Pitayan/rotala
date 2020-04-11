@@ -1,7 +1,7 @@
 <template>
   <DefaultLayout class="extensions">
-    <div class="sidebar sticky overflow-hidden top-0 left-0 pt-16 pr-6" :class="{ open: isSidebarOpen }" v-retain="isSidebarOpen">
-      <AisInstantSearchSsr class="pl-6 lg:pl-16">
+    <div class="sidebar sticky overflow-hidden top-0 left-0 pt-16" :class="{ open: isSidebarOpen }" v-retain="isSidebarOpen">
+      <AisInstantSearchSsr class="px-6 lg:px-16">
         <AisConfigure
           :hitsPerPage="hitsPerPage"
           :analyticsTags="['rotala']"
@@ -57,7 +57,7 @@
           </template>
 
           <template v-slot:loadMore="{ refine, isLastPage }">
-            <div class="px-4 mb-8">
+            <div class="px-4 mb-16 pb-16">
               <button class="button button-primary w-full" @click="refine" :disabled="isLastPage">
                 More +
               </button>

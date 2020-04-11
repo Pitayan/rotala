@@ -1,5 +1,5 @@
 <template>
-  <ul class="mt-12 pb-12">
+  <ul class="mt-8 pb-12">
     <li class="list-none" v-if="isOffCanvas">
       <ul class="pl-8 mb-8 relative">
         <span class="mt-px pb-1 px-1 rounded-full absolute bg-primary-100 cursor-pointer sm:hidden" style="right: 2rem;"
@@ -7,10 +7,8 @@
           <i class="icon icon-combo icon-close text-xs text-primary-600"></i>
         </span>
         <g-link to="/">
-            <SVGLogo class="inline-block mb-2 mr-2" width="24" />
-            <b class="text-xl">Rotala.css</b>
-            <br />
-          <small class="small text-gray-700 text-base">tunable css framework</small>
+          <SVG-logo class="inline-block mb-2 mr-2 text-primary-600" width="24" />
+          <b class="text-xl">Rotala.css</b>
         </g-link>
         <li class="list-none" v-for="{ node: parts } in $static.part.edges" :key="parts.part">
           <b>
@@ -70,7 +68,7 @@ query Menu {
 </static-query>
 
 <script>
-import SVGLogo from '~/assets/img/icon.svg'
+import SVGLogo from '~/assets/img/icon-fill-current.svg'
 
 export default {
   components: {
