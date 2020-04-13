@@ -17,7 +17,7 @@
       <section class="w-full mx-auto text-center mt-32">
         <h3 class="mb-8">How it Works</h3>
         <div class="flex flex-wrap sm:flex-no-wrap items-center justify-center">
-          <div class="w-64 m-4 p-2 border border-gray-300 rounded">
+          <div class="w-64 m-4 p-6 border border-gray-300 rounded">
             <h5 class="p-2">Styles</h5>
             <div class="h-12 p-2 text-left">
               <SVGIcon class="inline mr-4 text-gray-600 text-left" width="20" height="20" />Your custom styles
@@ -28,7 +28,7 @@
           </div>
           <hr class="hr w-12 sm:inline hidden">
 
-          <div class="w-64 m-4 p-2 border border-gray-300 rounded">
+          <div class="w-64 m-4 p-6 border border-gray-300 rounded">
             <h5 class="p-2">Build</h5>
             <div class="h-12 p-2 text-left">
               <SVGTailwind class="inline mr-4" width="20" height="20" />Tailwindcss
@@ -39,7 +39,7 @@
           </div>
           <hr class="hr w-12 sm:block hidden">
 
-          <div class="w-64 m-4 p-2 border border-gray-300 rounded">
+          <div class="w-64 m-4 p-6 border border-gray-300 rounded">
             <h5 class="p-2">Theme</h5>
             <div class="h-12 p-2 text-left">
               <span class="token keyword">@import</span><span class="token string"> "my_theme";</span><br>
@@ -52,7 +52,7 @@
       </section>
       <section class="w-full mx-auto text-center mt-32">
         <h3 class="mb-4">Features</h3>
-        <div class="flex flex-wrap justify-center mx-auto max-w-6xl">
+        <div class="flex flex-wrap justify-center mx-auto max-w-5xl">
           <div class="p-4 sm:w-1/2 w-full">
             <h5>Lightweight</h5>
             <p>
@@ -87,23 +87,64 @@
           </div>
         </div>
       </section>
-      <section class="w-full mx-auto text-center mt-32">
-        <h3 class="mb-4">An easier way to customize themes</h3>
-        <div class="flex mx-auto justify-center max-w-6xl">
-          <ul class="menu flex items-center m-4 text-lg">
-            <li class="menu-item">
-              <a href="#">first</a>
-            </li>
-            <li class="menu-item">
-              <a href="#">second</a>
-            </li>
-            <li class="menu-item">
-              <a href="#">third</a>
-            </li>
-          </ul>
+
+      <section class="w-full mx-auto text-center mt-32 max-w-3xl">
+        <Examples />
+      </section>
+
+      <section class="w-full-mx-auto text-center my-32">
+        <div>
+          <h3>Shall We Move on?</h3>
+          <p class="my-6">Take a few more steps to build up your components</p>
+
+          <a class="button button-primary text-xl font-medium" href="/docs">
+            Get Started
+          </a>
+        </div>
+      </section>
+
+      <section class="w-full mx-auto my-32 max-w-3xl">
+        <div class="p-6 border border-gray-300 rounded">
+          <h5>
+            The Rotala Newsletter<br>
+            <small class="text-gray-600">Stay Tuned on our updates!</small>
+          </h5>
+          <div class="flex flex-wrap items-center justify-between">
+            <label class="input-group relative w-full my-2 mr-4 max-w-xl">
+              <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                <i class="icon icon-mail text-gray-600 mt-px"></i>
+              </span>
+              <input class="input input-search" type="text" placeholder="your@email.com">
+            </label>
+            <button class="button button-primary font-medium">subscribe</button>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer class="w-full-mx-auto text-center m-8">
+      <p>
+        Design and built by <a class="link link-doc" href="https://github.com/daiyanze">daiyanze</a>.
+        Licensed under <a href="https://github.com/daiyanze/rotala/blob/master/LICENSE" class="link link-doc">MIT</a>.
+      </p>
+      <div>
+        <a href="https://twitter.com/rotalacss" class="link link-doc">
+          Twitter
+        </a>
+        ·
+        <a href="https://github.com/daiyanze/rotala" class="link link-doc">
+          Github
+        </a>
+        ·
+        <a href="https://github.com/daiyanze/rotala/issues" class="link link-doc">
+          Issues
+        </a>
+        ·
+        <a href="https://github.com/daiyanze/rotala/releases" class="link link-doc">
+          Releases
+        </a>
+      </div>
+    </footer>
   </DefaultLayout>
 </template>
 
@@ -117,13 +158,15 @@ query {
 
 <script>
 import Topbar from  "~/components/Topbar"
-import SVGPostcss from '~/assets/img/postcss.svg'
-import SVGTailwind from '~/assets/img/tailwind.svg'
-import SVGIcon from '~/assets/img/icon-fill-current.svg'
+import Examples from '~/components/Examples'
+import SVGPostcss from "~/assets/img/postcss.svg"
+import SVGTailwind from "~/assets/img/tailwind.svg"
+import SVGIcon from "~/assets/img/icon-fill-current.svg"
 
 export default {
   components: {
     Topbar,
+    Examples,
     SVGIcon,
     SVGPostcss,
     SVGTailwind

@@ -116,6 +116,18 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'examples/*.md',
+        typeName: 'Example',
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
+      }
+    },
+    {
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: process.env.GA_ID
