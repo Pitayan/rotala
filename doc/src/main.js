@@ -7,7 +7,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/style/theme.pcss'
 import '~/assets/style/trim.pcss'
 
-require('typeface-open-sans')
+import 'typeface-open-sans'
 
 export default function (Vue, { head, isClient, appOptions }) {
 

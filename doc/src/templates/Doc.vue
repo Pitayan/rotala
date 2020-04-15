@@ -13,7 +13,7 @@
         </li>
       </ul>
       <h1>{{ $page.doc.title }}</h1>
-      <VueRemarkContent class="markdown"></VueRemarkContent>
+      <VueRemarkContent class="markdown" ref="markdown"></VueRemarkContent>
     </section>
   </DocLayout>
 </template>
@@ -50,6 +50,22 @@ export default {
   computed: {
     subtitles () {
       return this.$page.doc.subtitles.filter(val => [2, 4, 6].includes(val.depth))
+    }
+  },
+  updated () {
+    this.highjackCodeBlock(this.$refs.markdown)
+  },
+  methods: {
+    // Insert data-lang attribute to pre>code
+    highjackCodeBlock (markdown) {
+      if (!markdown) return
+
+      const code = markdown.$el.querySelectorAll('pre[class*="language"]')
+      if (code.length) {
+        code.forEach((d, k) => {
+          d.setAttribute('data-lang', d.className.substring(9))
+        })
+      }
     }
   }
 }

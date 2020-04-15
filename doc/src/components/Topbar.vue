@@ -16,13 +16,7 @@
         </ul>
 
         <div class="flex-1 mx-4">
-          <label class="input-group relative w-full ml-auto md:max-w-sm">
-            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
-              <i class="icon icon-search text-gray-600 mt-px"></i>
-            </span>
-            <input class="input input-search" type="text"
-              placeholder="Search Docs...">
-          </label>
+          <TopbarSearch />
         </div>
 
         <div class="hidden sm:flex items-center justify-between">
@@ -65,12 +59,14 @@ query Menu {
 import SVGGithub from '~/assets/img/github.svg'
 import SVGTwitter from '~/assets/img/twitter.svg'
 import SVGLogo from '~/assets/img/icon-fill-current.svg'
+import TopbarSearch from '~/components/TopbarSearch'
 
 export default {
   components: {
     SVGGithub,
     SVGTwitter,
-    SVGLogo
+    SVGLogo,
+    TopbarSearch
   }
 }
 </script>

@@ -3,7 +3,7 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-
+const Prism = require('prismjs')
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
@@ -23,63 +23,54 @@ module.exports = {
       }))
     }
 
-    // Process styles for Postcss styles
+    const postcssConfig = ({ prefix = '', purge = false }) => {
+      return {
+        map: false,
+        plugins: [
+          require('postcss-import'),
+          require('postcss-nested'),
+          require('postcss-simple-vars')({ variables: { prefix } }),
+          require('tailwindcss'),
+          require('autoprefixer'),
+          ...process.env.NODE_ENV === 'production' && purge
+            ? [
+                require('@fullhuman/postcss-purgecss')({
+                  content: [
+                    './src/assets/style/**/*.pcss',
+                    './src/**/*.vue',
+                    './docs/*.md',
+                    './gridsome.config.js'
+                  ],
+                  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
+                })
+              ]
+            : []
+        ]
+      }
+    }
+
+    // Process styles for Vue components
+    config.module
+      .rule('postcss')
+      .oneOf('normal')
+      .use('postcss-loader')
+      .tap(() => postcssConfig({ purge: true }))
+
+    // Process styles for theme styles
     config.module
       .rule('postcss-loader-all')
       .test(/^(?!.*trim\.).*\.pcss$/g)
       .use('postcss-loader')
       .loader('postcss-loader')
-      .tap(() => {
-        return {
-          map: false,
-          plugins: [
-            require('postcss-import'),
-            require('postcss-nested'),
-            require('postcss-simple-vars')({
-              variables: {
-                prefix: ''
-              }
-            }),
-            require('tailwindcss'),
-            require('autoprefixer'),
-            ...process.env.NODE_ENV === 'production'
-              ? [
-                  require('@fullhuman/postcss-purgecss')({
-                    content: [
-                      './src/assets/style/**/*.pcss',
-                      './src/**/*.vue',
-                      './docs/*.md',
-                      './gridsome.config.js'
-                    ],
-                    defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
-                  })
-                ]
-              : []
-          ]
-        }
-      })
+      .tap(() => postcssConfig({ purge: true }))
 
+    // Process styles for trim styles
     config.module
       .rule('postcss-loader-trim')
       .test(/trim.pcss/g)
       .use('postcss-loader')
       .loader('postcss-loader')
-      .tap(() => {
-        return {
-          map: false,
-          plugins: [
-            require('postcss-import'),
-            require('postcss-nested'),
-            require('postcss-simple-vars')({
-              variables: {
-                prefix: 'trim-'
-              }
-            }),
-            require('tailwindcss'),
-            require('autoprefixer')
-          ]
-        }
-      })
+      .tap(() => postcssConfig({ prefix: 'trim-' }))
 
     // Load SVG images
     const svgRule = config.module.rule('svg')
