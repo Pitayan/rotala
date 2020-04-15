@@ -97,9 +97,21 @@ address {
 }
 
 pre {
+  @apply relative;
   @apply whitespace-pre;
 
   width: inherit;
+
+  &::before {
+    @apply absolute;
+    @apply text-gray-600;
+    @apply text-sm;
+    @apply z-50;
+
+    top: .25rem;
+    right: .5rem;
+    content: attr(data-lang);
+  }
 
   code {
     @apply block;
@@ -108,20 +120,10 @@ pre {
     @apply bg-gray-100;
     @apply leading-relaxed;
     @apply overflow-x-auto;
-    @apply p-4;
+    @apply p-5;
 
     color: inherit;
     font-size: 85%;
-
-    &::before {
-      @apply absolute;
-      @apply text-gray-600;
-      @apply text-sm;
-
-      top: .5rem;
-      right: 2rem;
-      content: attr(data-lang);
-    }
   }
 }
 
