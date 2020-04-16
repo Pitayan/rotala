@@ -36,6 +36,7 @@ module.exports = {
             ? [
                 require('@fullhuman/postcss-purgecss')({
                   content: [
+                    './node_modules/docsearch.js/dist/cdn/docsearch.min.css',
                     './src/assets/style/**/*.pcss',
                     './src/**/*.vue',
                     './docs/*.md',
