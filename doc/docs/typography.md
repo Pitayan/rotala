@@ -126,7 +126,7 @@ Typography contains default styles of headings semantic text list etc.
 
 ## Code
 <div class="my-6">
-    <pre><code data-lang="HTML"><span class="">&lt;!-- code snippets --&gt;</span>
+    <pre data-lang="HTML"><code><span>&lt;!-- code snippets --&gt;</span>
 <kbd>F12</kbd>
 <span>&lt;p&gt;</span><span>This is an example</span><span>&lt;/p&gt;</span>
 <span>&lt;a&gt;</span><span>This is an example</span><span>&lt;/a&gt;</span>

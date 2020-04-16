@@ -108,10 +108,7 @@ pre[class*="language-"] {
 pre[data-line] {
   position: relative;
 }
-pre[class*="language-"] > code[class*="language-"] {
-  position: relative;
-  z-index: 1;
-}
+
 .line-highlight {
   position: absolute;
   left: 0;
@@ -120,7 +117,6 @@ pre[class*="language-"] > code[class*="language-"] {
   margin-top: 1em;
   background: theme('colors.orange.200');
   box-shadow: inset 5px 0 0 theme('colors.orange.300');
-  z-index: 0;
   pointer-events: none;
   line-height: inherit;
   white-space: pre;

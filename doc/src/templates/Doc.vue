@@ -47,6 +47,11 @@ export default {
       ]
     }
   },
+  data () {
+    return {
+      init: false
+    }
+  },
   computed: {
     subtitles () {
       return this.$page.doc.subtitles.filter(val => [2, 4, 6].includes(val.depth))
@@ -54,6 +59,7 @@ export default {
   },
   updated () {
     this.highjackCodeBlock(this.$refs.markdown)
+    this.scrollToAnchor()
   },
   methods: {
     // Insert data-lang attribute to pre>code
@@ -61,11 +67,26 @@ export default {
       if (!markdown) return
 
       const code = markdown.$el.querySelectorAll('pre[class*="language"]')
+
       if (code.length) {
         code.forEach((d, k) => {
           d.setAttribute('data-lang', d.className.substring(9))
         })
       }
+    },
+    // jump to hashtag anchor on page load
+    scrollToAnchor () {
+      if (this.init) return
+
+      this.$nextTick(() => {
+        if (!this.$route.hash) return
+
+        setTimeout(() =>{
+          const el = document.querySelector(this.$route.hash);
+          el && el.scrollIntoView();
+          this.init = true
+        }, 70)
+      })
     }
   }
 }
