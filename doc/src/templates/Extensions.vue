@@ -1,6 +1,6 @@
 <template>
-  <DefaultLayout class="extensions">
-    <div class="sidebar sticky overflow-hidden top-0 left-0 pt-16" :class="{ open: isSidebarOpen }" v-retain="isSidebarOpen">
+  <DefaultLayout>
+    <div class="sidebar sticky overflow-hidden top-0 left-0 pt-16" :class="{ open: isSidebarOpen }">
       <AisInstantSearchSsr class="px-6 lg:px-16">
         <AisConfigure
           :hitsPerPage="hitsPerPage"

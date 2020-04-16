@@ -1,20 +1,3 @@
-/* TODO: REMOVE pre (This should be styled by rotala core lib) */
-pre {
-  @apply relative;
-
-  &::before {
-    @apply absolute;
-    @apply text-gray-600;
-    @apply text-sm;
-    @apply z-50;
-
-    top: .25rem;
-    right: .5rem;
-    content: attr(data-lang);
-  }
-}
-
 pre code {
   @apply rounded-sm;
-  @apply p-5;
 }

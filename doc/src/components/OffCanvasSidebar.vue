@@ -9,12 +9,12 @@
       class="drawer left"
       :class="{ open }"
       @click.self="containerOpen = false"
-      v-if="open">
+      v-if="open"
+      v-retain="containerOpen">
       <transition
         enter-active-class="effect-slide-left-off-canvas"
         leave-active-class="effect-slide-right-off-canvas"
-        @leave="leave"
-        v-retain="open">
+        @leave="leave">
         <div
           class="drawer-container overflow-auto"
           style="animation-duration: 200ms"
@@ -61,11 +61,9 @@ export default {
   methods: {
     enter () {
       this.containerOpen = true
-      document.body.classList.add('is-drawer-open')
     },
     leave () {
       this.open = false
-      document.body.classList.remove('is-drawer-open')
     }
   },
   destroy () {

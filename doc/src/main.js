@@ -8,25 +8,31 @@ import '~/assets/style/theme.pcss'
 import '~/assets/style/trim.pcss'
 
 import 'typeface-open-sans'
+import { extend } from 'rotala-theme-default-light/variables'
 
-export default function (Vue, { head, isClient, appOptions }) {
+export default function (Vue, { head }) {
 
   Vue.component('DefaultLayout', DefaultLayout)
   Vue.component('DocLayout', DocLayout)
 
+  // Retain scrollbar when sidebar or modal is open
   Vue.directive('retain', {
-    update (_, { value: isOpen }) {
+    bind (_, { value: isOpen }) {
       const body = document.body
-      if (isOpen) {
+      if (!isOpen) {
         const scrollTop = -(body.scrollTop || document.documentElement.scrollTop || 0)
         body.style.cssText += `top: ${scrollTop}px;`
         body.classList.add('is-drawer-open')
-      } else {
+      }
+    },
+    update (_, { value: isOpen }) {
+      const body = document.body
+      if (!isOpen) {
         const scrollTop = -parseInt(body.style.top || '')
+        body.classList.remove('is-drawer-open')
+        body.style.cssText = body.style.cssText.replace(`top: ${body.style.top};`, '')
         body.scrollTop = scrollTop
         document.documentElement.scrollTop = scrollTop
-        body.style.cssText = body.style.cssText.replace(`top: ${body.style.top};`, '')
-        body.classList.remove('is-drawer-open')
       }
     }
   })
@@ -41,7 +47,7 @@ export default function (Vue, { head, isClient, appOptions }) {
 
   head.meta.push({
     name: 'theme-color',
-    content: '#3D9968'
+    content: extend.colors.primary[600]
   })
 
   head.meta.push({

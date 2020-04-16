@@ -25,7 +25,7 @@ Extend the target component to keep your html template clean and readible
 }
 ```
 
-```html
+```html {}
 <input class="input" placeholder="type something here" />
 ```
 

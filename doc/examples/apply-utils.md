@@ -10,7 +10,7 @@ Use the utilities to modify the component directly.
 @import "rotala";
 ```
 
-```html
+```html {}
 <button class="button px-8 py-4 text-lg focus:bg-primary-200" />Hover Me</button>
 ```
 <button class="button px-8 py-4 text-lg hover:bg-primary-200" />Hover Me</button>
