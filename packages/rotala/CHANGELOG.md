@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.3 (2020-04-16)
+
+
+### Bug Fixes
+
+* remove box-sizing for html & * *:after/before ([e4ecda0](https://github.com/daiyanze/rotala/commit/e4ecda0bdc04d6ffaf28a524b16dd355a6f808e0))
+
+
+
+
+
 ## 0.0.2 (2020-04-02)
 
 
