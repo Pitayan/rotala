@@ -78,7 +78,7 @@ Rudimentary collapse behaviour without any transition effect
 </form>
 <br><br>
 
-```html
+```html {}
 <div class="accordion">
   <input class="accordion-indicator" type="checkbox" hidden checked />
   <label class="accordion-header" for="accordion-1">Elements</label>
@@ -166,7 +166,7 @@ With transition effect on both container element and icon indicator
   </div>
 </form>
 
-```html
+```html {}
 <div class="accordion">
   <input class="accordion-indicator" type="checkbox" hidden checked />
   <label class="accordion-header" for="accordion-1">
@@ -199,7 +199,7 @@ Use `open` to toggle the content
   </div>
 </div>
 
-```html
+```html {}
 <div class="accordion open">
   <label class="accordion-header" for="accordion-1">
     <i class="icon icon-combo accordion-icon icon-chevron-right mr-px"></i>
@@ -231,7 +231,7 @@ If `IE11` is not your targeted browser. You may also use the semantic HTML tags 
   </div>
 </details>
 
-```html
+```html {}
 <details class="accordion" open>
   <summary class="accordion-header">
     <i class="icon icon-combo icon-chevron-right mr-px"></i>

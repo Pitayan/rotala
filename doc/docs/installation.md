@@ -37,7 +37,7 @@ npm install rotala
 ## Inline CDN
 Use CDN delivered compiled files to skip importing files to your project. You may also specify the targeted version.
 
-```html
+```html {}
 <!-- Latest -->
 <link rel="stylesheet" href="https://unpkg.com/rotala@latest/dist/rotala.css">
 ```
