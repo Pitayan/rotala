@@ -26,7 +26,7 @@ Typography contains default styles of headings semantic text list etc.
 ## Parapraphs
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
-```html
+```html {}
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 ```
 
@@ -36,7 +36,7 @@ Typography contains default styles of headings semantic text list etc.
   <cite>- Steve Jobs</cite>
 </blockquote>
 
-```html
+```html {}
 <blockquote>
   <p>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.</p>
   <cite>- Steve Jobs</cite>
@@ -51,7 +51,7 @@ Typography contains default styles of headings semantic text list etc.
   <a class="link" href="mailto:first.last@example.com">first.last@example.com</a>
 </address>
 
-```html
+```html {}
 <address>
   <div>Green Office</div><br />
   <div>1-1 Alpha, Beta, Somewhere</div><br />
@@ -126,7 +126,7 @@ Typography contains default styles of headings semantic text list etc.
 
 ## Code
 <div class="my-6">
-    <pre><code data-lang="HTML"><span class="">&lt;!-- code snippets --&gt;</span>
+    <pre data-lang="HTML"><code><span>&lt;!-- code snippets --&gt;</span>
 <kbd>F12</kbd>
 <span>&lt;p&gt;</span><span>This is an example</span><span>&lt;/p&gt;</span>
 <span>&lt;a&gt;</span><span>This is an example</span><span>&lt;/a&gt;</span>
@@ -179,7 +179,7 @@ Typography contains default styles of headings semantic text list etc.
   </div>
 </div>
 
-```html
+```html {}
 <!-- Unordered list -->
 <ul>
   <li>List Item 1</li>
