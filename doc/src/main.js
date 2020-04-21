@@ -17,14 +17,6 @@ export default function (Vue, { head }) {
 
   // Retain scrollbar when sidebar or modal is open
   Vue.directive('retain', {
-    bind (_, { value: isOpen }) {
-      const body = document.body
-      if (!isOpen) {
-        const scrollTop = -(body.scrollTop || document.documentElement.scrollTop || 0)
-        body.style.cssText += `top: ${scrollTop}px;`
-        body.classList.add('is-drawer-open')
-      }
-    },
     update (_, { value: isOpen }) {
       const body = document.body
       if (!isOpen) {
@@ -33,6 +25,10 @@ export default function (Vue, { head }) {
         body.style.cssText = body.style.cssText.replace(`top: ${body.style.top};`, '')
         body.scrollTop = scrollTop
         document.documentElement.scrollTop = scrollTop
+      } else {
+        const scrollTop = -(body.scrollTop || document.documentElement.scrollTop || 0)
+        body.style.cssText += `top: ${scrollTop}px;`
+        body.classList.add('is-drawer-open')
       }
     }
   })

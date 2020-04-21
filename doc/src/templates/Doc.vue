@@ -23,7 +23,6 @@ query Doc ($path: String!) {
   doc: doc (path: $path) {
     title
     path
-    date (format: "D. MMMM YYYY")
     headings (depth: h1) {
       value
     }
@@ -92,24 +91,23 @@ export default {
 }
 </script>
 
-
-<style scoped>
+<style lang="postcss" scoped>
 
 /deep/ > h2,
 /deep/ > h3,
 /deep/ > h4,
 /deep/ > h5,
 /deep/ > h6 {
-  padding-top: 100px;
-  margin-top: -80px;
+  @apply pt-24;
+  @apply -mt-24;
 }
 
 /deep/ > p > img {
-  max-width: 100%;
+  @apply max-w-full;
 }
 
 .markdown {
-  padding-bottom: 50vh;
-  min-height: calc(90vh);
+  padding-bottom: calc(100vh - 13rem + 2px);
+  min-height: calc(100vh - 13rem + 2px);
 }
 </style>

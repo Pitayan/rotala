@@ -84,7 +84,7 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
-        index: ['installation'],
+        index: ['introduction'],
         baseDir: './docs',
         pathPrefix: '/docs',
         typeName: 'Doc',

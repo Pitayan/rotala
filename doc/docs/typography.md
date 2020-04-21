@@ -1,11 +1,12 @@
 ---
 title: Typography
-date: 2020-03-17 07:42:34
 link: /docs/typography/
 slug: typography
-section: Elements
+section: Components
 ---
 Typography contains default styles of headings semantic text list etc.
+<br>
+<br>
 
 ## Headings
 <h1 class="h1 mb-4">H1 Heading <span class="bg-gray-200 rounded py-1 px-2">40px</span></h1>
@@ -23,12 +24,16 @@ Typography contains default styles of headings semantic text list etc.
 <div class="h3">H3 Heading</div>
 ```
 
+
+
 ## Parapraphs
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 ```html {}
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 ```
+
+
 
 ## Quotes
 <blockquote>
@@ -42,6 +47,8 @@ Typography contains default styles of headings semantic text list etc.
   <cite>- Steve Jobs</cite>
 </blockquote>
 ```
+
+
 
 ## Address
 <address><strong>Rotala, Inc.</strong>
@@ -58,7 +65,9 @@ Typography contains default styles of headings semantic text list etc.
 </address>
 ```
 
-## Semantic Elements
+
+
+## Semantic elements
 <div class="flex flex-wrap">
   <div class="w-1/2">
     <div class="my-4">
@@ -126,7 +135,7 @@ Typography contains default styles of headings semantic text list etc.
 
 ## Code
 <div class="my-6">
-    <pre data-lang="HTML"><code><span>&lt;!-- code snippets --&gt;</span>
+    <pre data-lang="html"><code><span>&lt;!-- code snippets --&gt;</span>
 <kbd>F12</kbd>
 <span>&lt;p&gt;</span><span>This is an example</span><span>&lt;/p&gt;</span>
 <span>&lt;a&gt;</span><span>This is an example</span><span>&lt;/a&gt;</span>

@@ -1,21 +1,45 @@
 ---
 title: Button
-date: 2020-03-18
 link: /docs/button/
 slug: button
-section: Elements
+section: Components
 ---
-Button includes variant styles and sizes for buttons.
+A clickable form controller component.
+<br>
+<br>
 
-## trim.css
-2 default features:
-- default simple appearance
-- disabled appearance
+## Features
+<table class="table-group table-group-outline">
+  <thead>
+    <tr>
+      <th>Class Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="align-baseline">
+    <tr>
+      <td>.button</td>
+      <td>
+        default button style
+      </td>
+    </tr>
+    <tr>
+      <td>.disabled</td>
+      <td>
+        disabled button style
+      </td>
+    </tr>
+  </tbody>
+</table>
 <br>
 <br>
+
 
 #### default
 <button class="trim-button" type="button">Default Button</button>
+<br>
+<br>
+
 
 ```html {}
 <button class="button" type="button">Button</button>
@@ -23,54 +47,77 @@ Button includes variant styles and sizes for buttons.
 <a class="button" href="#">Button</a>
 ```
 
+
 #### default disabled
-<button class="trim-button disabled" type="button" disabled>Button</button>
-
-```html {}
-<button class="button disabled" type="button" disabled>Button</button>
-```
-
-## theme.css
-3 extra features:
-- 3 variants: `primary`&nbsp;`secondary`&nbsp;`outline`
-- loading effect
-- disabled appearance for each variant
+<button class="trim-button disabled" type="button" disabled>Disabled Button</button>
 <br>
 <br>
 
-#### variants
-
-<button class="button button-outline m-2" type="button">Outline Button</button>
-<button class="button button-primary m-2" type="button">Primary Button</button>
-<button class="button button-secondary m-2" type="button">Secondary Button</button>
 
 ```html {}
-<button class="button button-primary" type="button">Outline Button</button>
-<button class="button button-primary" type="button">Primary Button</button>
-<button class="button button-secondary" type="button">Secondary Button</button>
+<button class="button disabled" type="button" disabled>Disabled Button</button>
 ```
 
-#### loading
-<button class="button loading m-2" type="button">Default Button</button>
-<button class="button button-outline loading m-2" type="button">Outline Button</button>
-<button class="button button-primary loading m-2" type="button">Primary Button</button>
-<button class="button button-secondary loading m-2" type="button">Secondary Button</button>
 
-```html {}
-<button class="button loading" type="button">Default Button</button>
-<button class="button button-outline loading" type="button">Outline Button</button>
-<button class="button button-primary loading" type="button">Primary Button</button>
-<button class="button button-secondary loading" type="button">Secondary Button</button>
+## Templates
+#### rounded & outline
+<button class="trim-button rounded-full text-gray-700 border border-solid border-gray-700" type="button">Rounded</button>
+<br>
+<br>
+
+
+```css {}
+.button {
+  @apply rounded-full;
+  @apply text-gray-700;
+  @apply border border-solid border-gray-700;
+}
 ```
 
-#### variant disabled
-
-<button class="button button-outline disabled m-2" type="button" disabled>Outline Button</button>
-<button class="button button-primary disabled m-2" type="button" disabled>Primary Button</button>
-<button class="button button-secondary disabled m-2" type="button" disabled>Secondary Button</button>
 
 ```html {}
-<button class="button button-primary disabled" type="button" disabled>Outline Button</button>
-<button class="button button-primary disabled" type="button" disabled>Primary Button</button>
-<button class="button button-secondary disabled" type="button" disabled>Secondary Button</button>
+<button class="button shadow text-gray-700 border border-solid border-gray-700" type="button">Rounded</button>
+```
+
+
+#### background & hover
+<button class="trim-button text-gray-700 bg-gray-300 hover:bg-gray-500 transition-colors duration-150" type="button">Background Gray</button>
+<br>
+<br>
+
+
+```css {}
+.button {
+  @apply text-gray-700;
+  @apply bg-gray-300;
+  @apply hover:bg-gray-500;
+  @apply transition-colors duration-150;
+}
+```
+
+
+
+```html {}
+<button class="button text-gray-700 bg-gray-300 hover:bg-gray-500 transition-colors duration-150" type="button">Background Gray</button>
+```
+
+#### with icon
+<button class="trim-button text-gray-700 border border-solid border-gray-700 inline-flex items-center" type="button"><i class="icon icon-search mr-1"></i>Search</button>
+<br>
+<br>
+
+
+```css {}
+.button {
+  @apply text-gray-700;
+  @apply border border-solid border-gray-700;
+  @apply inline-flex items-center;
+}
+```
+
+
+```html {}
+<button class="trim-button text-gray-700 border border-solid border-gray-700 inline-flex items-center" type="button">
+  <i class="icon icon-search mr-1"></i>Search
+</button>
 ```

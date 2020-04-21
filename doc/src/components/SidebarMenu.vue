@@ -54,7 +54,7 @@ query Menu {
       }
     }
   }
-  docs: allDoc(order:ASC) {
+  docs: allDoc(sortBy: "order", order: ASC) {
     edges {
       node {
         title
