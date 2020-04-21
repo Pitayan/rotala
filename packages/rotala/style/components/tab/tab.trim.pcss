@@ -17,5 +17,16 @@
       color: inherit;
       transition: color .15s;
     }
+
+    &[disabled],
+    &:disabled,
+    &.disabled {
+      @apply cursor-default;
+
+      a {
+        @apply pointer-events-none;
+        @apply text-gray-400;
+      }
+    }
   }
 }

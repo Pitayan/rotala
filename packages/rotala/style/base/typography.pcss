@@ -81,8 +81,7 @@ mark {
   @apply bg-orange-300;
   @apply border-b-2 border-solid border-orange-500;
   @apply rounded-sm;
-
-  padding: 0.25rem 0.5rem 0;
+  @apply px-0 pt-1 pb-2;
 }
 
 blockquote {
@@ -135,11 +134,11 @@ code {
 }
 
 ul, ol {
-  margin: 1rem 0 1rem 1rem;
-  padding: 0;
+  @apply p-0;
+  @apply mr-0 ml-4 my-4;
 
   ul, ol {
-    margin: 1rem 0 1rem 1rem;
+    @apply mr-0 ml-4 my-4;
   }
 
   li {
@@ -168,13 +167,13 @@ ol {
 }
 
 dl {
-  margin: 1rem 0 1rem 1rem;
+  @apply mr-0 ml-4 my-4;
 
   dt {
     @apply font-black;
   }
 
   dd {
-    margin: 1rem 0 2rem 0;
+    @apply mx-0 mt-4 mb-8;
   }
 }
