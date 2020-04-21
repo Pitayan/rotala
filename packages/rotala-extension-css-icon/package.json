@@ -18,7 +18,8 @@
     "framework",
     "UI",
     "UX",
-    "rotala"
+    "rotala",
+    "rotala-extension"
   ],
   "author": "daiyanze",
   "license": "MIT",
