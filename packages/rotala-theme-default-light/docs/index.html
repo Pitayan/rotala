@@ -403,7 +403,7 @@
         <button type="button" class="button button-primary">primary button</button>
         <button type="button" class="button button-secondary">secondary button</button>
       </div>
-      <hr class="hr mb-4">
+      <hr class="divider mb-4">
       <h4>loading</h4>
       <div class="my-2">
         <button type="button" class="button button-outline loading">loading button</button>
@@ -414,7 +414,7 @@
           <span class="inline-block">Loading</span>
         </button>
       </div>
-      <hr class="hr mb-4">
+      <hr class="divider mb-4">
       <h4>disabled</h4>
       <div class="my-2">
         <button type="button" class="button button-primary disabled">primary button</button>
@@ -500,13 +500,13 @@
 
     <section id="Divider">
       <h2>Divider</h2>
-      <span class="hr"></span>
+      <span class="divider"></span>
       <br>
       <br>
       <h2>horizontal</h2>
-      <span class="hr" data-content="hr text center"></span><br><br>
-      <span class="hr text-left" data-content="hr text left"></span><br><br>
-      <span class="hr text-right" data-content="hr text right"></span><br><br>
+      <span class="divider" data-content="divider text center"></span><br><br>
+      <span class="divider text-left" data-content="divider text left"></span><br><br>
+      <span class="divider text-right" data-content="divider text right"></span><br><br>
       <h2>vertical</h2>
       <div class="flex">
         <form class="form-group m-8" style="width: 300px">
@@ -529,7 +529,7 @@
             <button class="button button-primary">Sign in</button>
           </div>
         </form>
-        <div class="hr hr-vertical" data-content="or"></div>
+        <div class="divider hr-vertical" data-content="or"></div>
         <form class="form-group m-8" style="width: 300px">
           <div class="form-group-item input-group">
             <label class="form-group-label" for="input-example-3">Email</label>
@@ -1044,8 +1044,18 @@
       <div class="row">
         <div class="p-2">
           <ul class="tab">
-            <li class="tab-item active"><a class="badge" href="#tabs" data-badge="10">Music</a></li>
-            <li class="tab-item"><a class="badge" href="#tabs" data-badge="">Playlists</a></li>
+            <li class="tab-item active">
+              <a class="badge" href="#tabs">
+                Music
+                <span class="badge-text">10</span>
+              </a>
+            </li>
+            <li class="tab-item">
+              <a class="badge" href="#tabs">
+                Playlists
+                <span class="badge-status"></span>
+              </a>
+            </li>
             <li class="tab-item"><a href="#tabs">Radio</a></li>
             <li class="tab-item"><a href="#tabs">Store</a></li>
           </ul>
