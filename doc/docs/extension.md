@@ -11,9 +11,9 @@ Contribute to **Rotala** extension library to enhence the framework.
 <br>
 
 ## Kick-start
-A **Rotala** extension is quite straightforward. Before start, you'll need to refer to [docs/build](/docs/build){class="link link-doc"} to learn more about compiling **Rotala** style sets.
+A **Rotala** extension is quite straightforward. Before start, you'll need to refer to [docs/build](/docs/build){class="ro-link ro-link-doc"} to learn more about compiling **Rotala** style sets.
 
-Make sure to create an pleasing `README` file under the project. Follow the [npm docs](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry){class="link link-doc" target="_blank"} to learn about creating/publishing a package
+Make sure to create an pleasing `README` file under the project. Follow the [npm docs](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry){class="ro-link ro-link-doc" target="_blank"} to learn about creating/publishing a package
 
 ```shell
 # initialize
@@ -44,11 +44,11 @@ How to name your extension is all up to you. However, it's recommended to name t
 <br>
 
 - `rotala-theme-*` -- used for a customized theme by extending the **Rotala** core style sets.
-  - Example: [rotala-theme-default-light](/extensions/rotala-theme-default-light){class="link link-doc"}
+  - Example: [rotala-theme-default-light](/extensions/rotala-theme-default-light){class="ro-link ro-link-doc"}
 
 
 - `rotala-extension-*` -- used for a any general type of extension. It could also be an extra style sets that **Rotala** doesn't have yet.
-  - Example: [rotala-extension-css-icon](/extensions/rotala-extension-css-icon){class="link link-doc"}
+  - Example: [rotala-extension-css-icon](/extensions/rotala-extension-css-icon){class="ro-link ro-link-doc"}
 
 <br>
 <br>

@@ -7,9 +7,9 @@
           <b class="ml-2 text-xl hidden md:block">Rotala.css</b>
         </g-link>
 
-        <ul class="flex-no-wrap tab hidden lg:flex border-0 mx-4">
-          <li class="tab-item mx-3" v-for="{ node: parts } in $static.part.edges" :key="parts.part">
-            <g-link class="px-0 py-6 -my-px mr-0 font-semibold" :to="parts.link">
+        <ul class="flex-no-wrap ro-tab hidden lg:flex border-0 mx-4">
+          <li class="ro-tab-item mx-3" v-for="{ node: parts } in $static.part.edges" :key="parts.part">
+            <g-link class="px-0 py-6 -my-1 mr-0 font-semibold border-b-2" :to="parts.link">
               {{ parts.part }}
             </g-link>
           </li>
@@ -20,13 +20,13 @@
         </div>
 
         <div class="hidden sm:flex items-center justify-between">
-          <ul class="tab flex justify-start items-center border-0">
-            <li class="tab-item text-gray-700">
+          <ul class="ro-tab flex justify-start items-center border-0">
+            <li class="ro-tab-item text-gray-700">
               <a class="mr-0" target="__blank" href="https://github.com/daiyanze/rotala">
                 <SVG-github width="20" height="20" />
               </a>
             </li>
-            <li class="tab-item text-gray-700">
+            <li class="ro-tab-item text-gray-700">
               <a class="mr-0" target="__blank" href="https://twitter.com/rotalacss">
                 <SVG-twitter width="20" height="20" />
               </a>
@@ -34,8 +34,8 @@
           </ul>
         </div>
 
-        <a href="javascript:void(0)" @click="$root.$emit('sidebar')" class="link ml-2 lg:hidden" aria-label="Toggle the sidebar">
-          <i class="icon icon-menu"></i>
+        <a href="javascript:void(0)" @click="$root.$emit('sidebar')" class="ro-link ml-2 lg:hidden" aria-label="Toggle the sidebar">
+          <i class="ro-icon ro-icon-menu"></i>
         </a>
       </div>
     </div>

@@ -11,17 +11,17 @@
         <div class="my-6">
           <span class="flex justify-between">
             <AisSearchBox class="w-full" placeholder="Search extensions..." :classNames="{
-              'ais-SearchBox-form': 'input-group',
-              'ais-SearchBox-input': 'input input-search',
+              'ais-SearchBox-form': 'ro-input-group',
+              'ais-SearchBox-input': 'ro-input ro-input-search',
               'ais-SearchBox-reset': 'hidden',
               'ais-SearchBox-submit': 'text-gray-600 absolute inset-y-0 left-0 pl-3 flex items-center'
             }">
               <template v-slot:submit-icon>
-                <span class="icon icon-search"></span>
+                <span class="ro-icon ro-icon-search"></span>
               </template>
             </AisSearchBox>
             <button class="button text-gray-700 text-lg flex items-center pr-0 md:hidden block" @click="toggleSidebar">
-              <i class="icon icon-close icon-combo"></i>
+              <i class="ro-icon ro-icon-close icon-combo"></i>
             </button>
           </span>
           <AisStateResults class="my-4 ml-2" v-slot="{ nbHits }">
@@ -58,7 +58,7 @@
 
           <template v-slot:loadMore="{ refine, isLastPage }">
             <div class="px-4 mb-16 pb-16">
-              <button class="button button-primary w-full" @click="refine" :disabled="isLastPage">
+              <button class="ro-button ro-button-primary w-full" @click="refine" :disabled="isLastPage">
                 More +
               </button>
             </div>
@@ -68,8 +68,8 @@
     </div>
 
     <div class="content p-6">
-      <button class="button text-gray-700 text-lg flex items-center px-0 mb-8 md:hidden block" @click="toggleSidebar">
-        <i class="icon icon-chevron-left icon-combo"></i> Extensions
+      <button class="ro-button text-gray-700 text-lg flex items-center px-0 mb-8 md:hidden block" @click="toggleSidebar">
+        <i class="ro-icon ro-icon-chevron-left ro-icon-combo"></i> Extensions
       </button>
 
       <div class="flex text-gray-700 text-sm my-2" v-if="Boolean($route.params.id) && hit">
@@ -102,7 +102,7 @@
         <h3>Welcome to the Rotala Extensions Library!</h3>
         <p class="text-xl mt-12 text-gray-700">Use the search box to pick an extension.
           With Rotala extensions, you can quickly extend the default behaviors and appearances of Rotala components to make everything look better.</p>
-        <p class="mt-8 text-gray-700">Learn how to build your own <g-link class="link link-doc" to="/docs/extension">extension</g-link></p>
+        <p class="mt-8 text-gray-700">Learn how to build your own <g-link class="ro-link ro-link-doc" to="/docs/extension">extension</g-link></p>
       </div>
     </div>
   </DefaultLayout>

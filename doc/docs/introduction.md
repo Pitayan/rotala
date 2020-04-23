@@ -7,7 +7,7 @@ section: Getting Started
 ---
 
 **Rotala** is a flat-design based css framework that offers a great customizibility with which we can create our own theme quickly and easily.
-The framework is made available by modern css with some very handy & popular tools [PostCSS](https://postcss.org){class="link link-doc"} and [Tailwindcss](https://tailwindcss.com/){class="link link-doc"}.
+The framework is made available by modern css with some very handy & popular tools [PostCSS](https://postcss.org){class="ro-link ro-link-doc"} and [Tailwindcss](https://tailwindcss.com/){class="ro-link ro-link-doc"}.
 <br>
 <br>
 
@@ -16,21 +16,21 @@ The framework is made available by modern css with some very handy & popular too
 In the **Rotala** core styles sets, all the components hold the very minimal and rudimentrary styles that are await for being extended. Which means, you can start theming with extending/overriding these default components.
 
 <div class="flex flex-wrap items-center">
-  <button class="trim-button flex-1">buttton</button>
-  <a class="trim-link flex-1" href="#">link</a>
-  <ul class="trim-menu flex-1">
-    <li class="trim-menu-item">
+  <button class="button flex-1">buttton</button>
+  <a class="link flex-1" href="#">link</a>
+  <ul class="menu flex-1">
+    <li class="menu-item">
       <a href="#menu-item-1">menu item 1</a>
     </li>
-    <li class="trim-menu-item">
+    <li class="menu-item">
       <a href="#menu-item-2">menu item 2</a>
     </li>
   </ul>
-  <ul class="trim-pagination flex-1">
-    <li class="trim-pagination-item">
+  <ul class="pagination flex-1">
+    <li class="pagination-item">
       <a href="/">page 1</a>
     </li>
-    <li class="trim-pagination-item">
+    <li class="pagination-item">
       <a href="/">page 2</a>
     </li>
   </ul>
@@ -63,7 +63,7 @@ In the **Rotala** core styles sets, all the components hold the very minimal and
 
 
 ## Why made it this way?
-Not long ago, an elegant CSS tool [Tailwindcss](https://tailwindcss.com/){class="link link-doc"} was created for building up CSS frameworks and themes. It hopes us to make the most of the provided "fragmented utils" to create component templates. This is a very good approach for theming purposes. Besides, with another sets of configurations (`tailwind.config.js`) we could easily control the dimensions of the "fragmented utils".
+Not long ago, an elegant CSS tool [Tailwindcss](https://tailwindcss.com/){class="ro-link ro-link-doc"} was created for building up CSS frameworks and themes. It hopes us to make the most of the provided "fragmented utils" to create component templates. This is a very good approach for theming purposes. Besides, with another sets of configurations (`tailwind.config.js`) we could easily control the dimensions of the "fragmented utils".
 
 ```html {}
 <div class="bg-white rounded-lg p-6">
@@ -83,7 +83,7 @@ However when the project gets larger, we will encounter something that looks lik
 <a href="/" class="transition-all ease-in-out duration-150 no-underline rounded-lg px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 bg-teal-500 hover:bg-teal-600 md:text-lg xl:text-base text-white font-semibold leading-tight shadow-md">Home</a>
 ```
 
-To recover the readibility and maintainability, it's better to compose these utils into a class with [Tailwindcss](https://tailwindcss.com/){class="link link-doc"}&nbsp; `@apply` function. And what's more, you could even create a parent class with very minimal and trimmed styles to let its descendents to inherit the atrributes. This is how **Rotala** gained the inspiration.
+To recover the readibility and maintainability, it's better to compose these utils into a class with [Tailwindcss](https://tailwindcss.com/){class="ro-link ro-link-doc"}&nbsp; `@apply` function. And what's more, you could even create a parent class with very minimal and trimmed styles to let its descendents to inherit the atrributes. This is how **Rotala** gained the inspiration.
 
 ```css
 .link {
@@ -110,24 +110,24 @@ To recover the readibility and maintainability, it's better to compose these uti
 ```
 
 
-In a manner of speaking, **Rotala** is rather a normal practice of [Tailwindcss](https://tailwindcss.com/){class="link link-doc"} theming by trimming the components to the minimum viable styles. Yet, it utilizes the best tools in hand to make the framework as customizable as possible.
+In a manner of speaking, **Rotala** is rather a normal practice of [Tailwindcss](https://tailwindcss.com/){class="ro-link ro-link-doc"} theming by trimming the components to the minimum viable styles. Yet, it utilizes the best tools in hand to make the framework as customizable as possible.
 <br>
 <br>
 
 
 
 ## Extensions
-Since **Rotala** core only provides the "trimmed" components, we need more tools to enhence the framework utility. Relying on communities and 3rd parties seems a pretty good idea. So, in the end, the inspiration of "extensions" came right out after imitating [Gatsbyjs](https://www.gatsbyjs.org/){class="link link-doc"} and [Gridsome](https://gridsome.org/){class="link link-doc"} about how they built their beautiful plugin pages.
+Since **Rotala** core only provides the "trimmed" components, we need more tools to enhence the framework utility. Relying on communities and 3rd parties seems a pretty good idea. So, in the end, the inspiration of "extensions" came right out after imitating [Gatsbyjs](https://www.gatsbyjs.org/){class="ro-link ro-link-doc"} and [Gridsome](https://gridsome.org/){class="ro-link ro-link-doc"} about how they built their beautiful plugin pages.
 
-- Learn how to extend **Rotala** with [extension](/docs/extension){class="link link-doc"}
-- Check out the [extension library](/extensions){class="link link-doc"}
+- Learn how to extend **Rotala** with [extension](/docs/extension){class="ro-link ro-link-doc"}
+- Check out the [extension library](/extensions){class="ro-link ro-link-doc"}
 <br>
 <br>
 
 
 ## Source files
 #### style.pcss
-The style files are ended with `.pcss` extension. We use `@apply` functions everywhere in the source file. Some of the stylings are not yet part of [Tailwindcss](https://tailwindcss.com/){class="link link-doc"}, so they are kept pure CSS format.
+The style files are ended with `.pcss` extension. We use `@apply` functions everywhere in the source file. Some of the stylings are not yet part of [Tailwindcss](https://tailwindcss.com/){class="ro-link ro-link-doc"}, so they are kept pure CSS format.
 
 ```css {}
 /* style/base/typography.pcss */

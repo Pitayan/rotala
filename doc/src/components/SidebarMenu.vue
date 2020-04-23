@@ -4,7 +4,7 @@
       <ul class="pl-8 mb-8 relative">
         <span class="mt-px pb-1 px-1 rounded-full absolute bg-primary-100 cursor-pointer sm:hidden" style="right: 2rem;"
           @click="$root.$emit('sidebar')">
-          <i class="icon icon-combo icon-close text-xs text-primary-600"></i>
+          <i class="ro-icon ro-icon-combo ro-icon-close text-xs text-primary-600"></i>
         </span>
         <g-link to="/">
           <SVG-logo class="inline-block mb-2 mr-2 text-primary-600" width="24" />

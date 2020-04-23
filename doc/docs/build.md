@@ -22,10 +22,10 @@ Learn how to configure and compile the **Rotala** resources.
 <br>
 
 ## File structure of the source
-As a [Monorepo](https://en.wikipedia.org/wiki/Monorepo){class="link link-doc" target="_blank"} project, **Rotala** locate all the resources together with official packages in the same <a class="link link-doc" target="_blank" :href="githubUrl">Github repository</a>.
+As a [Monorepo](https://en.wikipedia.org/wiki/Monorepo){class="ro-link ro-link-doc" target="_blank"} project, **Rotala** locate all the resources together with official packages in the same <a class="ro-link ro-link-doc" target="_blank" :href="githubUrl">Github repository</a>.
 
 
-<table class="table-group table-group-outline">
+<table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
       <th>Folder</th>
@@ -42,9 +42,9 @@ As a [Monorepo](https://en.wikipedia.org/wiki/Monorepo){class="link link-doc" ta
       <td>
         Contains <b>Rotala</b> core style set and official packages.
         <ul>
-          <li><g-link class="link link-doc" to="/extensions/rotala">Rotala</g-link></li>
-          <li><g-link class="link link-doc" to="/extensions/rotala-theme-default-light">Rotala Theme Default Light</g-link></li>
-          <li><g-link class="link link-doc" to="/extensions/rotala-extension-css-icon">Rotala Extension CSS Icon</g-link></li>
+          <li><g-link class="ro-link ro-link-doc" to="/extensions/rotala">Rotala</g-link></li>
+          <li><g-link class="ro-link ro-link-doc" to="/extensions/rotala-theme-default-light">Rotala Theme Default Light</g-link></li>
+          <li><g-link class="ro-link ro-link-doc" to="/extensions/rotala-extension-css-icon">Rotala Extension CSS Icon</g-link></li>
         </ul>
       </td>
     </tr>
@@ -56,7 +56,7 @@ As a [Monorepo](https://en.wikipedia.org/wiki/Monorepo){class="link link-doc" ta
 
 As for each official package under the source folder, all the source files are comipled into `dist` folder.
 
-<table class="table-group table-group-outline">
+<table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
       <th>Folder</th>
@@ -81,12 +81,12 @@ As for each official package under the source folder, all the source files are c
 
 
 ## Postcss
-**Rotala** core only uses [PostCSS](https://postcss.org){class="link link-doc"} and its plugins to compile the source.
+**Rotala** core only uses [PostCSS](https://postcss.org){class="ro-link ro-link-doc"} and its plugins to compile the source.
 
 #### plugins
-The following [PostCSS](https://postcss.org){class="link link-doc"} plugins are already dependencies by default. By installing **Rotala** via a package manager `yarn`&nbsp;or&nbsp;`npm`, you'll have them in your project.
+The following [PostCSS](https://postcss.org){class="ro-link ro-link-doc"} plugins are already dependencies by default. By installing **Rotala** via a package manager `yarn`&nbsp;or&nbsp;`npm`, you'll have them in your project.
 
-<table class="table-group table-group-outline">
+<table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
       <th>Name</th>
@@ -95,14 +95,14 @@ The following [PostCSS](https://postcss.org){class="link link-doc"} plugins are 
   </thead>
   <tbody class="align-baseline">
     <tr>
-      <td><a class="link link-doc" href="https://github.com/postcss/postcss-import" target="_blank">postcss-import</a></td>
+      <td><a class="ro-link ro-link-doc" href="https://github.com/postcss/postcss-import" target="_blank">postcss-import</a></td>
       <td>
         Enables <code>@import</code> keyword
         <pre class="language-css"><code class="language-css"><span class="token atrule">@import</span> "rotala";</code></pre>
       </td>
     </tr>
     <tr>
-      <td><a class="link link-doc" href="https://github.com/postcss/postcss-nested" target="_blank">postcss-nested</a></td>
+      <td><a class="ro-link ro-link-doc" href="https://github.com/postcss/postcss-nested" target="_blank">postcss-nested</a></td>
       <td>
         Enables nesting classes
         <pre class="language-css"><code class="language-css"><span class="token selector"><span class="token class">.tab</span></span> <span class="token punctuation">{</span>
@@ -113,26 +113,26 @@ The following [PostCSS](https://postcss.org){class="link link-doc"} plugins are 
       </td>
     </tr>
     <tr>
-      <td><a class="link link-doc" href="https://github.com/postcss/postcss-simple-vars" target="_blank">postcss-simple-vars</a></td>
+      <td><a class="ro-link ro-link-doc" href="https://github.com/postcss/postcss-simple-vars" target="_blank">postcss-simple-vars</a></td>
       <td>
         Enables custom variables
         <pre class="language-css"><code class="language-css">$<span class="token property">my-component</span><span class="token punctuation">:</span> </span>a-beautiful-component<span class="token punctuation">;</span></code></pre>
       </td>
     </tr>
     <tr>
-      <td><a class="link link-doc" href="https://github.com/postcss/autoprefixer" target="_blank">autoprefixer</a></td>
+      <td><a class="ro-link ro-link-doc" href="https://github.com/postcss/autoprefixer" target="_blank">autoprefixer</a></td>
       <td>
         Apply prefixes based on target browsers
       </td>
     </tr>
     <tr>
-      <td><a class="link link-doc" href="https://github.com/cssnano/cssnano" target="_blank">cssnano</a></td>
+      <td><a class="ro-link ro-link-doc" href="https://github.com/cssnano/cssnano" target="_blank">cssnano</a></td>
       <td>
         Minimize your CSS stylesheet
       </td>
     </tr>
     <tr>
-      <td><a class="link link-doc" href="https://tailwindcss.com" target="_blank">Tailwindcss</a></td>
+      <td><a class="ro-link ro-link-doc" href="https://tailwindcss.com" target="_blank">Tailwindcss</a></td>
       <td>
         Utility first CSS framework
       </td>
@@ -145,7 +145,7 @@ The following [PostCSS](https://postcss.org){class="link link-doc"} plugins are 
 
 
 #### configurations
-Here is the default [PostCSS](https://postcss.org){class="link link-doc"} configuration for **Rotala** core styles sets.
+Here is the default [PostCSS](https://postcss.org){class="ro-link ro-link-doc"} configuration for **Rotala** core styles sets.
 
 ```js {}
 // postcss.config.js
@@ -182,7 +182,7 @@ module.exports = {
 It's recommended to customize your own build by introduing the source files into your project. In this way, you can easily extend the styles with the **Rotala** "blank design" components for theming purposes.
 
 #### default
-Extend the class easily with [Tailwindcss](https://tailwindcss.com/){class="link link-doc"} utilities.
+Extend the class easily with [Tailwindcss](https://tailwindcss.com/){class="ro-link ro-link-doc"} utilities.
 
 <button class="button">default</button>
 <button class="button text-gray-700 rounded-full hover:bg-gray-300">hover me</button>
@@ -204,14 +204,14 @@ Extend the class easily with [Tailwindcss](https://tailwindcss.com/){class="link
 #### on demand
 Only need what you want for the project? Simply import the required components to minimize the import size of the package.
 
-<ul class="trim-tab border border-solid border-gray-300 text-gray-700 rounded-full inline-flex">
-  <li class="trim-tab-item rounded-full" :class="{ 'bg-gray-300': active == 0 }">
+<ul class="tab border border-solid border-gray-300 text-gray-700 rounded-full inline-flex">
+  <li class="tab-item rounded-full" :class="{ 'bg-gray-300': active == 0 }">
     <a href="#one" @click.self="active = 0">one</a>
   </li>
-  <li class="trim-tab-item rounded-full" :class="{ 'bg-gray-300': active == 1 }">
+  <li class="tab-item rounded-full" :class="{ 'bg-gray-300': active == 1 }">
     <a href="#two" @click.self="active = 1">two</a>
   </li>
-  <li class="trim-tab-item rounded-full" :class="{ 'bg-gray-300': active == 2 }">
+  <li class="tab-item rounded-full" :class="{ 'bg-gray-300': active == 2 }">
     <a href="#three" @click.self="active = 2">three</a>
   </li>
 </ul>
@@ -240,7 +240,7 @@ Only need what you want for the project? Simply import the required components t
 
 
 ## Prefix
-**Rotala** keeps all of its classes without prefixes by default. To Avoid class name collisions while introducing **Rotala** to your project, it is preferable to add a custom prefix to the existing classes. Prefix is enabled by a [PostCSS](https://postcss.org){class="link link-doc"} plugin [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars){class="link link-doc"}.
+**Rotala** keeps all of its classes without prefixes by default. To Avoid class name collisions while introducing **Rotala** to your project, it is preferable to add a custom prefix to the existing classes. Prefix is enabled by a [PostCSS](https://postcss.org){class="ro-link ro-link-doc"} plugin [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars){class="ro-link ro-link-doc"}.
 
 ```css {}
 /* Prefix */
@@ -255,7 +255,7 @@ $select: $(prefix)select;
 ...
 ```
 
-Utilize the [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars){class="link link-doc"} plugin to add your prefix.
+Utilize the [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars){class="ro-link ro-link-doc"} plugin to add your prefix.
 
 ```js {}
 // postcss.config.js
