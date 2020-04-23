@@ -1,14 +1,14 @@
 <template>
   <DocLayout :subtitles="subtitles">
     <section class="pt-20 px-6 w-full mx-auto xl:mx-0">
-      <ul class="breadcrumb text-sm my-4">
-        <li class="breadcrumb-item">
-          <g-link class="link link-doc text-primary-600" to="/">Home</g-link>
+      <ul class="ro-breadcrumb text-sm my-4">
+        <li class="ro-breadcrumb-item">
+          <g-link class="ro-link ro-link-doc text-primary-600" to="/">Home</g-link>
         </li>
-        <li class="breadcrumb-item">
-          <g-link class="link link-doc text-primary-600" to="/docs/">Docs</g-link>
+        <li class="ro-breadcrumb-item">
+          <g-link class="ro-link ro-link-doc text-primary-600" to="/docs/">Docs</g-link>
         </li>
-        <li class="breadcrumb-item">
+        <li class="ro-breadcrumb-item">
           <span>{{ $page.doc.title }}</span>
         </li>
       </ul>

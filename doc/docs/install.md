@@ -34,7 +34,7 @@ npm install rotala
 
 
 ## CDN
-The compiled files are hosted on [unpkg](https://unpkg.com/){class="link link-doc"}.
+The compiled files are hosted on [unpkg](https://unpkg.com/){class="ro-link ro-link-doc"}.
 
 <a class="button button-primary" target="_blank" href="https://unpkg.com/rotala">Download from unpkg</a>
 
@@ -54,7 +54,7 @@ The compiled files are hosted on [unpkg](https://unpkg.com/){class="link link-do
 
 ## Pre-built
 Start quickly with compiled and minified source. You can also download the official packages from the
-<a class="link link-doc" target="_blank" :href="githubUrl">Github repository</a>.
+<a class="ro-link ro-link-doc" target="_blank" :href="githubUrl">Github repository</a>.
 
 <a class="button button-primary" target="_blank" :href="releaseUrl">Download Source</a>
 

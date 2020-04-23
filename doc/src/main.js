@@ -5,7 +5,7 @@ import DocLayout from '~/layouts/DocLayout.vue'
 import DefaultLayout from '~/layouts/Default.vue'
 
 import '~/assets/style/theme.pcss'
-import '~/assets/style/trim.pcss'
+import '~/assets/style/rotala.components.pcss'
 
 import 'typeface-open-sans'
 import { extend } from 'rotala-theme-default-light/variables'
