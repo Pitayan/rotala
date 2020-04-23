@@ -6,7 +6,7 @@
   "style": "style/main.pcss",
   "scripts": {
     "dev": "cross-env NODE_ENV=development concurrently  \"postcss docs/main.pcss -o docs/assets/css/rotala.css --watch\" \"live-server ./docs\"",
-    "build": "cross-env NODE_ENV=production postcss style/main.pcss -o dist/rotala.css",
+    "build": "cross-env NODE_ENV=production concurrently \"postcss docs/main.pcss -o docs/assets/css/rotala.css\" \"postcss style/main.pcss -o dist/rotala.css\"",
     "prepare": "lerna run build"
   },
   "repository": {
