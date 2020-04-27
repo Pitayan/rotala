@@ -9,11 +9,11 @@ Paging indicator component
 <br>
 <br>
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -56,6 +56,8 @@ Paging indicator component
 <br>
 <br>
 
+
+## Features
 #### default
 <ul class="pagination">
   <li class="pagination-prev">
@@ -196,10 +198,6 @@ Paging indicator component
 </ul>
 ```
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### active page
 Active status for the pagination item

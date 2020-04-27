@@ -7,11 +7,11 @@ section: Components
 
 A vertical navigation component
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -33,6 +33,8 @@ A vertical navigation component
 <br>
 <br>
 
+
+## Features
 #### default
 <ul class="menu w-64">
   <li class="menu-item"><a href="#first">First</a></li>
@@ -50,10 +52,6 @@ A vertical navigation component
 </ul>
 ```
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### hover effect
 <ul class="menu w-64">

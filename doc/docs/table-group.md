@@ -7,11 +7,11 @@ section: Components
 
 A data table component
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -27,6 +27,8 @@ A data table component
 <br>
 <br>
 
+
+## Features
 #### default
 <table class="table-group">
   <thead>
@@ -86,10 +88,6 @@ A data table component
 </table>
 ```
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### outline
 Style with horizontal lines

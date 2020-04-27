@@ -10,11 +10,11 @@ Address redirect component
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -39,6 +39,8 @@ Address redirect component
 <br>
 <br>
 
+
+## Features
 #### default
 <a class="link" href="#">link</a>
 <br>
@@ -57,10 +59,6 @@ Address redirect component
 <a class="link disabled" href="#" disabled>link</a>
 ```
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### hover underline
 <a class="link border-b-2 border-solid border-transparent hover:border-gray-600" href="#">link</a>

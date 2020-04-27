@@ -10,11 +10,11 @@ A common form component for group related elements
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -54,6 +54,8 @@ A common form component for group related elements
 <br>
 <br>
 
+
+## Features
 #### default
 <form class="form-group flex">
   <fieldset class="form-group-fieldset mx-auto w-64">

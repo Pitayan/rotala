@@ -9,11 +9,11 @@ Informative notification indicator to the corner
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -42,6 +42,7 @@ Informative notification indicator to the corner
 <br>
 
 
+## Features
 #### status
 <div class="flex flex-wrap items-center">
   <span class="badge mx-4">
@@ -139,10 +140,6 @@ Use paddings for inline or small elements to avoid overlapping.
 </figure>
 ```
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### size
 Change the badge size with `height` and `width`
