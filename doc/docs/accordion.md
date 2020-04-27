@@ -54,11 +54,11 @@ Accordion is used for toggling visiblity of content.
     </tr>
     <tr>
       <td>
-        .open<br>
-        [open]
+        <p>.open</p>
+        <p>[open]</p>
       </td>
       <td>
-        An additional control class to swith accrodion open/close
+        The switch to control accrodion open/close
       </td>
     </tr>
   </tbody>

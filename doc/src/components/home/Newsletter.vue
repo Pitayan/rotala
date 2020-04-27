@@ -12,12 +12,12 @@
       </h5>
 
       <div class="flex flex-wrap items-center justify-between">
-        <label class="input-group relative w-full my-2 mr-4 max-w-xl">
+        <label class="ro-input-group relative w-full my-2 mr-4 max-w-xl">
           <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
-            <i class="icon icon-mail text-gray-600 mt-px"></i>
+            <i class="ro-icon ro-icon-mail text-gray-600 mt-px"></i>
           </span>
           <input id="mce-EMAIL"
-            class="input input-search"
+            class="ro-input ro-input-search"
             type="email"
             name="EMAIL"
             v-model="value"
@@ -31,7 +31,7 @@
           </span>
         </label>
         <button
-          class="button button-primary font-medium"
+          class="ro-button ro-button-primary font-medium"
           :type="value ? 'submit' : 'button'"
           :disabled="!isEmailValid">
           subscribe

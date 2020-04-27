@@ -53,50 +53,50 @@ A User profile image Component
 
 #### image
 <figure class="avatar m-2">
-  <img src="/avatar-1.svg" style="background: pink;" alt="Avatar">
+  <img src="/avatar-1.svg" class="bg-pink-300" alt="Avatar">
 </figure>
 <figure class="avatar m-2">
-  <img src="/avatar-2.svg" style="background: turquoise;" alt="Avatar">
+  <img src="/avatar-2.svg" class="bg-blue-300" alt="Avatar">
 </figure>
 <figure class="avatar m-2">
-  <img src="/avatar-3.svg" style="background: palegreen;" alt="Avatar">
+  <img src="/avatar-3.svg" class="bg-green-300" alt="Avatar">
 </figure>
 <figure class="avatar m-2">
-  <img src="/avatar-4.svg" style="background: lightsalmon;" alt="Avatar">
+  <img src="/avatar-4.svg" class="bg-red-300" alt="Avatar">
 </figure>
 <figure class="avatar m-2">
-  <img src="/avatar-5.svg" style="background: moccasin;" alt="Avatar">
+  <img src="/avatar-5.svg" class="bg-yellow-300" alt="Avatar">
 </figure>
 <br>
 <br>
 
 ```html {}
 <figure class="avatar">
-  <img src="/avatar-1.svg" style="background: pink;" alt="Avatar"  />
+  <img src="/avatar-1.svg" class="bg-pink-300" alt="Avatar"  />
 </figure>
 ```
 
 
 #### rounded
 <figure class="avatar avatar-rounded m-2">
-  <img src="/avatar-1.svg" style="background: pink;" alt="Avatar">
+  <img src="/avatar-1.svg" class="bg-pink-300" alt="Avatar">
 </figure>
 <figure class="avatar avatar-rounded m-2">
-  <img src="/avatar-2.svg" style="background: turquoise;" alt="Avatar">
+  <img src="/avatar-2.svg" class="bg-blue-300" alt="Avatar">
 </figure>
 <figure class="avatar avatar-rounded m-2">
-  <img src="/avatar-3.svg" style="background: palegreen;" alt="Avatar">
+  <img src="/avatar-3.svg" class="bg-green-300" alt="Avatar">
 </figure>
 <figure class="avatar avatar-rounded m-2">
-  <img src="/avatar-4.svg" style="background: lightsalmon;" alt="Avatar">
+  <img src="/avatar-4.svg" class="bg-red-300" alt="Avatar">
 </figure>
 <figure class="avatar avatar-rounded m-2">
-  <img src="/avatar-5.svg" style="background: moccasin;" alt="Avatar">
+  <img src="/avatar-5.svg" class="bg-yellow-300" alt="Avatar">
 </figure>
 
 ```html {}
-<figure class="avatar avatar-rounded m-2">
-  <img src="/avatar-1.svg" style="background: pink;" alt="Avatar">
+<figure class="avatar avatar-rounded">
+  <img src="/avatar-1.svg" alt="Avatar">
 </figure>
 ```
 
@@ -107,11 +107,17 @@ Some stylish examples with a bit more efforts
 <br>
 
 #### background
-<figure class="avatar bg-gray-400 text-white" data-initial="avatar"></figure>
+Use `background color` and `color` to change avatar colors
+
+<figure class="avatar bg-gray-500 text-white mx-2" data-initial="avatar"></figure>
+<figure class="avatar bg-orange-500 text-white mx-2" data-initial="avatar"></figure>
+<figure class="avatar bg-pink-500 text-white mx-2" data-initial="avatar"></figure>
+<figure class="avatar bg-indigo-500 text-white mx-2" data-initial="avatar"></figure>
+<figure class="avatar bg-primary-500 text-white mx-2" data-initial="avatar"></figure>
 <br>
 <br>
 
 ```html {}
-<figure class="avatar bg-gray-400 text-white" data-initial="avatar"></figure>
+<figure class="avatar bg-gray-500 text-white" data-initial="avatar"></figure>
 ```
 
