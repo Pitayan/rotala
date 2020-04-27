@@ -10,11 +10,11 @@ Hoverable popup text hint
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -51,7 +51,7 @@ Hoverable popup text hint
 <br>
 <br>
 
-
+## Features
 #### default
 The default popover container's background color is transparent. You may paint the color yourself.
 

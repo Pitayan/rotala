@@ -9,11 +9,11 @@ Select input component
 <br>
 <br>
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -39,6 +39,7 @@ Select input component
 <br>
 
 
+## Features
 #### default
 <label class="select-group">
   <select class="select">
@@ -120,10 +121,6 @@ Select input component
 ```
 
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### underline
 <label class="select-group">

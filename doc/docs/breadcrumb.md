@@ -10,11 +10,11 @@ A hierachical inidicator component to display current location
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -37,8 +37,8 @@ A hierachical inidicator component to display current location
 <br>
 
 
+## Features
 #### default
-
 <ul class="breadcrumb">
   <li class="breadcrumb-item">
     <a href="#">Home</a>
@@ -80,10 +80,6 @@ A hierachical inidicator component to display current location
 </ul>
 ```
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### character separator
 
@@ -173,7 +169,7 @@ Some stylish examples with a bit more efforts
 <br>
 
 
-#### styled link
+#### hover & underline
 
 <ul class="breadcrumb">
   <li class="breadcrumb-item">

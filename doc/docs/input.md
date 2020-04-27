@@ -10,11 +10,11 @@ Text input component
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -39,6 +39,8 @@ Text input component
 <br>
 <br>
 
+
+## Features
 #### default
 <input class="input" type="text" placeholder="a clean input" autofocus />
 <textarea class="input" placeholder="a clean textarea"></textarea>
@@ -63,10 +65,6 @@ Text input component
 <textarea class="input disabled" placeholder="a clean textarea" disabled></textarea>
 ```
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### underline
 <input class="input border-b border-solid border-gray-300 focus:border-blue-500 w-48" type="text" placeholder="underlined input" />

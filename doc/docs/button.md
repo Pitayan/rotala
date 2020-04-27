@@ -8,11 +8,11 @@ A clickable form controller component.
 <br>
 <br>
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -38,6 +38,7 @@ A clickable form controller component.
 <br>
 
 
+## Features
 #### default
 <button class="button" type="button">Default Button</button>
 <br>
@@ -62,10 +63,6 @@ A clickable form controller component.
 ```
 
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 
 #### rounded & outline

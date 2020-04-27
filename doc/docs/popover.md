@@ -19,11 +19,11 @@ export default {
 
 A floating content component
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -69,6 +69,8 @@ A floating content component
 <br>
 <br>
 
+
+## Features
 #### default
 The default popover container's background color is transparent. You may paint the color yourself.
 

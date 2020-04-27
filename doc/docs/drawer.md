@@ -39,11 +39,11 @@ An overlayer appearing to an edge of the page
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -94,6 +94,7 @@ An overlayer appearing to an edge of the page
 <br>
 
 
+## Features
 #### default
 The default drawer container's background color is transparent. You may paint the color yourself.
 
@@ -132,10 +133,6 @@ The default drawer container's background color is transparent. You may paint th
 </div>
 ```
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### container size
 Default container width/height is `320px`.
@@ -167,5 +164,3 @@ Default container width/height is `320px`.
   </div>
 </div>
 ```
-
-#### animation effect

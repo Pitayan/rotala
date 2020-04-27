@@ -10,11 +10,11 @@ A divider line to seperate contents
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -30,7 +30,7 @@ A divider line to seperate contents
 <br>
 <br>
 
-
+## Features
 #### default
 <br>
 <br>
@@ -43,10 +43,6 @@ A divider line to seperate contents
 ```
 
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### color
 Use `border color` to change its color

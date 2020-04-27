@@ -5,11 +5,11 @@ slug: radio
 section: Components
 ---
 
-#### Features
+#### Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -31,6 +31,8 @@ section: Components
 <br>
 <br>
 
+
+## Features
 #### default
 The appearance of the radio varies among browsers
 

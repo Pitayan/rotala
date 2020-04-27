@@ -19,11 +19,11 @@ Accordion is used for toggling visiblity of content.
 <br>
 <br>
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -66,6 +66,7 @@ Accordion is used for toggling visiblity of content.
 <br>
 <br>
 
+## Features
 #### with checkbox input
 <div>
   <div class="accordion mx-4 w-64">
@@ -226,10 +227,6 @@ If `IE11` is not your targeted browser. You may also use the semantic HTML tags 
 ```
 
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 <div class="accordion w-64">
   <input class="accordion-indicator" id="accordion-5" type="checkbox" name="accordion-checkbox-0" hidden checked />

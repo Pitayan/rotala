@@ -53,11 +53,11 @@ A overlayer dialog component
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -114,6 +114,8 @@ A overlayer dialog component
 <br>
 <br>
 
+
+## Features
 #### default
 The default modal container's background color is transparent. You may paint the color yourself.
 

@@ -9,11 +9,11 @@ A toggle switch form controller
 <br>
 <br>
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -35,6 +35,8 @@ A toggle switch form controller
 <br>
 <br>
 
+
+## Features
 #### default
 The appearance of the checkbox varies among browsers
 

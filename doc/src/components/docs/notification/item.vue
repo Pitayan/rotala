@@ -19,7 +19,7 @@ export default {
       default: false
     },
     containerClasses: {
-      type: [Object, Array, String],
+      type: Object,
       default: () => {}
     }
   },

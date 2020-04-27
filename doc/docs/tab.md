@@ -10,11 +10,11 @@ Tab navigation to switch between views
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -46,6 +46,7 @@ Tab navigation to switch between views
 <br>
 
 
+## Features
 #### default
 <ul class="tab">
   <li class="tab-item">
@@ -116,10 +117,6 @@ Tab navigation to switch between views
 </ul>
 ```
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### Classic Tab
 With bottom border and hover effect

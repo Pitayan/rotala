@@ -10,11 +10,11 @@ A User profile image Component
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -42,6 +42,8 @@ A User profile image Component
 <br>
 <br>
 
+
+## Features
 #### initial
 <figure class="avatar bg-gray-300" data-initial="avatar"></figure>
 <br>
@@ -101,10 +103,6 @@ A User profile image Component
 ```
 
 
-## Templates
-Some stylish examples with a bit more efforts
-<br>
-<br>
 
 #### background
 Use `background color` and `color` to change avatar colors

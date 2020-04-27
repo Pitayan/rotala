@@ -18,10 +18,10 @@ export default {
 }
 </script>
 
-<notification :position="position" :container-classes="['bg-white', 'shadow-lg', 'rounded']">
+<notification :position="position" :container-classes="{ [`bg-white shadow-lg rounded`]: true }">
   <notification-item
     :open.sync="open"
-    :container-classes="['bg-white', 'shadow-lg', 'rounded']" />
+    :container-classes="{ [`bg-white shadow-lg rounded`]: true }" />
 </notification>
 
 
@@ -30,11 +30,11 @@ A notifying component to display messages to the corner of page
 <br>
 
 
-## Features
+## Properties
 <table class="ro-table-group ro-table-group-outline">
   <thead>
     <tr>
-      <th>Property</th>
+      <th>Name</th>
       <th>Description</th>
     </tr>
   </thead>
@@ -85,6 +85,7 @@ A notifying component to display messages to the corner of page
 <br>
 
 
+## Features
 #### default
 The default notification container's background color is transparent. You may paint the color yourself.
 
