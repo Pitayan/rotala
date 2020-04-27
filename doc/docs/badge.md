@@ -56,7 +56,7 @@ Informative notification indicator to the corner
     <span class="badge badge-status"></span>
   </figure>
   <figure class="avatar avatar-rounded badge mx-4 bg-gray-300">
-    <img src="/avatar-1.svg" style="background: pink;" alt="Avatar">
+    <img src="/avatar-1.svg" class="bg-pink-300" alt="Avatar">
     <span class="badge badge-status"></span>
   </figure>
 </div>
@@ -106,7 +106,7 @@ Use paddings for inline or small elements to avoid overlapping.
     <span class="badge badge-text">10000</span>
   </figure>
   <figure class="avatar avatar-rounded badge mx-4 bg-gray-300">
-    <img src="/avatar-1.svg" style="background: pink;" alt="Avatar">
+    <img src="/avatar-1.svg" class="bg-pink-300" alt="Avatar">
     <span class="badge badge-text">Hi</span>
   </figure>
 </div>
@@ -190,7 +190,7 @@ Change the badge color with `background color`
     <span class="badge badge-status bg-yellow-500"></span>
   </figure>
   <figure class="avatar avatar-rounded badge mx-4 bg-gray-300">
-    <img src="/avatar-1.svg" style="background: pink;" alt="Avatar">
+    <img src="/avatar-1.svg" class="bg-pink-300" alt="Avatar">
     <span class="badge badge-text bg-green-500">Hi!</span>
   </figure>
 </div>

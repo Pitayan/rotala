@@ -25,8 +25,8 @@ A clickable form controller component.
     </tr>
     <tr>
       <td>
-        .disabled<br>
-        [disabled]
+        <p>.disabled</p>
+        <p>[disabled]</p>
       </td>
       <td>
         disabled button style

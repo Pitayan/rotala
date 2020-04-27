@@ -8,7 +8,7 @@
       that helps develop customized themes with a bottom-up approach.
     </h5>
 
-    <a class="button button-primary text-xl font-medium" href="/docs">
+    <a class="ro-button ro-button-primary text-xl font-medium" href="/docs">
       Get Started
     </a>
   </div>
