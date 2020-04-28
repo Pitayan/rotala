@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="mb-8">How it Works</h3>
+    <h3 class="mb-8 font-extrabold">How it Works</h3>
     <div class="flex flex-wrap sm:flex-no-wrap items-center justify-center">
       <div class="w-64 m-4 p-6 border border-gray-300 rounded">
         <h5 class="p-2">Styles</h5>

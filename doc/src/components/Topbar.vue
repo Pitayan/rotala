@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed bg-white flex items-center top-0 inset-x-0 z-20 h-16 border-b border-gray-300 h-16">
+  <header class="topbar">
     <div class="w-full max-w-screen-2xl relative mx-auto px-6 lg:px-16">
       <div class="flex items-center">
         <g-link class="flex items-center" to="/">
@@ -22,12 +22,12 @@
         <div class="hidden sm:flex items-center justify-between">
           <ul class="ro-tab flex justify-start items-center border-0">
             <li class="ro-tab-item text-gray-700">
-              <a class="mr-0" target="__blank" href="https://github.com/daiyanze/rotala">
+              <a class="mr-0" target="__blank" :href="githubUrl">
                 <SVG-github width="20" height="20" />
               </a>
             </li>
             <li class="ro-tab-item text-gray-700">
-              <a class="mr-0" target="__blank" href="https://twitter.com/rotalacss">
+              <a class="mr-0" target="__blank" :href="twitterUrl">
                 <SVG-twitter width="20" height="20" />
               </a>
             </li>
@@ -67,10 +67,28 @@ export default {
     SVGTwitter,
     SVGLogo,
     TopbarSearch
+  },
+  data () {
+    return {
+      githubUrl: process.env.GRIDSOME_ROTALA_GITHUB,
+      twitterUrl: process.env.GRIDSOME_ROTALA_TWITTER
+    }
   }
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 
+.topbar {
+  @apply fixed;
+  @apply bg-white;
+  @apply flex;
+  @apply items-center;
+  @apply top-0;
+  @apply inset-x-0;
+  @apply z-20;
+  @apply h-16;
+  @apply border-b;
+  @apply border-gray-300;
+}
 </style>

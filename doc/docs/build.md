@@ -10,7 +10,7 @@ section: Getting Started
 export default {
   data () {
     return {
-      githubUrl: process.env.GRIDSOME_ALGOLIA_GITHUB,
+      githubUrl: process.env.GRIDSOME_ROTALA_GITHUB,
       active: 0
     }
   }

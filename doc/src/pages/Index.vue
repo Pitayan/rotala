@@ -1,7 +1,7 @@
 <template>
-  <DefaultLayout>
+  <DefaultLayout class="topbar-home">
     <main class="w-full max-w-screen-2xl mx-auto relative px-6 main">
-      <section class="w-full pt-16 my-16 mx-auto text-center">
+      <section class="w-full mx-auto my-8 text-center">
         <Intro />
       </section>
 
@@ -72,3 +72,13 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss">
+
+.topbar-home {
+  .topbar {
+    @apply relative;
+    @apply border-none;
+  }
+}
+</style>

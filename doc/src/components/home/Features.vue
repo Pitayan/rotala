@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h3 class="mb-4">Features</h3>
+  <div class="features">
+    <h3 class="mb-4 font-extrabold">Features</h3>
     <div class="flex flex-wrap justify-center mx-auto max-w-5xl">
       <div class="p-6 sm:w-1/2 w-full">
         <h5>Lightweight</h5>
