@@ -1,5 +1,6 @@
 <template>
   <form action="https://rotalacss.us19.list-manage.com/subscribe/post?u=0a9fb4638f81bf62999f66e9d&amp;id=947eb37a84"
+    class=" max-w-3xl"
     method="post"
     id="mc-embedded-subscribe-form"
     name="mc-embedded-subscribe-form"
@@ -31,7 +32,7 @@
           </span>
         </label>
         <button
-          class="ro-button ro-button-primary font-medium"
+          class="ro-button ro-button-primary font-extrabold rounded-full"
           :type="value ? 'submit' : 'button'"
           :disabled="!isEmailValid">
           subscribe
