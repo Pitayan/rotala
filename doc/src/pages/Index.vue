@@ -1,7 +1,7 @@
 <template>
   <DefaultLayout class="topbar-home">
     <main class="w-full max-w-screen-2xl mx-auto relative px-6 main">
-      <section class="w-full mx-auto my-8 text-center">
+      <section class="w-full mx-auto">
         <Intro />
       </section>
 
@@ -9,7 +9,7 @@
         <Workflow />
       </section>
 
-      <section class="w-full mx-auto text-center mt-32">
+      <section class="w-full mx-auto mt-32">
         <Features />
       </section>
 
@@ -17,12 +17,12 @@
         <Examples />
       </section>
 
-      <section class="w-full mx-auto text-center my-32 max-w-3xl">
+      <section class="w-full mx-auto text-center my-32">
         <Action />
       </section>
 
       <section class="w-full mx-auto my-32 max-w-3xl">
-        <Newsletter class="p-6 border border-gray-300 rounded" />
+        <Newsletter />
       </section>
     </main>
 
