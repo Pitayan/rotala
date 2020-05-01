@@ -1,6 +1,6 @@
 {
   "name": "rotala-extension-css-icon",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "icon extension for rotala.css framework",
   "main": "dist/icon.thin.css",
   "style": "style/icon.thin.pcss",
@@ -27,7 +27,7 @@
     "url": "https://github.com/daiyanze/rotala/issues"
   },
   "dependencies": {
-    "rotala": "^0.0.3"
+    "rotala": "^0.0.4"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
