@@ -98,11 +98,11 @@
 
       <div class="markdown" v-html="content" v-if="Boolean($route.params.id) && hit"></div>
       <div class="welcome-block text-center mx-auto max-w-2xl px-6 mt-8" v-else>
-        <SVGIcon class="text-primary-600 mx-auto mb-6" width="64" height="64" />
+        <SVGExtension class="mb-12 mx-auto" width="300" />
         <h3>Welcome to the Rotala Extensions Library!</h3>
-        <p class="text-xl mt-12 text-gray-700">Use the search box to pick an extension.
+        <p class="mt-12">Use the search box to pick an extension.
           With Rotala extensions, you can quickly extend the default behaviors and appearances of Rotala components to make everything look better.</p>
-        <p class="mt-8 text-gray-700">Learn how to build your own <g-link class="ro-link ro-link-doc" to="/docs/extension">extension</g-link></p>
+        <p class="mt-8">Learn how to build your own <g-link class="ro-link ro-link-doc" to="/docs/extension">extension</g-link></p>
       </div>
     </div>
   </DefaultLayout>
@@ -112,10 +112,10 @@
 import markdown from '~/utils/markdown'
 import Sidebar from '~/components/Sidebar.vue'
 import algoliasearch from 'algoliasearch/lite'
-import SVGIcon from '~/assets/img/icon-fill-current.svg'
 import SVGGithub from '~/assets/img/github.svg'
 import SVGGitLab from '~/assets/img/gitlab.svg'
 import SVGBitbucket from '~/assets/img/bitbucket.svg'
+import SVGExtension from '~/assets/img/extension.svg'
 
 import {
   createInstantSearch,
@@ -149,10 +149,10 @@ export default {
     AisInfiniteHits,
     AisStateResults,
     AisInstantSearchSsr,
-    SVGIcon,
     SVGGithub,
     SVGGitLab,
-    SVGBitbucket
+    SVGBitbucket,
+    SVGExtension
   },
   data () {
     return {
