@@ -2,7 +2,7 @@
   @apply inline-block;
   @apply relative;
 
-  &-container {
+  & &-container {
     @apply z-50;
     @apply block;
     @apply absolute;
@@ -10,7 +10,7 @@
     @apply opacity-0;
 
     left: 50%;
-    width: 20rem;
+    width: calc(theme('screens.sm') / 2);
     transform: translate(-50%, -50%) scale(0);
   }
 
@@ -21,14 +21,14 @@
     transform: translate(-50%, -108%) scale(1);
   }
 
-  &-top {
+  &&-top-center {
     &.$(popover)-click.open .$(popover)-container,
     &.$(popover)-hover:hover .$(popover)-container {
       transform: translate(-50%, -108%) scale(1);
     }
   }
 
-  &-top-left {
+  &&-top-left {
     .$(popover)-container {
       left: 100%;
     }
@@ -39,7 +39,7 @@
     }
   }
 
-  &-top-right {
+  &&-top-right {
     .$(popover)-container {
       @apply left-0;
     }
@@ -50,7 +50,7 @@
     }
   }
 
-  &-right {
+  &&-right {
     .$(popover)-container {
       left: 100%;
       top: 50%;
@@ -62,7 +62,7 @@
     }
   }
 
-  &-left {
+  &&-left {
     .$(popover)-container {
       @apply left-0;
 
@@ -75,7 +75,7 @@
     }
   }
 
-  &-bottom-right {
+  &&-bottom-right {
     .$(popover)-container {
       @apply left-0;
 
@@ -88,7 +88,7 @@
     }
   }
 
-  &-bottom {
+  &&-bottom-center {
     .$(popover)-container {
       top: 100%;
     }
@@ -99,7 +99,7 @@
     }
   }
 
-  &-bottom-left {
+  &&-bottom-left {
     .$(popover)-container {
       left: 100%;
       top: 100%;
