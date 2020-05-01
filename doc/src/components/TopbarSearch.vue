@@ -1,13 +1,13 @@
 <template>
   <form :id="id" class="header-search">
-    <label class="input-group relative w-full ml-auto md:max-w-sm">
+    <label class="ro-input-group relative w-full ml-auto md:max-w-sm">
       <span class="absolute inset-y-0 left-0 pl-3 flex items-center z-50 text-base">
-        <i class="icon icon-search text-gray-600 mt-px"></i>
+        <i class="ro-icon ro-icon-search text-gray-600 mt-px"></i>
       </span>
       <input
         ref="input"
         :id="`${id}-input`"
-        class="input input-search"
+        class="ro-input ro-input-search"
         placeholder="Search Docs..."
         title="Search Docs"
         type="search"

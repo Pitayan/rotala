@@ -30,5 +30,3 @@ Extend the target component to keep your html template clean and readible
 ```
 
 <input class="input px-2 rounded border border-solid border-gray-300 bg-gray-200 transition-colors duration-150 focus:bg-white" placeholder="type something here" />
-<br>
-<br>

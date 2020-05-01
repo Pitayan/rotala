@@ -9,7 +9,6 @@
   &-item {
     @apply inline-block;
     @apply m-px;
-    @apply cursor-pointer;
 
     a {
       @apply text-center;
@@ -17,6 +16,8 @@
       @apply py-2 px-3;
     }
 
+    &[disabled],
+    &:disabled,
     &.disabled {
       @apply cursor-default;
 

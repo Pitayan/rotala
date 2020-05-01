@@ -1,12 +1,12 @@
 <template>
   <div class="examples__frame">
-    <h3>An easier way to customize themes</h3>
+    <h3 class="font-bold">An easier way to customize themes</h3>
     <p>
       Choose a comfortable way to develop components for your theme
     </p>
     <div class="flex mx-auto justify-center">
-      <ul class="menu flex items-center m-2 text-lg">
-        <li class="menu-item"
+      <ul class="ro-menu flex items-center m-2 text-lg">
+        <li class="ro-menu-item"
           :class="{ active: index == current }"
           v-for="({ node }, index) in $static.examples.edges"
           :key="index">

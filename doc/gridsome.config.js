@@ -57,21 +57,21 @@ module.exports = {
       .use('postcss-loader')
       .tap(() => postcssConfig({ purge: true }))
 
-    // Process styles for theme styles
+    // Process styles for rotala theme default light
     config.module
-      .rule('postcss-loader-all')
-      .test(/^(?!.*trim\.).*\.pcss$/g)
+      .rule('postcss-loader-theme')
+      .test(/^(?!.*rotala\.components\.).*\.pcss$/g)
       .use('postcss-loader')
       .loader('postcss-loader')
-      .tap(() => postcssConfig({ purge: true }))
+      .tap(() => postcssConfig({ purge: true, prefix: 'ro-' }))
 
-    // Process styles for trim styles
+    // Process styles for only rotala components
     config.module
-      .rule('postcss-loader-trim')
-      .test(/trim.pcss/g)
+      .rule('postcss-loader-components')
+      .test(/rotala.components.pcss/g)
       .use('postcss-loader')
       .loader('postcss-loader')
-      .tap(() => postcssConfig({ prefix: 'trim-' }))
+      .tap(() => postcssConfig({}))
 
     // Load SVG images
     const svgRule = config.module.rule('svg')
@@ -84,7 +84,7 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
-        index: ['installation'],
+        index: ['introduction'],
         baseDir: './docs',
         pathPrefix: '/docs',
         typeName: 'Doc',
@@ -97,7 +97,7 @@ module.exports = {
           autolinkHeadings: {
             behavior: 'append',
             linkProperties: {
-              className: ['link link-anchor', 'ml-2']
+              className: ['ro-link ro-link-anchor', 'ml-2']
             },
             content: {
               type: 'text',

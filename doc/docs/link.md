@@ -1,47 +1,70 @@
 ---
 title: Link
-date: 2020-03-23
 link: /docs/link/
 slug: link
-section: Elements
+section: Components
 ---
-Element to help redirect to a different address
 
-## trim.css
-2 features:
-- default browser appearance
-- disabled appearance
+Address redirect component
+<br>
+<br>
 
+
+## Properties
+<table class="ro-table-group ro-table-group-outline">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="align-baseline">
+    <tr>
+      <td>.link</td>
+      <td>
+        Default link style
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>.disabled</p>
+        <p>[disabled]</p>
+      </td>
+      <td>
+        Disabled link style
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+
+
+## Features
 #### default
-<a class="trim-link" href="#">link</a>
+<a class="link" href="#">link</a>
+<br>
+<br>
 
 ```html {}
 <a class="link" href="#">link</a>
 ```
 
 #### disabled
-<a class="trim-link disabled" href="#" disabled>link</a>
+<a class="link disabled" href="#" dsiabled>link</a>
+<br>
+<br>
 
 ```html {}
 <a class="link disabled" href="#" disabled>link</a>
 ```
 
-## theme.css
-2 extra features:
-- hover effect
-- active appearance
 
-#### hover effect
-<a class="link" href="#">hover me</a>
+#### hover underline
+<a class="link border-b-2 border-solid border-transparent hover:border-gray-600" href="#">link</a>
+<br>
+<br>
 
 ```html {}
-<a class="link" href="#">hover me</a>
+<a class="link border-b-2 border-solid border-transparent hover:border-gray-600" href="#">link</a>
 ```
-
-#### active appearance
-<a class="link" href="#">inactive link</a>
-<br>
-<a class="link active" href="#">active link</a>
-
-#### disabled
-<a class="link disabled" href="#" disabled>active link</a>

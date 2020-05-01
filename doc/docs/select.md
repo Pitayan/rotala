@@ -1,82 +1,88 @@
 ---
 title: Select
-date: 2020-03-21
 link: /docs/select/
 slug: select
-section: Elements
+section: Components
 ---
-Select input fields
 
-## trim.css
-2 features:
-- basic simple appearance with no border
-- disabled appearance
+Select input component
+<br>
+<br>
 
+## Properties
+<table class="ro-table-group ro-table-group-outline">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="align-baseline">
+    <tr>
+      <td>.select</td>
+      <td>
+        The select container component
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>.disabled</p>
+        <p>[disabled]</p>
+      </td>
+      <td>
+        The disabled select style
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+
+
+## Features
 #### default
-
-<label class="trim-select-group">
-  <select class="trim-select">
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
-
-<label class="trim-select-group">
-  <select class="trim-select" multiple>
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
-
-```html {}
-<!-- single -->
 <label class="select-group">
   <select class="select">
     <option disabled>Choose one</option>
     <option value="1">1</option>
     <option value="2">2</option>
+    <option value="3">3</option>
   </select>
 </label>
-
-<!-- multiple -->
+<br>
+<br>
 <label class="select-group">
   <select class="select" multiple>
     <option disabled>Choose one</option>
     <option value="1">1</option>
     <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+</label>
+
+```html {}
+<!-- single select -->
+<label class="select-group">
+  <select class="select">
+    <option disabled>Choose one</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+</label>
+
+<!-- multiple select -->
+<label class="select-group">
+  <select class="select" multiple>
+    <option disabled>Choose one</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
   </select>
 </label>
 ```
 
 #### disabled
-<label class="trim-select-group">
-  <select class="trim-select disabled" disabled>
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
-<br>
-<br>
-<label class="trim-select-group">
-  <select class="trim-select disabled" multiple disabled>
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
-
-```html {}
 <label class="select-group">
   <select class="select disabled" disabled>
     <option disabled>Choose one</option>
@@ -93,63 +99,20 @@ Select input fields
     <option value="2">2</option>
   </select>
 </label>
-```
-
-## theme.css
-2 extra features:
-- 2 variants: `outline`&nbsp;`underline`
-- variant disabled appearance
-
-#### variants
-<label class="select-group">
-  <select class="select select-outline w-64 mx-2 my-8">
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
-<label class="select-group">
-  <select class="select select-underline w-64 mx-2 my-8">
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
-<br>
-<label class="select-group">
-  <select class="select select-outline w-64  mx-2 my-8" multiple>
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
-<label class="select-group">
-  <select class="select select-underline w-64  mx-2 my-8" multiple>
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
 
 ```html {}
+<!-- single select disabled -->
 <label class="select-group">
-  <select class="select select-outline">
+  <select class="select disabled" disabled>
     <option disabled>Choose one</option>
     <option value="1">1</option>
     <option value="2">2</option>
   </select>
 </label>
 
+<!-- multiple select disabled -->
 <label class="select-group">
-  <select class="select select-underline" multiple>
+  <select class="select disabled" multiple disabled>
     <option disabled>Choose one</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -157,60 +120,50 @@ Select input fields
 </label>
 ```
 
-#### variant disabled
 
+
+#### underline
 <label class="select-group">
-  <select class="select select-outline disabled w-64 mx-2 my-8" disabled>
+  <select class="select border-b border-solid border-gray-300 focus:border-blue-500 w-48">
     <option disabled>Choose one</option>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
-<label class="select-group">
-  <select class="select select-underline disabled w-64 mx-2 my-8" disabled>
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
   </select>
 </label>
 <br>
-<label class="select-group">
-  <select class="select select-outline disabled w-64  mx-2 my-8" multiple disabled>
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
-<label class="select-group">
-  <select class="select select-underline disabled w-64  mx-2 my-8" multiple disabled>
-    <option disabled>Choose one</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-</label>
+<br>
 
 ```html {}
 <label class="select-group">
-  <select class="select select-outline disabled" disabled>
+  <select class="select border-b border-solid border-gray-300 focus:border-blue-500 w-48">
     <option disabled>Choose one</option>
     <option value="1">1</option>
     <option value="2">2</option>
+    <option value="3">3</option>
   </select>
 </label>
+```
 
+#### outline
 <label class="select-group">
-  <select class="select select-underline disabled" multiple disabled>
+  <select class="select px-2 rounded border border-solid border-gray-300 focus:border-blue-500 w-48">
     <option disabled>Choose one</option>
     <option value="1">1</option>
     <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+</label>
+<br>
+<br>
+
+```html {}
+<label class="select-group">
+  <select class="select px-2 rounded border border-solid border-gray-300 focus:border-blue-500 w-48">
+    <option disabled>Choose one</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
   </select>
 </label>
 ```

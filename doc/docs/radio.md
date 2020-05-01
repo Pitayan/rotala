@@ -1,93 +1,91 @@
 ---
 title: Radio
-date: 2020-03-22
 link: /docs/radio/
 slug: radio
-section: Elements
+section: Components
 ---
 
-## trim.css
-2 features:
-- default browser appearance
-- disabled appearance
+#### Properties
+<table class="ro-table-group ro-table-group-outline">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="align-baseline">
+    <tr>
+      <td>.radio-group</td>
+      <td>
+        The radio group container component
+      </td>
+    </tr>
+    <tr>
+      <td>.radio</td>
+      <td>
+        The radio container component
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
 
+
+## Features
 #### default
-<form class="trim-radio-group">
-  <label class="trim-radio">
+The appearance of the radio varies among browsers
+
+<form class="radio-group">
+  <label class="radio">
     <input type="radio" value="1" name="check_0" checked />
-    Radio 1
+    Check 1
   </label>
-  <label class="trim-radio">
+  <label class="radio">
     <input type="radio" value="2" name="check_0" />
-    Radio 2
+    Check 2
   </label>
 </form>
-
-```html {}
-<label class="trim-radio-group">
-  <input type="radio" value="1" name="check_0" checked />
-  Radio 1
-</label>
-<label class="trim-radio-group">
-  <input type="radio" value="2" name="check_0" />
-  Radio 2
-</label>
-```
-
-#### disabled
-<form class="trim-radio-group">
-  <label class="trim-radio">
-    <input type="radio" value="1" name="check_0" checked disabled />
-    Radio 1
-  </label>
-  <label class="trim-radio">
-    <input type="radio" value="2" name="check_0" disabled />
-    Radio 2
-  </label>
-</form>
+<br>
+<br>
 
 ```html {}
 <form class="radio-group">
   <label class="radio">
-    <input type="radio" value="1" name="check_0" checked disabled />
-    Radio 1
+    <input type="radio" value="1" name="check_0" checked />
+    Check 1
   </label>
   <label class="radio">
-    <input type="radio" value="2" name="check_0" disabled />
-    Radio 2
+    <input type="radio" value="2" name="check_0" />
+    Check 2
   </label>
 </form>
 ```
 
-## theme.css
-3 extra feature:
-- 1 variant theme
-- variants disabled appearance
 
-#### variant
-<form>
-  <label class="radio">
-    <input type="radio" value="1" name="check_0" hidden checked />
-    <i class="radio-icon"></i>
-    Radio 1
-  </label>
-  <label class="radio">
-    <input type="radio" value="2" hidden name="check_0" />
-    <i class="radio-icon"></i>
-    Radio 2
-  </label>
-</form>
-
-#### variant disabled
-<form>
+#### disabled
+<form class="radio-group">
   <label class="radio disabled">
-    <input type="radio" value="1" name="check_0" hidden checked disabled />
-    <i class="radio-icon"></i>
-    Radio 1
+    <input type="radio" value="1" name="check_0" checked disabled />
+    Check 1
   </label>
   <label class="radio disabled">
-    <input type="radio" value="2" name="check_0" hidden disabled />
-    <i class="radio-icon"></i>
-    Radio 2
+    <input type="radio" value="2" name="check_0" disabled />
+    Check 2
   </label>
 </form>
+<br>
+<br>
+
+```html {}
+<form class="radio-group">
+  <label class="radio disabled">
+    <input type="radio" value="1" name="check_0" checked disabled />
+    Check 1
+  </label>
+  <label class="radio disabled">
+    <input type="radio" value="2" name="check_0" disabled />
+    Check 2
+  </label>
+</form>
+```

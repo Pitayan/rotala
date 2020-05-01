@@ -1,0 +1,235 @@
+/* Thin */
+
+/* Prefix */
+
+.thin-icon {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  height: 1em;
+  width: 1em;
+  font-size: normal;
+}
+
+.thin-icon::before,
+  .thin-icon::after {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  content: '';
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.thin-icon-combo {
+  vertical-align: -15%;
+}
+
+.thin-icon-close::before,
+    .thin-icon-close::after {
+  background: currentColor;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.thin-icon-close::before {
+  height: .0625rem;
+  width: 100%;
+}
+
+.thin-icon-close::after {
+  height: 100%;
+  width: .0625rem;
+}
+
+.thin-icon-search::before {
+  border-radius: 9999px;
+  border: .0625rem solid currentColor;
+  border-radius: 50%;
+  height: .75em;
+  left: 5%;
+  top: 5%;
+  transform: translate(0, 0) rotate(45deg);
+  width: .75em;
+}
+
+.thin-icon-search::after {
+  background: currentColor;
+  height: .0625rem;
+  left: 80%;
+  top: 80%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: .4em;
+}
+
+.thin-icon-menu::before {
+  width: 100%;
+  background: currentColor;
+  box-shadow: 0 -.35em, 0 .35em;
+  height: .0625rem;
+}
+
+.thin-icon-check::before {
+  border-style: solid;
+  border-color: currentColor;
+  border-width: 0 0 .0625rem .0625rem;
+  height: .5em;
+  width: .9em;
+  transform: translate(-50%, -90%) rotate(-45deg);
+}
+
+.thin-icon-arrow-down::before, .thin-icon-arrow-left::before, .thin-icon-arrow-right::before, .thin-icon-arrow-up::before, .thin-icon-chevron-up::before, .thin-icon-chevron-right::before, .thin-icon-chevron-down::before, .thin-icon-chevron-left::before {
+  border-color: currentColor;
+  height: .65em;
+  width: .65em;
+  border-style: solid;
+  border-width: .0625rem 0 0 .0625rem;
+}
+
+.thin-icon-arrow-left::after, .thin-icon-arrow-right::after {
+  background: currentColor;
+  height: .0625rem;
+  width: .8em;
+}
+
+.thin-icon-arrow-down::after, .thin-icon-arrow-up::after {
+  background: currentColor;
+  height: .8em;
+  width: .0625rem;
+}
+
+.thin-icon-arrow-left::before {
+  left: 35%;
+}
+
+.thin-icon-arrow-up::before {
+  top: 35%;
+}
+
+.thin-icon-arrow-down::before {
+  top: 65%;
+}
+
+.thin-icon-arrow-right::before {
+  left: 65%;
+}
+
+.thin-icon-arrow-left::before, .thin-icon-chevron-left::before {
+  transform: translate(-25%, -50%) rotate(-45deg);
+}
+
+.thin-icon-arrow-up::before, .thin-icon-chevron-up::before {
+  transform: translate(-50%, -25%) rotate(45deg);
+}
+
+.thin-icon-arrow-right::before, .thin-icon-chevron-right::before {
+  transform: translate(-75%, -50%) rotate(135deg);
+}
+
+.thin-icon-arrow-down::before, .thin-icon-chevron-down::before {
+  transform: translate(-50%, -75%) rotate(225deg);
+}
+
+.thin-icon-edit::before {
+  border: .0625rem solid currentColor;
+  height: .4em;
+  transform: translate(-40%, -60%) rotate(-45deg);
+  width: .85em;
+}
+
+.thin-icon-edit::after {
+  height: 0;
+  width: 0;
+  border: .15em solid currentColor;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  left: 5%;
+  top: 95%;
+  transform: translate(0, -100%);
+}
+
+.thin-icon-mail::before {
+  border-radius: 0.125rem;
+  border: .0625rem solid currentColor;
+  height: .8em;
+  width: 1em;
+}
+
+.thin-icon-mail::after {
+  border: .0625rem solid currentColor;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  height: .5em;
+  transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
+  width: .5em;
+}
+
+.thin-icon-attachment::before,
+    .thin-icon-attachment::after {
+  border-right-width: 0;
+  border: .0625rem solid currentColor;
+  border-right-width: 0;
+  border-radius: 5em 0 0 5em;
+  height: .5em;
+  width: .75em;
+}
+
+.thin-icon-attachment::before {
+  transform: translate(-70%, -45%) rotate(-45deg);
+}
+
+.thin-icon-attachment::after {
+  transform: translate(-30%, -55%) rotate(135deg);
+}
+
+.thin-icon-bookmark::before {
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+  border: .0625rem solid currentColor;
+  border-bottom-color: transparent;
+  height: .9em;
+  width: .8em;
+}
+
+.thin-icon-bookmark::after {
+  border-radius: 0.125rem;
+  border: .0625rem solid currentColor;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  height: .5em;
+  transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
+  width: .5em;
+}
+
+.thin-icon-ellipsis::before, .thin-icon-ellipsis-vertical::before {
+  border-radius: 9999px;
+  height: .1875rem;
+  width: .1875rem;
+  background: currentColor;
+  box-shadow: -.4em 0, .4em 0;
+}
+
+.thin-icon-ellipsis-vertical::before {
+  box-shadow: 0 -.4em, 0 .4em;
+}
+
+.thin-icon-minus::before {
+  width: 100%;
+  background: currentColor;
+  height: .0625rem;
+}
+
+.thin-icon-plus::before {
+  width: 100%;
+  background: currentColor;
+  height: .0625rem;
+}
+
+.thin-icon-plus::after {
+  height: 100%;
+  background: currentColor;
+  width: .0625rem;
+}

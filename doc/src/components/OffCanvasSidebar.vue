@@ -1,22 +1,22 @@
 <template>
   <transition
-    enter-active-class="effect-fade-in"
-    leave-active-class="effect-fade-out"
+    enter-active-class="ro-effect-fade-in"
+    leave-active-class="ro-effect-fade-out"
     @enter="enter">
     <div
       tabindex="-1"
       style="animation-duration: 200ms"
-      class="drawer left"
+      class="ro-drawer left"
       :class="{ open }"
       @click.self="containerOpen = false"
       v-if="open"
       v-retain="containerOpen">
       <transition
-        enter-active-class="effect-slide-left-off-canvas"
-        leave-active-class="effect-slide-right-off-canvas"
+        enter-active-class="ro-effect-slide-left-off-canvas"
+        leave-active-class="ro-effect-slide-right-off-canvas"
         @leave="leave">
         <div
-          class="drawer-container overflow-auto"
+          class="ro-drawer-container overflow-auto"
           style="animation-duration: 200ms"
           v-if="containerOpen">
           <SidebarMenu isOffCanvas />

@@ -1,14 +1,14 @@
 <template>
   <DocLayout :subtitles="subtitles">
     <section class="pt-20 px-6 w-full mx-auto xl:mx-0">
-      <ul class="breadcrumb text-sm my-4">
-        <li class="breadcrumb-item">
-          <g-link class="link link-doc text-primary-600" to="/">Home</g-link>
+      <ul class="ro-breadcrumb text-sm my-4">
+        <li class="ro-breadcrumb-item">
+          <g-link class="ro-link ro-link-doc text-primary-600" to="/">Home</g-link>
         </li>
-        <li class="breadcrumb-item">
-          <g-link class="link link-doc text-primary-600" to="/docs/">Docs</g-link>
+        <li class="ro-breadcrumb-item">
+          <g-link class="ro-link ro-link-doc text-primary-600" to="/docs/">Docs</g-link>
         </li>
-        <li class="breadcrumb-item">
+        <li class="ro-breadcrumb-item">
           <span>{{ $page.doc.title }}</span>
         </li>
       </ul>
@@ -23,7 +23,6 @@ query Doc ($path: String!) {
   doc: doc (path: $path) {
     title
     path
-    date (format: "D. MMMM YYYY")
     headings (depth: h1) {
       value
     }
@@ -92,24 +91,23 @@ export default {
 }
 </script>
 
-
-<style scoped>
+<style lang="postcss" scoped>
 
 /deep/ > h2,
 /deep/ > h3,
 /deep/ > h4,
 /deep/ > h5,
 /deep/ > h6 {
-  padding-top: 100px;
-  margin-top: -80px;
+  @apply pt-24;
+  @apply -mt-24;
 }
 
 /deep/ > p > img {
-  max-width: 100%;
+  @apply max-w-full;
 }
 
 .markdown {
-  padding-bottom: 50vh;
-  min-height: calc(90vh);
+  padding-bottom: calc(100vh - 13rem + 2px);
+  min-height: calc(100vh - 13rem + 2px);
 }
 </style>

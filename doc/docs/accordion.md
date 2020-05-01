@@ -1,199 +1,185 @@
 ---
 title: Accordion
-date: 2020-01-02
 link: /docs/accordion/
 slug: accordion
 section: Components
 ---
+
+<script>
+export default {
+  data () {
+    return {
+      open: true
+    }
+  }
+}
+</script>
+
 Accordion is used for toggling visiblity of content.
-
-## trim.css
-Rudimentary collapse behaviour without any transition effect
 <br>
-<form class="flex flex-wrap">
-  <div class="w-1/2">
-    <div class="trim-accordion mx-4 w-64">
-      <input class="trim-accordion-indicator" id="accordion-0" type="checkbox" name="accordion-checkbox-0" hidden checked />
-      <label class="trim-accordion-header" for="accordion-0">Elements (with checkbox)</label>
-      <div class="trim-accordion-body">
-        <ul class="trim-menu">
-          <li class="trim-menu-item">
-            <a href="#accordions">Element 1</a>
-          </li>
-          <li class="trim-menu-item">
-            <a href="#accordions">Element 2</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="trim-accordion mx-4 w-64">
-      <input class="trim-accordion-indicator" id="accordion-1" type="checkbox" name="accordion-checkbox-0" hidden />
-      <label class="trim-accordion-header" for="accordion-1">
-        Component
-      </label>
-      <div class="trim-accordion-body">
-        <ul class="trim-menu">
-          <li class="trim-menu-item">
-            <a href="#accordions">Component 1</a>
-          </li>
-          <li class="trim-menu-item">
-            <a href="#accordions">Component 2</a>
-          </li>
-        </ul>
-      </div>
+<br>
+
+## Properties
+<table class="ro-table-group ro-table-group-outline">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="align-baseline">
+    <tr>
+      <td>.accordion</td>
+      <td>
+        The accordion component container
+      </td>
+    </tr>
+    <tr>
+      <td>.accordion-indicator</td>
+      <td>
+        Used with an input tag to indicate if the accordion is open
+      </td>
+    </tr>
+    <tr>
+      <td>.accordion-header</td>
+      <td>
+        The title of the accordion component
+      </td>
+    </tr>
+    <tr>
+      <td>.accordion-body</td>
+      <td>
+        The content of the accordion component
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>.open</p>
+        <p>[open]</p>
+      </td>
+      <td>
+        The switch to control accrodion open/close
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+
+## Features
+#### with checkbox input
+<div>
+  <div class="accordion mx-4 w-64">
+    <input class="accordion-indicator" id="accordion-0" type="checkbox" name="accordion-checkbox-0" hidden checked />
+    <label class="accordion-header" for="accordion-0">
+      One (with checkbox)
+    </label>
+    <div class="accordion-body">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="#accordions">One 1</a>
+        </li>
+        <li class="menu-item">
+          <a href="#accordions">One 2</a>
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="w-1/2">
-    <div class="trim-accordion mx-4 w-64">
-      <input class="trim-accordion-indicator" id="accordion-2" type="radio" name="accordion-radio-0" hidden checked>
-      <label class="trim-accordion-header" for="accordion-2">Elements (with radio)</label>
-      <div class="trim-accordion-body">
-        <ul class="trim-menu">
-          <li class="trim-menu-item">
-            <a href="#accordions">Element 1</a>
-          </li>
-          <li class="trim-menu-item">
-            <a href="#accordions">Element 2</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="trim-accordion mx-4 w-64">
-      <input class="trim-accordion-indicator" id="accordion-3" type="radio" name="accordion-radio-0" hidden>
-      <label class="trim-accordion-header" for="accordion-3">
-        Component
-      </label>
-      <div class="trim-accordion-body">
-        <ul class="trim-menu">
-          <li class="trim-menu-item">
-            <a href="#accordions">Component 1</a>
-          </li>
-          <li class="trim-menu-item">
-            <a href="#accordions">Component 2</a>
-          </li>
-        </ul>
-      </div>
+  <div class="accordion mx-4 w-64">
+    <input class="accordion-indicator" id="accordion-1" type="checkbox" name="accordion-checkbox-0" hidden />
+    <label class="accordion-header" for="accordion-1">
+      Two
+    </label>
+    <div class="accordion-body">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="#accordions">Two 1</a>
+        </li>
+        <li class="menu-item">
+          <a href="#accordions">Two 2</a>
+        </li>
+      </ul>
     </div>
   </div>
-</form>
-<br><br>
+</div>
+<br>
+<br>
+
+#### with radio input
+<div>
+  <div class="accordion mx-4 w-64">
+    <input class="accordion-indicator" id="accordion-2" type="radio" name="accordion-radio-0" hidden checked>
+    <label class="accordion-header" for="accordion-2">
+      One (with radio)
+    </label>
+    <div class="accordion-body">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="#accordions">One 1</a>
+        </li>
+        <li class="menu-item">
+          <a href="#accordions">One 2</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="accordion mx-4 w-64">
+    <input class="accordion-indicator" id="accordion-3" type="radio" name="accordion-radio-0" hidden>
+    <label class="accordion-header" for="accordion-3">
+      Two
+    </label>
+    <div class="accordion-body">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="#accordions">Two 1</a>
+        </li>
+        <li class="menu-item">
+          <a href="#accordions">Two 2</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br>
+<br>
 
 ```html {}
-<div class="accordion">
-  <input class="accordion-indicator" type="checkbox" hidden checked />
-  <label class="accordion-header" for="accordion-1">Elements</label>
-  <div class="accordion-body">
-    <!-- content -->
+<div>
+  <div class="accordion">
+    <input class="accordion-indicator" id="accordion-0" type="checkbox" name="accordion-checkbox-0" hidden checked />
+    <label class="accordion-header" for="accordion-0">
+      One
+    </label>
+    <div class="accordion-body">
+      <!-- content -->
+    </div>
+  </div>
+  <div class="accordion">
+    <input class="accordion-indicator" id="accordion-1" type="checkbox" name="accordion-checkbox-0" hidden />
+    <label class="accordion-header" for="accordion-1">
+      Two
+    </label>
+    <div class="accordion-body">
+      <!-- content -->
+    </div>
   </div>
 </div>
 ```
 
-## theme.css
-With transition effect on both container element and icon indicator
-<br>
-<form class="flex flex-wrap">
-  <div class="w-1/2">
-    <div class="accordion mx-4 w-64">
-      <input class="accordion-indicator" id="accordion-4" type="checkbox" name="accordion-checkbox-1" hidden="" checked>
-      <label class="accordion-header" for="accordion-4">
-        <i class="icon icon-combo accordion-icon icon-chevron-right mr-px"></i>
-        Components (with checkbox)
-      </label>
-      <div class="accordion-body">
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="#accordions">Component 1</a>
-          </li>
-          <li class="menu-item">
-            <a href="#accordions">Component 2</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="accordion mx-4 w-64">
-      <input class="accordion-indicator" id="accordion-5" type="checkbox" name="accordion-checkbox-1" hidden="">
-      <label class="accordion-header" for="accordion-5">
-        <i class="icon icon-combo accordion-icon icon-chevron-right mr-px"></i>
-        Elements
-      </label>
-      <div class="accordion-body">
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="#accordions">Element 1</a>
-          </li>
-          <li class="menu-item">
-            <a href="#accordions">Element 2</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="w-1/2">
-    <div class="accordion mx-4 w-64">
-      <input class="accordion-indicator" id="accordion-6" type="radio" name="accordion-radio-2" hidden="" checked>
-      <label class="accordion-header" for="accordion-6">
-        <i class="icon icon-combo accordion-icon icon-chevron-right mr-px"></i>
-        Elements (with radio)
-      </label>
-      <div class="accordion-body">
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="#accordions">Element 1</a>
-          </li>
-          <li class="menu-item">
-            <a href="#accordions">Element 2</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="accordion mx-4 w-64">
-      <input class="accordion-indicator" id="accordion-7" type="radio" name="accordion-radio-2" hidden="">
-      <label class="accordion-header" for="accordion-7">
-        <i class="icon icon-combo accordion-icon icon-chevron-right mr-px"></i>
-        Components
-      </label>
-      <div class="accordion-body">
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="#accordions">Component 1</a>
-          </li>
-          <li class="menu-item">
-            <a href="#accordions">Component 2</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</form>
+#### toggle with `.open`{class="text-xl"}
+Use class `.open` to toggle the content instead of an input tag
 
-```html {}
-<div class="accordion">
-  <input class="accordion-indicator" type="checkbox" hidden checked />
-  <label class="accordion-header" for="accordion-1">
-    <i class="icon icon-combo accordion-icon icon-chevron-right mr-px"></i>
-    Elements
-  </label>
-  <div class="accordion-body">
-    <!-- content -->
-  </div>
-</div>
-```
-
-## Toggle by class
-Use `open` to toggle the content
-
-<div class="accordion open w-64">
-  <label class="accordion-header">
-    <i class="icon icon-combo accordion-icon icon-chevron-right mr-px"></i>
-    Elements
+<div class="accordion w-64" :class="{ open }">
+  <label class="accordion-header" @click="open = !open">
+    One (click to toggle)
   </label>
   <div class="accordion-body">
     <ul class="menu">
       <li class="menu-item">
-        <a href="#accordions">Element 1</a>
+        <a href="#accordions">One 1</a>
       </li>
       <li class="menu-item">
-        <a href="#accordions">Element 2</a>
+        <a href="#accordions">One 2</a>
       </li>
     </ul>
   </div>
@@ -201,9 +187,8 @@ Use `open` to toggle the content
 
 ```html {}
 <div class="accordion open">
-  <label class="accordion-header" for="accordion-1">
-    <i class="icon icon-combo accordion-icon icon-chevron-right mr-px"></i>
-    Elements
+  <label class="accordion-header">
+    One
   </label>
   <div class="accordion-body">
     <!-- content -->
@@ -211,21 +196,20 @@ Use `open` to toggle the content
 </div>
 ```
 
-## Semantic Tag
-If `IE11` is not your targeted browser. You may also use the semantic HTML tags `details`&nbsp;`summary` to implement a "collapsable" component. In this way, the `input` tag is no longer needed for triggering hide/show.
+#### semantic tag
+If `IE11` is not your targeted browser. You may also use the semantic HTML tags `details`&nbsp;`summary` to implement a "collapsable" component.
 
 <details class="accordion">
   <summary class="accordion-header">
-    <i class="icon icon-combo accordion-indicator icon-chevron-right mr-px"></i>
-    Elements
+    One
   </summary>
   <div class="accordion-body">
     <ul class="menu">
       <li class="menu-item">
-        <a href="#accordions">Element 1</a>
+        <a href="#accordions">One 1</a>
       </li>
       <li class="menu-item">
-        <a href="#accordions">Element 2</a>
+        <a href="#accordions">One 2</a>
       </li>
     </ul>
   </div>
@@ -234,11 +218,24 @@ If `IE11` is not your targeted browser. You may also use the semantic HTML tags 
 ```html {}
 <details class="accordion" open>
   <summary class="accordion-header">
-    <i class="icon icon-combo icon-chevron-right mr-px"></i>
-    Elements
+    One
   </summary>
   <div class="accordion-body">
     <!-- content -->
   </div>
 </details>
 ```
+
+
+
+<div class="accordion w-64">
+  <input class="accordion-indicator" id="accordion-5" type="checkbox" name="accordion-checkbox-0" hidden checked />
+  <label class="accordion-header" for="accordion-5">
+    One (click to toggle)
+  </label>
+  <div class="accordion-body">
+    <div>
+      hello
+    </div>
+  </div>
+</div>
