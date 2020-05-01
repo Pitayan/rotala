@@ -25,7 +25,7 @@
       <ul class="pl-8 mb-8">
         <b>{{ menu.section }}</b>
         <template v-for="{ node } in $static.docs.edges">
-          <li class="list-none relative" v-if="node.section == menu.section" :key="node.link">
+          <li class="list-none relative text-sm" v-if="node.section == menu.section" :key="node.link">
             <router-link class="block py-px w-full bullet-dot"
               :class="{ active: node.link == $route.path }" :to="node.link">
               {{ node.title }}

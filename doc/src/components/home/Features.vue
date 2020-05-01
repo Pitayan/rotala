@@ -1,9 +1,9 @@
 <template>
   <div class="features xl:text-left">
     <div class="flex flex-wrap items-center my-20 w-full justify-between">
-      <SVGLight class="my-8 mx-auto" width="400" />
-      <div class="max-w-3xl mx-auto">
-        <h3 class="mb-4 font-extrabold">Super Lightweight</h3>
+      <SVGLight class="my-8 mx-auto" width="600" />
+      <div class="max-w-2xl mx-auto">
+        <h3 class="mb-4 font-bold">Super Lightweight</h3>
         <p>
           By providing only the rudimentry appearance of every single component, the
           core library package results in a rather small size (~10kb gziped of CDN resource)
@@ -11,9 +11,9 @@
       </div>
     </div>
     <div class="flex flex-wrap items-center my-20 w-full justify-between">
-      <SVGExtend class="my-8 mx-auto" width="400" />
-      <div class="max-w-3xl mx-auto">
-        <h3 class="mb-4 font-extrabold">Customizable & Extendable</h3>
+      <SVGExtend class="my-8 mx-auto" width="600" />
+      <div class="max-w-2xl mx-auto">
+        <h3 class="mb-4 font-bold">Customizable & Extendable</h3>
         <p>
           The <b>Rotala</b> is built atop of <i>Tailwindcss</i> and <i>Postcss</i>.
           With the plugins and community support, you could even opt for a deeper customization to meet various design demands.
@@ -21,9 +21,9 @@
       </div>
     </div>
     <div class="flex flex-wrap items-center my-20 w-full justify-between">
-      <SVGSimple class="my-8 mx-auto" width="400" />
-      <div class="max-w-3xl mx-auto">
-        <h3 class="mb-4 font-extrabold">As Simple As Possible</h3>
+      <SVGSimple class="my-8 mx-auto" width="600" />
+      <div class="max-w-2xl mx-auto">
+        <h3 class="mb-4 font-bold">As Simple As Possible</h3>
         <p>
           No Js, only the modern CSS. The complete code base has nothing but clean css styles.
           This will help reduce the styling complexity of your project.

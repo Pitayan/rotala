@@ -10,11 +10,11 @@
       </p>
       <pre class="language-bash w-full mx-auto max-w-xl"><code class="language-bash"># Quick start
 npm install rotala</code></pre>
-      <a class="ro-button ro-button-primary px-8 py-2 rounded-full text-lg font-extrabold" href="/docs">
+      <a class="ro-button ro-button-primary px-8 py-2 rounded-full text-lg font-bold" href="/docs">
         Get Started
       </a>
     </div>
-    <SVGHome class="my-8 lg:my-auto" width="700" />
+    <SVGHome class="my-8 lg:my-auto lg:mx-0 mx-auto" width="700" />
   </div>
 </template>
 
@@ -31,7 +31,7 @@ export default {
 <style lang="postcss" scoped>
 .intro {
   @apply flex flex-wrap;
-  @apply justify-around;
+  @apply justify-between;
   @apply items-center;
   @apply my-8;
   @apply text-center;
