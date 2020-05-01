@@ -1,66 +1,61 @@
 ---
 title: Divider
-date: 2020-03-24
 link: /docs/divider/
 slug: divider
-section: Elements
+section: Components
 ---
 
 A divider line to seperate contents
+<br>
+<br>
 
-## trim.css
-1 feature:
-- basic appearance
 
+## Properties
+<table class="ro-table-group ro-table-group-outline">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="align-baseline">
+    <tr>
+      <td>.divider</td>
+      <td>
+        The horizontal divider line
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+
+## Features
 #### default
-<div class="trim-hr"></div>
+<br>
+<br>
+<div class="divider"></div>
+<br>
 <br>
 
 ```html {}
-<div class="hr"></div>
+<div class="divider"></div>
 ```
 
-## theme.css
-2 feature:
-- vertical
-- divider with text
 
-#### vertical
-<div class="flex h-32">
-  <button class="button">Button left</button>
-  <div class="hr hr-vertical"></div>
-  <button class="button">Button right</button>
-</div>
+
+#### color
+Use `border color` to change its color
+
+<div class="divider my-8 border-red-500"></div>
+<div class="divider my-8 border-green-500"></div>
+<div class="divider my-8 border-indigo-500"></div>
+<div class="divider my-8 border-orange-500"></div>
 
 ```html {}
-<div class="flex">
-  <button class="button">Button left</button>
-  <div class="hr hr-vertical"></div>
-  <button class="button">Button right</button>
-</div>
+<div class="divider my-8 border-red-500"></div>
+<div class="divider my-8 border-green-500"></div>
+<div class="divider my-8 border-indigo-500"></div>
+<div class="divider my-8 border-orange-500"></div>
 ```
 
-#### with text
-<div class="hr text-left" data-content="text left"></div>
-<div class="hr" data-content="text center"></div>
-<div class="hr text-right" data-content="text right"></div>
-
-```html {}
-<div class="hr text-left" data-content="text left"></div>
-<div class="hr" data-content="text center"></div>
-<div class="hr text-right" data-content="text right"></div>
-```
-
-<div class="inline-flex h-32">
-  <button class="button">Button left</button>
-  <div class="hr hr-vertical" data-content="OR"></div>
-  <button class="button">Button right</button>
-</div>
-
-```html {}
-<div class="flex">
-  <button class="button">Button left</button>
-  <div class="hr hr-vertical" data-content="OR"></div>
-  <button class="button">Button right</button>
-</div>
-```

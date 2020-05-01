@@ -1,25 +1,39 @@
 <template>
-  <div>
-    <h1 class="font-extrabold sm:text-5xl text-4xl my-16">
-      Into the crowd of designs with less efforts
-    </h1>
-    <h5 class="font-normal max-w-2xl mx-auto my-16">
-      <b>Rotala.css</b> is a light-weight and responsive open source CSS framework
-      that helps develop customized themes with a bottom-up approach.
-    </h5>
-
-    <a class="button button-primary text-xl font-medium" href="/docs">
-      Get Started
-    </a>
+  <div class="intro lg:flex-no-wrap lg:px-10 lg:my-12">
+    <div class="max-w-4xl lg:max-w-lg lg:text-left">
+      <h1 class="font-black sm:text-5xl text-3xl">
+        Make Your Own Customized Theme Effortlessly
+      </h1>
+      <p class="mb-8 mx-auto">
+        <b>Rotala.css</b> is a light-weight and responsive open source CSS framework
+        to help develop customized themes.
+      </p>
+      <pre class="language-bash w-full mx-auto max-w-xl"><code class="language-bash"># Quick start
+npm install rotala</code></pre>
+      <a class="ro-button ro-button-primary px-8 py-2 rounded-full text-lg font-bold" href="/docs">
+        Get Started
+      </a>
+    </div>
+    <SVGHome class="my-8 lg:my-auto lg:mx-0 mx-auto" width="700" />
   </div>
 </template>
 
 <script>
-export default {
+import SVGHome from '~/assets/img/home.svg'
 
+export default {
+  components: {
+    SVGHome
+  }
 }
 </script>
 
-<style>
-
+<style lang="postcss" scoped>
+.intro {
+  @apply flex flex-wrap;
+  @apply justify-between;
+  @apply items-center;
+  @apply my-8;
+  @apply text-center;
+}
 </style>

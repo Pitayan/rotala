@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed bg-white flex items-center top-0 inset-x-0 z-20 h-16 border-b border-gray-300 h-16">
+  <header class="topbar">
     <div class="w-full max-w-screen-2xl relative mx-auto px-6 lg:px-16">
       <div class="flex items-center">
         <g-link class="flex items-center" to="/">
@@ -7,9 +7,9 @@
           <b class="ml-2 text-xl hidden md:block">Rotala.css</b>
         </g-link>
 
-        <ul class="flex-no-wrap tab hidden lg:flex border-0 mx-4">
-          <li class="tab-item mx-3" v-for="{ node: parts } in $static.part.edges" :key="parts.part">
-            <g-link class="px-0 py-6 -my-px mr-0 font-semibold" :to="parts.link">
+        <ul class="flex-no-wrap ro-tab hidden lg:flex border-0 mx-4">
+          <li class="ro-tab-item mx-3" v-for="{ node: parts } in $static.part.edges" :key="parts.part">
+            <g-link class="px-0 py-6 -my-1 mr-0 font-bold border-b-2" :to="parts.link">
               {{ parts.part }}
             </g-link>
           </li>
@@ -20,22 +20,22 @@
         </div>
 
         <div class="hidden sm:flex items-center justify-between">
-          <ul class="tab flex justify-start items-center border-0">
-            <li class="tab-item text-gray-700">
-              <a class="mr-0" target="__blank" href="https://github.com/daiyanze/rotala">
+          <ul class="ro-tab flex justify-start items-center border-0">
+            <li class="ro-tab-item text-gray-700">
+              <a class="mr-0" target="__blank" :href="githubUrl">
                 <SVG-github width="20" height="20" />
               </a>
             </li>
-            <li class="tab-item text-gray-700">
-              <a class="mr-0" target="__blank" href="https://twitter.com/rotalacss">
+            <li class="ro-tab-item text-gray-700">
+              <a class="mr-0" target="__blank" :href="twitterUrl">
                 <SVG-twitter width="20" height="20" />
               </a>
             </li>
           </ul>
         </div>
 
-        <a href="javascript:void(0)" @click="$root.$emit('sidebar')" class="link ml-2 lg:hidden" aria-label="Toggle the sidebar">
-          <i class="icon icon-menu"></i>
+        <a href="javascript:void(0)" @click="$root.$emit('sidebar')" class="ro-link ml-2 lg:hidden" aria-label="Toggle the sidebar">
+          <i class="ro-icon ro-icon-menu"></i>
         </a>
       </div>
     </div>
@@ -67,10 +67,28 @@ export default {
     SVGTwitter,
     SVGLogo,
     TopbarSearch
+  },
+  data () {
+    return {
+      githubUrl: process.env.GRIDSOME_ROTALA_GITHUB,
+      twitterUrl: process.env.GRIDSOME_ROTALA_TWITTER
+    }
   }
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 
+.topbar {
+  @apply fixed;
+  @apply bg-white;
+  @apply flex;
+  @apply items-center;
+  @apply top-0;
+  @apply inset-x-0;
+  @apply z-20;
+  @apply h-16;
+  @apply border-b;
+  @apply border-gray-300;
+}
 </style>

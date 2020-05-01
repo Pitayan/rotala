@@ -1,0 +1,38 @@
+.$(badge) {
+  @apply relative;
+  @apply whitespace-no-wrap;
+
+  &-status,
+  &-text {
+    @apply absolute;
+    @apply inline-block;
+    @apply bg-gray-500;
+    @apply text-white;
+    @apply rounded-full;
+    @apply top-0;
+    @apply right-0;
+
+    background-clip: padding-box;
+    box-shadow: 0 0 0 .125rem white;
+    transform: translate(50%, -50%);
+  }
+
+  &-status {
+    @apply p-0;
+
+    height: 6px;
+    min-width: 6px;
+    width: 6px;
+  }
+
+  &-text {
+    @apply text-xs;
+    @apply leading-none;
+    @apply text-center;
+    @apply whitespace-no-wrap;
+    @apply h-4;
+
+    min-width: 1rem;
+    padding: .125rem .25rem;
+  }
+}

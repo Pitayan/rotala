@@ -1,5 +1,5 @@
 <h1 style="text-align: center;">Rotala.css</h1>
-A customizable css framework
+A customization focused css framework
 
 ## status
 Everything is under prototyping...

@@ -1,5 +1,5 @@
 # Rotala
-A customization focused CSS framework built with tailwindcss.
+A customization focused ui library built with tailwindcss.
 
 ## TODO
 - [] CI: Travis/Circle

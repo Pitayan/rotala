@@ -1,93 +1,96 @@
 ---
 title: Checkbox
-date: 2020-03-22
 link: /docs/checkbox/
 slug: checkbox
-section: Elements
+section: Components
 ---
 
-## trim.css
-2 features:
-- default browser appearance
-- disabled appearance
+A toggle switch form controller
+<br>
+<br>
 
+## Properties
+<table class="ro-table-group ro-table-group-outline">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody class="align-baseline">
+    <tr>
+      <td>.check-group</td>
+      <td>
+        The check group container component
+      </td>
+    </tr>
+    <tr>
+      <td>.checkbox</td>
+      <td>
+        The checkbox container component
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+
+
+## Features
 #### default
-<form class="trim-check-group">
-  <label class="trim-checkbox">
+The appearance of the checkbox varies among browsers
+
+<form class="check-group">
+  <label class="checkbox">
     <input type="checkbox" value="1" name="check_0" checked />
     Check 1
   </label>
-  <label class="trim-checkbox">
+  <label class="checkbox">
     <input type="checkbox" value="2" name="check_0" />
     Check 2
   </label>
 </form>
-
-```html {}
-<label class="trim-check-group">
-  <input type="checkbox" value="1" name="check_0" checked />
-  Check 1
-</label>
-<label class="trim-check-group">
-  <input type="checkbox" value="2" name="check_0" />
-  Check 2
-</label>
-```
-
-#### disabled
-<form class="trim-check-group">
-  <label class="trim-checkbox">
-    <input type="checkbox" value="1" name="check_0" checked disabled />
-    Check 1
-  </label>
-  <label class="trim-checkbox">
-    <input type="checkbox" value="2" name="check_0" disabled />
-    Check 2
-  </label>
-</form>
+<br>
+<br>
 
 ```html {}
 <form class="check-group">
   <label class="checkbox">
-    <input type="checkbox" value="1" name="check_0" checked disabled />
+    <input type="checkbox" value="1" name="check_0" checked />
     Check 1
   </label>
   <label class="checkbox">
+    <input type="checkbox" value="2" name="check_0" />
+    Check 2
+  </label>
+</form>
+```
+
+
+#### disabled
+<form class="check-group">
+  <label class="checkbox disabled">
+    <input type="checkbox" value="1" name="check_0" checked disabled />
+    Check 1
+  </label>
+  <label class="checkbox disabled">
+    <input type="checkbox" value="2" name="check_0" disabled />
+    Check 2
+  </label>
+</form>
+<br>
+<br>
+
+```html {}
+<form class="check-group">
+  <label class="checkbox disabled">
+    <input type="checkbox" value="1" name="check_0" checked disabled />
+    Check 1
+  </label>
+  <label class="checkbox disabled">
     <input type="checkbox" value="2" name="check_0" disabled />
     Check 2
   </label>
 </form>
 ```
 
-## theme.css
-3 extra feature:
-- 1 variant theme
-- variants disabled appearance
-
-#### variant
-<form>
-  <label class="checkbox">
-    <input type="checkbox" value="1" name="check_0" hidden checked />
-    <i class="checkbox-icon"></i>
-    Check 1
-  </label>
-  <label class="checkbox">
-    <input type="checkbox" value="2" hidden name="check_0" />
-    <i class="checkbox-icon"></i>
-    Check 2
-  </label>
-</form>
-
-#### variant disabled
-<form>
-  <label class="checkbox disabled">
-    <input type="checkbox" value="1" name="check_0" hidden checked disabled />
-    <i class="checkbox-icon"></i>
-    Check 1
-  </label>
-  <label class="checkbox disabled">
-    <input type="checkbox" value="2" name="check_0" hidden disabled />
-    <i class="checkbox-icon"></i>
-    Check 2
-  </label>
-</form>
