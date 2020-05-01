@@ -78,7 +78,7 @@ export default {
 .topbar-home {
   .topbar {
     @apply relative;
-    @apply border-none;
+    @apply border-transparent;
   }
 }
 </style>

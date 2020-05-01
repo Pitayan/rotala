@@ -9,7 +9,7 @@
     <div class="text-center" id="mc_embed_signup_scroll">
       <SVGMail class="mx-auto mb-4 w-full" />
 
-      <h3 class="font-extrabold">
+      <h3 class="font-bold">
         The Rotala Newsletter<br>
       </h3>
       <p>Subscribe to our email and get updates right in your inbox!</p>
@@ -27,7 +27,7 @@
             @input="checkEmailFormat($event.target.value)"
             placeholder="your@email.com" />
           <button
-            class="absolute inset-y-0 right-0 ro-button ro-button-primary font-extrabold rounded-full"
+            class="absolute inset-y-0 right-0 ro-button ro-button-primary font-bold rounded-full"
             :type="value ? 'submit' : 'button'"
             :disabled="!isEmailValid">
             subscribe

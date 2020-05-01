@@ -1,6 +1,6 @@
 <template>
   <div class="examples__frame">
-    <h3 class="font-extrabold">An easier way to customize themes</h3>
+    <h3 class="font-bold">An easier way to customize themes</h3>
     <p>
       Choose a comfortable way to develop components for your theme
     </p>

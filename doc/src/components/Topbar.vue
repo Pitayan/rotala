@@ -9,7 +9,7 @@
 
         <ul class="flex-no-wrap ro-tab hidden lg:flex border-0 mx-4">
           <li class="ro-tab-item mx-3" v-for="{ node: parts } in $static.part.edges" :key="parts.part">
-            <g-link class="px-0 py-6 -my-1 mr-0 font-extrabold border-b-2" :to="parts.link">
+            <g-link class="px-0 py-6 -my-1 mr-0 font-bold border-b-2" :to="parts.link">
               {{ parts.part }}
             </g-link>
           </li>
