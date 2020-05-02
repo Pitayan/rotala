@@ -1,9 +1,9 @@
 <template>
   <div class="examples__frame">
-    <h3 class="font-bold">An easier way to customize themes</h3>
-    <p>
-      Choose a comfortable way to develop components for your theme
-    </p>
+    <h1>An easier way to customize themes</h1>
+
+    <p>Choose a comfortable way to develop components for your theme</p>
+
     <div class="flex mx-auto justify-center">
       <ul class="ro-menu flex items-center m-2 text-lg">
         <li class="ro-menu-item"
@@ -16,6 +16,7 @@
         </li>
       </ul>
     </div>
+
     <transition name="slide">
       <template v-for="({ node }, index) in $static.examples.edges">
         <div class="examples__code"

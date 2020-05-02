@@ -5,10 +5,6 @@
         <Intro />
       </section>
 
-      <section class="w-full mx-auto text-center mt-32">
-        <Workflow />
-      </section>
-
       <section class="w-full mx-auto mt-32">
         <Features />
       </section>
