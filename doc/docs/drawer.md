@@ -11,7 +11,7 @@ import drawer from '~/components/docs/drawer'
 export default {
   data () {
     return {
-      position: 'right',
+      position: 'drawer-right',
       open: false,
       background: "rgba(0,0,0,.25)",
       size: '320'
@@ -25,10 +25,13 @@ export default {
   :open.sync="open"
   :drawer-classes="{ open, [position]: true }"
   :container-style="{
-    width: position == 'right' || position == 'left' ? `${size}px` : undefined,
-    height: position == 'top' || position == 'bottom' ? `${size}px` : undefined
+    width: position == 'drawer-right' || position == 'drawer-left' ? `${size}px` : undefined,
+    height: position == 'drawer-top' || position == 'drawer-bottom' ? `${size}px` : undefined
   }">
-  <div class="h-screen bg-white">
+  <div class="bg-white" :class="{
+    'bg-white h-full': true,
+    'h-screen': position == 'drawer-right' || position == 'drawer-left'
+  }">
     {{ position }}
   </div>
 </drawer>
@@ -62,10 +65,10 @@ An overlayer appearing to an edge of the page
     </tr>
     <tr>
       <td>
-        <p>.top</p>
-        <p>.bottom</p>
-        <p>.left</p>
-        <p>.right</p>
+        <p>drawer-top</p>
+        <p>drawer-bottom</p>
+        <p>drawer-left</p>
+        <p>drawer-right</p>
       </td>
       <td>
         The position of drawer to appear on the page.
@@ -100,19 +103,19 @@ The default drawer container's background color is transparent. You may paint th
 
 <form class="radio-group flex flex-wrap">
   <label class="radio">
-    <input type="radio" value="right" v-model="position" name="position" checked />
+    <input type="radio" value="drawer-right" v-model="position" name="position" checked />
     right
   </label>
   <label class="radio">
-    <input type="radio" value="left" v-model="position" name="position" />
+    <input type="radio" value="drawer-left" v-model="position" name="position" />
     left
   </label>
   <label class="radio">
-    <input type="radio" value="top" v-model="position" name="position" />
+    <input type="radio" value="drawer-top" v-model="position" name="position" />
     top
   </label>
   <label class="radio">
-    <input type="radio" value="bottom" v-model="position" name="position" />
+    <input type="radio" value="drawer-bottom" v-model="position" name="position" />
     bottom
   </label>
 </form>

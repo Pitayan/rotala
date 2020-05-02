@@ -19,29 +19,29 @@
     @apply h-full;
   }
 
-  &.right,
-  &.left {
+  &-right,
+  &-left {
     .$(drawer)-container {
       width: calc(theme('screens.sm') / 2);
     }
   }
 
-  &.right {
+  &-right {
     .$(drawer)-container {
       left: 100%;
       transform: translateX(-100%);
     }
   }
 
-  &.bottom {
+  &-bottom {
     .$(drawer)-container {
       top: 100%;
       transform: translateY(-100%);
     }
   }
 
-  &.top,
-  &.bottom {
+  &-top,
+  &-bottom {
     .$(drawer)-container {
       height: calc(theme('screens.sm') / 2);
     }
