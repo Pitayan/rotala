@@ -45,10 +45,10 @@
                 :to="`/extensions/${item.name}`">
                 <div class="flex justify-between">
                   <AisHighlight class="font-bold" :hit="item" attribute="name" />
-                  <div class="flex w-16 text-xs text-gray-700 items-start text-right">
-                    <SVGIcon class="flex-1 inline-block" width="14" height="14"  v-if="item.owner.name == 'daiyanze'" />
-                    <span class="flex-1">{{ item.humanDownloadsLast30Days }}</span>
-                    <i style="font-size:10px;" class="flex-1 icon icon-arrow-down"></i>
+                  <div class="flex w-16 text-xs text-gray-700 items-center ml-auto space-x-1">
+                    <SVGIcon class="inline-block" width="12" height="12"  v-if="item.owner.name == 'daiyanze'" />
+                    <span>{{ item.humanDownloadsLast30Days }}</span>
+                    <i style="font-size:10px;" class="ro-icon ro-icon-arrow-down"></i>
                   </div>
                 </div>
                 <AisHighlight class="block text-sm text-gray-700 py-4" :hit="item" attribute="description" />
@@ -116,6 +116,7 @@ import SVGGithub from '~/assets/img/github.svg'
 import SVGGitLab from '~/assets/img/gitlab.svg'
 import SVGBitbucket from '~/assets/img/bitbucket.svg'
 import SVGExtension from '~/assets/img/extension.svg'
+import SVGIcon from '~/assets/img/icon-fill-current.svg'
 
 import {
   createInstantSearch,
@@ -152,7 +153,8 @@ export default {
     SVGGithub,
     SVGGitLab,
     SVGBitbucket,
-    SVGExtension
+    SVGExtension,
+    SVGIcon
   },
   data () {
     return {
