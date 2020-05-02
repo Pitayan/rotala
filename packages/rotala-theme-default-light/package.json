@@ -1,6 +1,6 @@
 {
   "name": "rotala-theme-default-light",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a light theme for rotala.css framework",
   "main": "dist/theme.css",
   "style": "style/main.pcss",
@@ -28,8 +28,8 @@
     "url": "https://github.com/daiyanze/rotala/issues"
   },
   "dependencies": {
-    "rotala": "^0.0.4",
-    "rotala-extension-css-icon": "^0.0.5"
+    "rotala": "^0.0.5",
+    "rotala-extension-css-icon": "^0.0.6"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
