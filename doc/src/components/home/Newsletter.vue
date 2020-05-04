@@ -7,11 +7,9 @@
     target="_blank"
     novalidate>
     <div class="text-center" id="mc_embed_signup_scroll">
-      <SVGMail class="mx-auto mb-4 w-full" />
+      <SVGMail class="mx-auto mb-4" width="400" />
 
-      <h3 class="font-bold">
-        The Rotala Newsletter<br>
-      </h3>
+      <h1>The Rotala Newsletter</h1>
       <p>Subscribe to our email and get updates right in your inbox!</p>
 
       <div class="flex flex-wrap items-center justify-between mx-auto">
