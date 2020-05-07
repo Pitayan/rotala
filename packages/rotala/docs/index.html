@@ -5,54 +5,1065 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="stylesheet" href="/assets/css/rotala.css">
   <link rel="stylesheet" href="//unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css">
+  <link rel="stylesheet" href="/assets/css/rotala.css">
   <title>Welcome to Rotala!</title>
 </head>
-<body>
-  <main class="m-auto max-w-xl w-full">
-    <div class="relative w-full text-center">
-      <h3 class="mb-4">base</h3>
-      <div class="inset-0 flex m-10" aria-hidden="true">
-        <a class="link block w-1/5" href="base/typography.html">Typography</a>
-      </div>
-    </div>
+<body class="max-w-6xl w-full mt-20 mx-auto px-8">
+  <main>
+    <h1>
+      Rotala UI Style Guide<br>
+      <p class="text-xl text-gray-700">Customization focused UI System</p>
+    </h1>
     <br>
     <br>
-    <div class="relative w-full text-center">
-      <h3 class="mb-4">components</h3>
-      <div class="inset-0 flex m-10" aria-hidden="true">
-        <a class="link block w-1/5" href="components/a.html">a link</a>
-        <a class="link block w-1/5" href="components/button.html">Button</a>
-        <a class="link block w-1/5" href="components/checkbox.html">Checkbox</a>
-        <a class="link block w-1/5" href="components/Radio.html">Radio</a>
-        <a class="link block w-1/5" href="components/input.html">Input</a>
+
+
+    <h2>Typography</h2>
+    <hr class="divider" />
+    <br>
+    <br>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Headings</h4>
+      <div>
+        <h1>h1. Heading <span class="rounded py-px px-2 text-gray-700 bg-gray-300">40px</span></h1>
+        <h2>h2. Heading <span class="rounded py-px px-2 text-gray-700 bg-gray-300">32px</span></h2>
+        <h3>h3. Heading <span class="rounded py-px px-2 text-gray-700 bg-gray-300">28px</span></h3>
+        <h4>h4. Heading <span class="rounded py-px px-2 text-gray-700 bg-gray-300">24px</span></h4>
+        <h5>h5. Heading <span class="rounded py-px px-2 text-gray-700 bg-gray-300">20px</span></h5>
+        <h6>h6. Heading <span class="rounded py-px px-2 text-gray-700 bg-gray-300">16px</span></h6>
       </div>
-      <div class="inset-0 flex m-10">
-        <a class="link block w-1/5" href="components/select.html">Select</a>
-        <a class="link block w-1/5" href="components/textarea.html">Textarea</a>
-        <a class="link block w-1/5" href="components/table.html">Table</a>
-        <a class="link block w-1/5" href="components/divider.html">Divider</a>
-        <a class="link block w-1/5" href="components/accordion.html">Accordion</a>
+    </section>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Paragraph</h4>
+      <p class="w-full md:w-1/3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Address</h4>
+      <address>
+        <strong>Rotala, Inc.</strong>
+        <div>Green Office</div>
+        <div>1-1 Alpha, Beta, Somewhere</div>
+        <div>+00-11-2222-3333 (Main)</div>
+        <i>first.last@example.com</i>
+      </address>
+    </section>
+    <br>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Semantic Elements</h4>
+      <div class="w-1/2 md:w-1/3">
+        <div class="m-2">
+          <abbr title="Internationalization">I18N</abbr><code class="ml-2">abbr</code>
+        </div>
+        <div class="m-2">
+          <strong>Bold</strong><code class="ml-2">strong</code><code class="ml-2">b</code>
+        </div>
+        <div class="m-2">
+          <cite>Citation</cite><code class="ml-2">cite</code>
+        </div>
+        <div class="m-2">
+          <code>Hello World!</code><code class="ml-2">code</code>
+        </div>
+        <div class="m-2">
+          <del>Deleted</del><code class="ml-2">del</code>
+        </div>
+        <div class="m-2">
+          <em>Emphasis</em><code class="ml-2">em</code>
+        </div>
+        <div class="m-2">
+          <i>Italic</i><code class="ml-2">i</code>
+        </div>
+        <div class="m-2">
+          <ins>Inserted</ins><code class="ml-2">ins</code>
+        </div>
+        <div class="m-2">
+          <kbd>Ctrl + S</kbd><code class="ml-2">kbd</code>
+        </div>
       </div>
-      <div class="inset-0 flex m-10">
-        <a class="link block w-1/5" href="components/avatar.html">Avatar</a>
-        <a class="link block w-1/5" href="components/badge.html">Badge</a>
-        <a class="link block w-1/5" href="components/breadcrumb.html">Breadcrumb</a>
-        <a class="link block w-1/5" href="components/drawer.html">Drawer</a>
-        <a class="link block w-1/5" href="components/tab.html">Tab</a>
+      <div class="w-1/2 md:w-1/3">
+        <div class="m-2">
+          <mark>Highlighted</mark><code class="ml-2">mark</code>
+        </div>
+        <div class="m-2">
+          <ruby>漢
+            <rt>kan</rt>字
+            <rt>ji</rt>
+          </ruby><code class="ml-2">ruby</code>
+        </div>
+        <div class="m-2">
+          <s>Strikethrough</s><code class="ml-2">s</code>
+        </div>
+        <div class="m-2">
+          <samp>Sample</samp><code class="ml-2">samp</code>
+        </div>
+        <div class="m-2">
+          Text <sub>Subscripted</sub><code class="ml-2">sub</code>
+        </div>
+        <div class="m-2">
+          Text <sup>Superscripted</sup><code class="ml-2">sup</code>
+        </div>
+        <div class="m-2">
+          <time>20:00</time><code class="ml-2">time</code>
+        </div>
+        <div class="m-2">
+          <u>Underline</u><code class="ml-2">u</code>
+        </div>
+        <div class="m-2">
+          <var>x</var> =
+          <var>y</var> + 2<code class="ml-2">var</code>
+        </div>
       </div>
-      <div class="inset-0 flex m-10">
-        <a class="link block w-1/5" href="components/menu.html">Menu</a>
-        <a class="link block w-1/5" href="components/modal.html">Modal</a>
-        <a class="link block w-1/5" href="components/notification.html">Notification</a>
-        <a class="link block w-1/5" href="components/pagination.html">Pagination</a>
-        <a class="link block w-1/5" href="components/popover.html">Popover</a>
+    </section>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Code</h4>
+      <pre class="w-full md:w-2/3" data-lang="HTML"><code><span class="">&lt;!-- code snippets --&gt;</span>
+  <kbd>F12</kbd>
+  <span>&lt;p&gt;</span><span>This is an example</span><span>&lt;/p&gt;</span>
+  <span>&lt;a&gt;</span><span>This is an example</span><span>&lt;/a&gt;</span>
+  <span>&lt;span&gt;</span><span>This is an example</span><span>&lt;/span&gt;</span>
+  <span>&lt;b&gt;</span><span>This is an example</span><span>&lt;/b&gt;</span>
+          </code></pre>
+    </section>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">List</h4>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <ul>
+          <h6>Unordered List</h6>
+          <li>Item 1</li>
+          <li>Item 2
+            <ul>
+              <li>Sub-Item 1</li>
+              <li>Sub-Item 2</li>
+            </ul>
+          </li>
+          <li>Item 3</li>
+        </ul>
       </div>
-      <div class="inset-0 flex m-10">
-        <a class="link block w-1/5" href="components/tooltip.html">Tooltip</a>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <ol>
+          <h6>Ordered List</h6>
+          <li>Item 1</li>
+          <li>Item 2
+            <ol>
+              <li>Sub-Item 1</li>
+              <ol>
+                <li>Sub-Item 1</li>
+              </ol>
+            </ol>
+          </li>
+          <li>Item 3</li>
+        </ol>
       </div>
-    </div>
+    </section>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Description List</h4>
+      <div>
+        <dl>
+          <dt>Item 1</dt>
+          <dd>Description for Item 1</dd>
+          <dt>Item 2</dt>
+          <dd>Description for Item 2</dd>
+          <dt>Item 3</dt>
+          <dd>Description for Item 3</dd>
+        </dl>
+      </div>
+    </section>
+
+
+    <h2>Components</h2>
+    <hr class="divider" />
+    <br>
+    <br>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Link</h4>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>default</h6>
+        <a href="#" class="link">link</a>
+      </div>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>disabled</h6>
+        <a href="#" class="link disabled" disabled>link</a>
+      </div>
+    </section>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Accordion</h4>
+
+      <div class="accordion w-full md:w-1/3 mb-8">
+        <h6>checkbox accordion</h6>
+
+        <label for="accordion-0">
+          <input class="accordion-indicator" id="accordion-0" type="checkbox" name="accordion-checkbox" hidden="">
+          <span class="accordion-header">One</span>
+          <div class="accordion-body">
+            <ul class="menu plain">
+              <li class="menu-item">
+                <a href="#accordions">item 1</a>
+              </li>
+              <li class="menu-item">
+                <a href="#accordions">item 2</a>
+              </li>
+            </ul>
+          </div>
+        </label>
+
+        <label for="accordion-1">
+          <input class="accordion-indicator" id="accordion-1" type="checkbox" name="accordion-checkbox" hidden="">
+          <span class="accordion-header">Two</span>
+          <div class="accordion-body">
+            <ul class="menu plain">
+              <li class="menu-item">
+                <a href="#accordions">item 1</a>
+              </li>
+              <li class="menu-item">
+                <a href="#accordions">item 2</a>
+              </li>
+            </ul>
+          </div>
+        </label>
+      </div>
+
+      <div class="accordion w-full md:w-1/3 mb-8">
+        <h6>radio accordion</h6>
+
+        <label for="accordion-2">
+          <input class="accordion-indicator" id="accordion-2" type="radio" name="accordion-radio" hidden="">
+          <span class="accordion-header">One</span>
+          <div class="accordion-body">
+            <ul class="menu plain">
+              <li class="menu-item">
+                <a href="#accordions">item 1</a>
+              </li>
+              <li class="menu-item">
+                <a href="#accordions">item 2</a>
+              </li>
+            </ul>
+          </div>
+        </label>
+
+        <label for="accordion-3">
+          <input class="accordion-indicator" id="accordion-3" type="radio" name="accordion-radio" hidden="">
+          <span class="accordion-header">Two</span>
+          <div class="accordion-body">
+            <ul class="menu plain">
+              <li class="menu-item">
+                <a href="#accordions">item 1</a>
+              </li>
+              <li class="menu-item">
+                <a href="#accordions">item 2</a>
+              </li>
+            </ul>
+          </div>
+        </label>
+      </div>
+    </section>
+    <br>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Avatar</h4>
+
+      <div class="w-full md:w-2/3 flex flex-wrap">
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>avatar initial</h6>
+          <figure class="avatar bg-gray-300" data-initial="Hi"></figure>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>avatar image</h6>
+          <figure class="avatar">
+            <img class="bg-pink-200" src="assets/img/avatar-1.svg" alt="Avatar" />
+          </figure>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>avatar initial rounded</h6>
+          <figure class="avatar avatar-rounded bg-gray-300" data-initial="Hi"></figure>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>avatar image rounded</h6>
+          <figure class="avatar avatar-rounded">
+            <img class="bg-blue-200" src="assets/img/avatar-2.svg" alt="Avatar" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Breadcrumb</h4>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>default</h6>
+
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">/</li>
+          <li class="breadcrumb-item">
+            <a href="#">Mypage</a>
+          </li>
+          <li class="breadcrumb-item">/</li>
+          <li class="breadcrumb-item active">
+            <a href="#">Setting</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>disabled</h6>
+
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="link disabled" href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item text-gray-400">/</li>
+          <li class="breadcrumb-item">
+            <a class="link disabled" href="#">Mypage</a>
+          </li>
+          <li class="breadcrumb-item text-gray-400">/</li>
+          <li class="breadcrumb-item">
+            <a class="link disabled" href="#" disabled>Setting</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Button</h4>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>default</h6>
+        <button class="button">button</button>
+      </div>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>disabled</h6>
+        <button class="button disabled" disabled>button</button>
+      </div>
+    </section>
+    <br>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Checkbox</h4>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>default</h6>
+        <label class="check-group">
+          <input class="checkbox" type="checkbox" value="1" name="check_0" checked />
+          Check 1
+        </label>
+        <label class="check-group">
+          <input class="checkbox" type="checkbox" value="2" name="check_0" />
+          Check 2
+        </label>
+      </div>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>disabled</h6>
+        <label class="check-group">
+          <input class="checkbox disabled" type="checkbox" value="1" name="check_1" disabled checked />
+          Check 1
+        </label>
+        <label class="check-group">
+          <input class="checkbox disabled" type="checkbox" value="2" name="check_1" disabled />
+          Check 2
+        </label>
+      </div>
+    </section>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Drawer</h4>
+
+      <div class="w-full md:w-2/3 flex flex-wrap">
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>left</h6>
+          <button class="button button-primary m-4" onclick="toggleDrawer('left')">open left drawer</button>
+          <div class="drawer drawer-left" id="drawer-left" onclick="toggleDrawer('left')">
+            <div class="drawer-container bg-gray-300" onclick="stop(event)">
+              <div>
+                This is a drawer
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>right</h6>
+          <button class="button button-primary m-4" onclick="toggleDrawer('right')">open right drawer</button>
+          <div class="drawer drawer-right" id="drawer-right" onclick="toggleDrawer('right')">
+            <div class="drawer-container bg-gray-300" onclick="thisstop(event)">
+              <div>
+                This is a drawer
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>top</h6>
+          <button class="button button-primary m-4" onclick="toggleDrawer('top')">open top drawer</button>
+          <div class="drawer drawer-top" id="drawer-top" onclick="toggleDrawer('top')">
+            <div class="drawer-container bg-gray-300" onclick="stop(event)">
+              <div>
+                This is a drawer
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>bottom</h6>
+          <button class="button button-primary m-4" onclick="toggleDrawer('bottom')">open bottom drawer</button>
+          <div class="drawer drawer-bottom" id="drawer-bottom" onclick="toggleDrawer('bottom')">
+            <div class="drawer-container bg-gray-300" onclick="stop(event)">
+              <div>
+                This is a drawer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function toggleDrawer(position) {
+          this.event.stopPropagation();
+
+          var id = 'drawer-' + position;
+          var drawer = document.getElementById(id);
+
+          drawer.classList.contains('open')
+            ? drawer.classList.remove('open')
+            : drawer.classList.add('open');
+        }
+      </script>
+    </section>
+    <br>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Divider</h4>
+
+      <div class="w-full md:w-1/3">
+        <h6>default</h6>
+        <br>
+        <br>
+        <span class="divider"></span>
+      </div>
+    </section>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Input</h4>
+
+      <div class="w-full md:w-2/3 flex flex-wrap">
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>input default</h6>
+          <label class="input-group">
+            <input class="input" type="text" placeholder="input something here">
+          </label>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>input disabled</h6>
+          <label class="input-group">
+            <input class="input disabled" type="text" placeholder="disabled input" disabled>
+          </label>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>textarea default</h6>
+          <label class="input-group">
+            <textarea class="input" type="text" placeholder="input something here"></textarea>
+          </label>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>textarea disabled</h6>
+          <label class="input-group">
+            <textarea class="input disabled" type="text" placeholder="input something here" disabled></textarea>
+          </label>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Menu</h4>
+
+      <div class="w-full md:w-1/3">
+        <h6>default</h6>
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="link" href="#first">First</a>
+          </li>
+          <li class="menu-item">
+            <a class="link" href="#second">Second</a>
+          </li>
+          <li class="menu-item">
+            <a class="link" href="#third">Third</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-full md:w-1/3">
+        <h6>disabled</h6>
+        <ul class="menu">
+          <li class="menu-item disabled">
+            <a href="#first">First</a>
+          </li>
+          <li class="menu-item disabled">
+            <a href="#second">Second</a>
+          </li>
+          <li class="menu-item disabled">
+            <a href="#third">Third</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Modal</h4>
+
+      <div class="w-full md:w-1/3">
+        <h6>default</h6>
+        <button class="button" onclick="toggleModal('default')">open default modal</button>
+        <div class="modal" id="modal-default" onclick="toggleModal('default')">
+          <div class="modal-container bg-gray-300" onclick="event.stopPropagation()">
+            <div class="modal-head">
+              <h3>Default Modal</h3>
+            </div>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button class="button" onclick="toggleModal('default')">cancel</button>
+              <button class="button" onclick="toggleModal('default')">submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        function toggleModal (type) {
+          this.event.stopPropagation();
+
+          var id = 'modal-' + type;
+          var modal = document.getElementById(id);
+
+          modal.classList.contains('open')
+            ? modal.classList.remove('open')
+            : modal.classList.add('open')
+        }
+      </script>
+    </section>
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Notification</h4>
+
+      <div class="w-full md:w-2/3 flex flex-wrap">
+        <div class="w-full md:w-1/2 mb-8">
+          <button class="button" onclick="toggleNotification('top-left')">open top left notification</button>
+          <div class="notification notification-top-left" id="notification-top-left">
+            <div class="notification-container bg-gray-300">
+              <div class="notification-title">Notification</div>
+              <p>This is a notificaton. This is a notification. This is a notification</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <button class="button" onclick="toggleNotification('top-center')">open top center notification</button>
+          <div class="notification notification-top-center" id="notification-top-center">
+            <div class="notification-container bg-gray-300">
+              <div class="notification-title">Notification</div>
+              <p>This is a notificaton. This is a notification. This is a notification</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <button class="button" onclick="toggleNotification('top-right')">open top right notification</button>
+          <div class="notification notification-top-right" id="notification-top-right">
+            <div class="notification-container bg-gray-300">
+              <div class="notification-title">Notification</div>
+              <p>This is a notificaton. This is a notification. This is a notification</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <button class="button" onclick="toggleNotification('bottom-left')">open bottom right notification</button>
+          <div class="notification notification-bottom-left" id="notification-bottom-left">
+            <div class="notification-container bg-gray-300">
+              <div class="notification-title">Notification</div>
+              <p>This is a notificaton. This is a notification. This is a notification</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <button class="button" onclick="toggleNotification('bottom-center')">open bottom center notification</button>
+          <div class="notification notification-bottom-center" id="notification-bottom-center">
+            <div class="notification-container bg-gray-300">
+              <div class="notification-title">Notification</div>
+              <p>This is a notificaton. This is a notification. This is a notification</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <button class="button" onclick="toggleNotification('bottom-right')">open bottom right notification</button>
+          <div class="notification notification-bottom-right" id="notification-bottom-right">
+            <div class="notification-container bg-gray-300">
+              <div class="notification-title">Notification</div>
+              <p>This is a notificaton. This is a notification. This is a notification</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        function toggleNotification (type) {
+          this.event.stopPropagation();
+
+          var id = 'notification-' + type;
+          var notification = document.getElementById(id);
+          var container = notification.querySelector('.notification-container');
+
+          container.classList.contains('open')
+            ? container.classList.remove('open')
+            : container.classList.add('open')
+        }
+      </script>
+    </section>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Pagination</h4>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>default</h6>
+        <ul class="pagination">
+          <li class="pagination-prev">
+            <a class="link" href="#">Prev</a>
+          </li>
+          <li class="pagination-item">
+            <a class="link" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="link" href="#">3</a>
+          </li>
+          <li class="pagination-next">
+            <a class="link" href="#">Next</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>disabled</h6>
+        <ul class="pagination">
+          <li class="pagination-prev">
+            <a class="link disabled" href="#" disabled>Prev</a>
+          </li>
+          <li class="pagination-item">
+            <a class="link disabled" href="#" disabled>1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="link disabled" href="#" disabled>2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="link disabled" href="#" disabled>3</a>
+          </li>
+          <li class="pagination-next">
+            <a class="link disabled" href="#" disabled>Next</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Popover</h4>
+
+      <div class="w-full md:w-2/3 flex flex-wrap">
+        <div class="w-full md:w-1/2 mb-8">
+          <div class="popover popover-top-left popover-hover">
+            <button class="button">top left</button>
+            <div class="popover-container bg-gray-300">
+              <div class="p-4 text-left">
+                <h5>Popover</h5>
+                <p>
+                  This is the content of the Popover.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <div class="popover popover-top-center popover-hover">
+            <button class="button">top center</button>
+            <div class="popover-container bg-gray-300">
+              <div class="p-4 text-left">
+                <h5>Popover</h5>
+                <p>
+                  This is the content of the Popover.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <div class="popover popover-top-right popover-hover">
+            <button class="button">top right</button>
+            <div class="popover-container bg-gray-300">
+              <div class="p-4 text-left">
+                <h5>Popover</h5>
+                <p>
+                  This is the content of the Popover.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <div class="popover popover-left popover-hover">
+            <button class="button">left</button>
+            <div class="popover-container bg-gray-300">
+              <div class="p-4 text-left">
+                <h5>Popover</h5>
+                <p>
+                  This is the content of the Popover.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <div class="popover popover-right popover-hover">
+            <button class="button">right</button>
+            <div class="popover-container bg-gray-300">
+              <div class="p-4 text-left">
+                <h5>Popover</h5>
+                <p>
+                  This is the content of the Popover.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <div class="popover popover-bottom-left popover-hover">
+            <button class="button">bottom left</button>
+            <div class="popover-container bg-gray-300">
+              <div class="p-4 text-left">
+                <h5>Popover</h5>
+                <p>
+                  This is the content of the Popover.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <div class="popover popover-bottom-center popover-hover">
+            <button class="button">bottom center</button>
+            <div class="popover-container bg-gray-300">
+              <div class="p-4 text-left">
+                <h5>Popover</h5>
+                <p>
+                  This is the content of the Popover.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <div class="popover popover-bottom-right popover-hover">
+            <button class="button">bottom right</button>
+            <div class="popover-container bg-gray-300">
+              <div class="p-4 text-left">
+                <h5>Popover</h5>
+                <p>
+                  This is the content of the Popover.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Radio</h4>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>default</h6>
+        <label class="radio-group">
+          <input class="radio" type="radio" value="1" name="radio_0" checked />
+          Radio 1
+        </label>
+        <label class="radio-group">
+          <input class="radio" type="radio" value="2" name="radio_0" />
+          Radio 2
+        </label>
+      </div>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>disabled</h6>
+        <label class="radio-group">
+          <input class="radio disabled" type="radio" value="1" name="radio_1" disabled checked />
+          Radio 1
+        </label>
+        <label class="radio-group">
+          <input class="radio disabled" type="radio" value="2" name="radio_1" disabled />
+          Radio 2
+        </label>
+      </div>
+    </section>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Select</h4>
+
+      <div class="w-full md:w-2/3 flex flex-wrap">
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>single</h6>
+          <label class="select-group">
+            <select class="select">
+              <option disabled>Choose one</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>single disabled</h6>
+          <label class="select-group">
+            <select class="select disabled" disabled>
+              <option disabled>Choose one</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>multiple</h6>
+          <label class="select-group">
+            <select class="select" multiple>
+              <option disabled>Choose one</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <h6>multiple disabled</h6>
+          <label class="select-group">
+            <select class="select disabled" disabled multiple>
+              <option disabled>Choose one</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Tab</h4>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>default</h6>
+        <ul class="tab">
+          <li class="tab-item">
+            <a class="link" href="#tabs">List</a>
+          </li>
+          <li class="tab-item">
+            <a class="link" href="#tabs">Favorite</a>
+          </li>
+          <li class="tab-item">
+            <a class="link" href="#tabs">Mypage</a>
+          </li>
+          <li class="tab-item">
+            <a class="link" href="#tabs">Settings</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-full md:w-1/3 mb-8">
+        <h6>disabled</h6>
+        <ul class="tab">
+          <li class="tab-item disabled">
+            <a href="#tabs">List</a>
+          </li>
+          <li class="tab-item disabled">
+            <a href="#tabs">Favorite</a>
+          </li>
+          <li class="tab-item disabled">
+            <a href="#tabs">Mypage</a>
+          </li>
+          <li class="tab-item disabled">
+            <a href="#tabs">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Table Group</h4>
+
+      <div class="w-full md:w-1/3">
+        <h6>default</h6>
+        <table class="table-group">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Manufacturer</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gift Box</td>
+              <td>Alpha Inc.</td>
+              <td>$1.5</td>
+            </tr>
+            <tr>
+              <td>Table Sheet</td>
+              <td>Beta Manufacture</td>
+              <td>$9</td>
+            </tr>
+            <tr>
+              <td>Notebook</td>
+              <td>Cheer co.</td>
+              <td>$3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <section class="flex flex-wrap mb-16">
+      <h4 class="w-full md:w-1/3">Tooltip</h4>
+
+      <div class="w-full md:w-2/3 flex flex-wrap">
+        <div class="w-full md:w-1/2 mb-8">
+          <span class="tooltip tooltip-top-left">
+            <button class="button">top left</button>
+            <div class="tooltip-container bg-gray-300">
+              <div class="whitespace-pre">This is a tooltip!</div>
+            </div>
+          </span>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <span class="tooltip tooltip-top-center">
+            <button class="button">top center</button>
+            <div class="tooltip-container bg-gray-300">
+              <div class="whitespace-pre">This is a tooltip!</div>
+            </div>
+          </span>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <span class="tooltip tooltip-top-right">
+            <button class="button">top right</button>
+            <div class="tooltip-container bg-gray-300">
+              <div class="whitespace-pre">This is a tooltip!</div>
+            </div>
+          </span>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <span class="tooltip tooltip-left">
+            <button class="button">left</button>
+            <div class="tooltip-container bg-gray-300">
+              <div class="whitespace-pre">This is a tooltip!</div>
+            </div>
+          </span>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <span class="tooltip tooltip-right">
+            <button class="button">right</button>
+            <div class="tooltip-container bg-gray-300">
+              <div class="whitespace-pre">This is a tooltip!</div>
+            </div>
+          </span>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <span class="tooltip tooltip-bottom-left">
+            <button class="button">bottom left</button>
+            <div class="tooltip-container bg-gray-300">
+              <div class="whitespace-pre">This is a tooltip!</div>
+            </div>
+          </span>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <span class="tooltip tooltip-bottom-center">
+            <button class="button">bottom center</button>
+            <div class="tooltip-container bg-gray-300">
+              <div class="whitespace-pre">This is a tooltip!</div>
+            </div>
+          </span>
+        </div>
+
+        <div class="w-full md:w-1/2 mb-8">
+          <span class="tooltip tooltip-bottom-right">
+            <button class="button">rop right</button>
+            <div class="tooltip-container bg-gray-300">
+              <div class="whitespace-pre">This is a tooltip!</div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
