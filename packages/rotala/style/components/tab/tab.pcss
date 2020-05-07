@@ -1,32 +1,28 @@
 .$(tab) {
+  @apply list-none;
+  @apply m-0;
   @apply flex;
   @apply items-center;
   @apply flex-wrap;
-  @apply list-none;
-  @apply m-0;
 
-  & > &-item {
-    @apply relative;
+  & &-item {
     @apply mt-0;
+    @apply p-2;
+    @apply relative;
+    @apply no-underline;
+    @apply outline-none;
 
     a {
-      @apply block;
-      @apply py-2 px-2;
+      @apply p-2;
       @apply no-underline;
-
-      color: inherit;
-      transition: color .15s;
     }
 
     &[disabled],
     &:disabled,
     &.disabled {
       @apply cursor-default;
-
-      a {
-        @apply pointer-events-none;
-        @apply text-gray-400;
-      }
+      @apply pointer-events-none;
+      @apply text-gray-400;
     }
   }
 }
