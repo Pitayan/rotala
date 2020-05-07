@@ -3,19 +3,25 @@
   @apply list-none;
   @apply p-2;
 
-  &-item {
+  & &-item {
     @apply mt-0;
-    @apply py-0 px-2;
+    @apply p-2;
     @apply relative;
     @apply no-underline;
     @apply outline-none;
 
-    & > a {
+    a {
       @apply block;
       @apply no-underline;
       @apply p-2;
+    }
 
-      color: inherit;
+    &[disabled],
+    &:disabled,
+    &.disabled {
+      @apply cursor-default;
+      @apply pointer-events-none;
+      @apply text-gray-400;
     }
   }
 }
