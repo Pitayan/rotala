@@ -5,20 +5,12 @@ $url: 'data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 24 24" height="24" wi
 }
 
 .$(select) {
-  @apply border-b border-solid border-gray-600;
-
   transition: background .15s, border .15s, box-shadow .15s;
-
-  &:active,
-  &:focus {
-    @apply border-primary-600;
-  }
 
   &[disabled],
   &:disabled,
   &.disabled {
-    @apply border-gray-400;
-    @apply border-dashed;
+    @apply border-dashed border-gray-400;
 
     &::placeholder {
       @apply text-gray-400;
@@ -47,23 +39,15 @@ $url: 'data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 24 24" height="24" wi
   &-outline {
     @apply rounded-sm;
     @apply pr-6 pl-2;
-    @apply border border-solid;
+    @apply border border-solid border-gray-500;
 
     &[size],
     &[multiple] {
-      @apply px-4;
+      @apply px-2;
     }
 
     &:focus {
       @apply shadow-primary-base;
-    }
-  }
-
-  &-underline {
-    @apply pr-6;
-    @apply border-b border-solid border-gray-500;
-
-    &:focus {
       @apply border-primary-600;
     }
   }
