@@ -1,7 +1,7 @@
 <template>
   <transition
-    enter-active-class="ro-effect-fade-in"
-    leave-active-class="ro-effect-fade-out"
+    enter-active-class="fade-in"
+    leave-active-class="fade-out"
     @enter="enter">
     <div
       tabindex="-1"
@@ -12,8 +12,8 @@
       v-if="open"
       v-retain="containerOpen">
       <transition
-        enter-active-class="ro-effect-slide-left-off-canvas"
-        leave-active-class="ro-effect-slide-right-off-canvas"
+        enter-active-class="slide-left-off-canvas"
+        leave-active-class="slide-right-off-canvas"
         @leave="leave">
         <div
           class="ro-drawer-container overflow-auto"

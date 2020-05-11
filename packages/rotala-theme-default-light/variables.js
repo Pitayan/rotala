@@ -61,7 +61,7 @@ module.exports = {
           boxShadow: '0 0 0 .125rem ' + hexToRgba(colors.secondary[600], 0.2)
         },
         '.shadow-white': {
-          boxShadow: '0 0 0 .125rem' + hexToRgba('#ffffff', 1)
+          boxShadow: '0 0 0 .125rem ' + hexToRgba('#ffffff', 1)
         }
       }
 

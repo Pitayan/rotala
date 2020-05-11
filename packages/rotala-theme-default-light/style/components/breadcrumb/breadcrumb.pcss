@@ -3,11 +3,12 @@ $url: 'data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 24 24" height="16" wi
 .$(breadcrumb) {
   .$(breadcrumb)-item {
     &.active {
-      @apply text-primary-600;
+      a {
+        @apply text-primary-500;
+      }
     }
 
     a {
-      @apply text-gray-700;
       transition: color .15s;
 
       &:hover,
