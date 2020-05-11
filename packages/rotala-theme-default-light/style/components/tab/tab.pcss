@@ -3,9 +3,11 @@
   @apply text-gray-800;
 
   &-item {
+    @apply block;
+    @apply border-b-2 border-solid border-transparent;
+    @apply -mb-px;
+
     a {
-      @apply border-b border-solid border-transparent;
-      @apply -mb-px;
 
       &:focus,
       &:hover {
@@ -13,10 +15,13 @@
       }
     }
 
-    &.active a,
-    a.active {
+    &.active {
       @apply border-primary-600;
-      @apply text-primary-600;
+
+      a {
+        @apply border-primary-600;
+        @apply text-primary-600;
+      }
     }
   }
 
@@ -29,21 +34,6 @@
       a {
         @apply mx-0;
       }
-
-      .$(badge) {
-        &[data-badge]::after {
-          @apply absolute;
-          right: .125rem;
-          top: .125rem;
-          transform: translate(0, 0);
-        }
-      }
-    }
-  }
-
-  &:not(.$(tab)-block) {
-    .$(badge) {
-      @apply pr-0;
     }
   }
 }

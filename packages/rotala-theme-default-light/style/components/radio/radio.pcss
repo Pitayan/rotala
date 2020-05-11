@@ -1,5 +1,9 @@
 
 .$(radio) {
+  @apply relative;
+  @apply block;
+  @apply leading-5;
+
   &[disabled],
   &:disabled,
   &.disabled {
@@ -47,7 +51,7 @@
   @apply left-0;
   @apply rounded-full;
 
-  top: 8px;
+  top: 6px;
 
   &::after,
   &::before {

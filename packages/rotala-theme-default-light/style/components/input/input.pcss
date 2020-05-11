@@ -9,8 +9,6 @@
   @apply duration-150;
   @apply ease-in-out;
 
-  caret-color: theme('colors.primary.600');
-
   &[disabled],
   &:disabled,
   &.disabled {
@@ -22,11 +20,6 @@
       @apply text-gray-400;
     }
 
-    &:focus,
-    &:active {
-      @apply border-primary-600;
-    }
-
     &:not(:placeholder-shown) {
       +.input-label {
         @apply text-gray-400;
@@ -34,18 +27,12 @@
     }
   }
 
-  &-underline {
-    @apply border-b border-solid border-gray-500;
-
-    &:focus {
-      @apply border-primary-600;
-    }
-  }
-
   &-outline {
     @apply rounded-sm;
     @apply px-2;
     @apply border border-solid border-gray-500;
+
+    caret-color: theme('colors.primary.600');
 
     &:focus {
       @apply shadow-primary-base;
@@ -76,3 +63,4 @@
     }
   }
 }
+

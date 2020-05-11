@@ -14,4 +14,23 @@
   &.active {
     @apply text-primary-500;
   }
+
+  &-underline {
+    @apply font-medium;
+    @apply text-primary-600;
+    @apply border-b border-solid border-primary-300;
+
+    &[disabled],
+    &:disabled,
+    &.disabled {
+      @apply border-dashed border-gray-300;
+    }
+
+    &:hover,
+    &:active,
+    &.active {
+      @apply text-primary-600;
+      @apply border-primary-600;
+    }
+  }
 }
