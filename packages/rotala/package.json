@@ -1,6 +1,6 @@
 {
   "name": "rotala",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A customization focused CSS framework",
   "main": "dist/rotala.css",
   "style": "style/main.pcss",
