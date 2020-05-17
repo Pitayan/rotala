@@ -33,7 +33,7 @@
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
     "postcss-simple-vars": "^5.0.2",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.4.0"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
