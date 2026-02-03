@@ -19,8 +19,8 @@ dist
 # lock files
 yarn.lock
 package-lock.json
-# ignore any lock file other than main lock file
-!/yarn.lock
+# keep pnpm lock file
+!pnpm-lock.yaml
 
 # temp
 .temp/

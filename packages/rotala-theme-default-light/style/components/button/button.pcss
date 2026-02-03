@@ -7,13 +7,13 @@
   &[disabled],
   &:disabled,
   &.disabled {
-    @apply text-gray-400 !important;
-    @apply border-dashed border-gray-400 !important;
-    @apply bg-transparent !important;
+    @apply !text-gray-400;
+    @apply !border-dashed !border-gray-400;
+    @apply !bg-transparent;
   }
 
   &.$(loading) {
-    @apply text-transparent !important;
+    @apply !text-transparent;
   }
 
   &-outline {

@@ -9,7 +9,7 @@ module.exports = {
         prefix: ''
       }
     }),
-    require('tailwindcss'),
+    require('@tailwindcss/postcss'),
     require('autoprefixer'),
     ...process.env.NODE_ENV === 'production'
       ? [

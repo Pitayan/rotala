@@ -6,8 +6,8 @@
   "style": "style/main.pcss",
   "scripts": {
     "dev": "cross-env NODE_ENV=development concurrently  \"postcss docs/main.pcss -o docs/assets/css/rotala.css --watch\" \"live-server ./docs\"",
-    "build": "cross-env NODE_ENV=production concurrently \"postcss docs/main.pcss -o docs/assets/css/rotala.css\" \"postcss style/main.pcss -o dist/rotala.css\"",
-    "prepare": "lerna run build"
+    "build": "cross-env NODE_ENV=production concurrently \"postcss docs/main.pcss -o docs/assets/css/rotala.css\" \"postcss style/dist.pcss -o dist/rotala.css\"",
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",
@@ -27,20 +27,21 @@
   },
   "homepage": "https://github.com/daiyanze/rotala#readme",
   "dependencies": {
-    "autoprefixer": "^9.7.4",
-    "cssnano": "^4.1.10",
-    "postcss": "^7.0.27",
-    "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.2.1",
-    "postcss-simple-vars": "^5.0.2",
-    "tailwindcss": "^1.4.0"
+    "@tailwindcss/postcss": "^4.1.17",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.5.6",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^6.2.0",
+    "postcss-simple-vars": "^7.0.1",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "concurrently": "^5.0.2",
-    "cross-env": "^6.0.3",
-    "live-server": "^1.2.1",
-    "postcss-banner": "^3.0.1",
-    "postcss-cli": "^7.1.0"
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "live-server": "^1.2.2",
+    "postcss-banner": "^4.0.1",
+    "postcss-cli": "^11.0.0"
   },
   "gitHead": "ee61601271cd3184463212ffa5dbc7f2e039cf5f"
 }

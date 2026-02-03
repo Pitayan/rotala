@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development concurrently \"postcss docs/thin.pcss -o docs/assets/css/thin.css --watch\" \"postcss docs/thick.pcss -o docs/assets/css/thick.css --watch\" \"live-server ./docs\"",
     "build": "cross-env NODE_ENV=production concurrently \"postcss style/icon.thin.pcss -o dist/icon.thin.css\" \"postcss style/icon.thick.pcss -o dist/icon.thick.css\"",
-    "prepare": "lerna run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",
@@ -27,13 +27,15 @@
     "url": "https://github.com/daiyanze/rotala/issues"
   },
   "dependencies": {
-    "rotala": "^0.0.4"
+    "rotala": "workspace:*",
+    "@tailwindcss/postcss": "^4.1.17",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0",
-    "cross-env": "^7.0.2",
-    "live-server": "^1.2.1",
-    "postcss-cli": "^7.1.0"
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "live-server": "^1.2.2",
+    "postcss-cli": "^11.0.0"
   },
   "gitHead": "dc9083752bb5cdfd9a98a10e1cd41fb2e1ac0012"
 }

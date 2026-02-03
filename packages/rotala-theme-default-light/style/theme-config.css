@@ -1,0 +1,44 @@
+@theme {
+  --color-primary-100: #ECF7F1;
+  --color-primary-200: #D0EADC;
+  --color-primary-300: #B4DDC7;
+  --color-primary-400: #7CC49E;
+  --color-primary-500: #44AA74;
+  --color-primary-600: #3D9968;
+  --color-primary-700: #296646;
+  --color-primary-800: #1F4D34;
+  --color-primary-900: #143323;
+
+  --color-secondary-100: #F3F1F1;
+  --color-secondary-200: #E1DCDC;
+  --color-secondary-300: #CFC6C7;
+  --color-secondary-400: #AC9C9E;
+  --color-secondary-500: #887174;
+  --color-secondary-600: #7A6668;
+  --color-secondary-700: #524446;
+  --color-secondary-800: #3D3334;
+  --color-secondary-900: #292223;
+
+  --color-gray-100: #F9F9F9;
+  --color-gray-200: #EFEFEF;
+  --color-gray-300: #E5E5E5;
+  --color-gray-400: #D2D2D2;
+  --color-gray-500: #BEBFBE;
+  --color-gray-600: #ABACAB;
+  --color-gray-700: #727372;
+  --color-gray-800: #565656;
+  --color-gray-900: #393939;
+}
+
+/* Custom utility classes */
+@utility shadow-primary-base {
+  box-shadow: 0 0 0 .125rem rgba(61, 153, 104, 0.2);
+}
+
+@utility shadow-secondary-base {
+  box-shadow: 0 0 0 .125rem rgba(122, 102, 104, 0.2);
+}
+
+@utility shadow-white {
+  box-shadow: 0 0 0 .125rem rgba(255, 255, 255, 1);
+}

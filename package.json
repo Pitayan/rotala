@@ -1,15 +1,17 @@
 {
   "name": "rotalacss",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.20.2"
-  },
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "publish": "lerna publish",
-    "publish-canary": "lerna publish --canary",
-    "prepare": "lerna run prepare"
-  }
+    "prepare": "pnpm -r run prepare",
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.0"
 }

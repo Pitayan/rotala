@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development concurrently \"postcss docs/main.pcss -o docs/assets/css/theme.css --watch\" \"live-server ./docs\"",
     "build": "cross-env NODE_ENV=production concurrently \"postcss docs/main.pcss -o docs/assets/css/theme.css\" \"postcss style/main.pcss -o dist/theme.css\"",
-    "prepare": "lerna run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",
@@ -28,14 +28,20 @@
     "url": "https://github.com/daiyanze/rotala/issues"
   },
   "dependencies": {
-    "rotala": "^0.0.6",
-    "rotala-extension-css-icon": "^0.0.5"
+    "rotala": "workspace:*",
+    "rotala-extension-css-icon": "workspace:*",
+    "@tailwindcss/postcss": "^4.1.17",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.5.6",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0",
-    "cross-env": "^7.0.2",
-    "live-server": "^1.2.1",
-    "postcss-cli": "^7.1.0"
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "live-server": "^1.2.2",
+    "postcss-cli": "^11.0.0"
   },
   "gitHead": "dc9083752bb5cdfd9a98a10e1cd41fb2e1ac0012"
 }
